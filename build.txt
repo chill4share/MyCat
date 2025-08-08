@@ -5,4 +5,5 @@ pnpm install
 pnpm tauri build 
 -> khi build mạng 3 chữ ở VN thường bị lỗi ko tải được NSIS
 -> tải thủ công về trước -> ném 'nsis-3.zip' vào %LOCALAPPDATA%\tauri
+-> code chưa áp dụng update vì lười
 pnpm tauri dev
