@@ -1,0 +1,5 @@
+cargo clean
+rd /s /q dist
+rd /s /q target
+pnpm install
+pnpm tauri build
