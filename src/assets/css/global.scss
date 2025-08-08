@@ -1,0 +1,54 @@
+html,
+body,
+#app {
+  background-color: transparent !important;
+}
+
+html {
+  --uno: select-none overscroll-none antialiased;
+
+  font-family: 'Inter', 'Segoe UI', 'Noto Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #111;
+  color-scheme: light;
+
+  &.dark {
+    color: #e0e0e0;
+    color-scheme: dark;
+  }
+
+  img {
+    -webkit-user-drag: none;
+  }
+
+  button {
+    outline: none !important;
+    background-color: #1e88e5;
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #1565c0;
+    }
+
+    &:active {
+      background-color: #0d47a1;
+    }
+  }
+
+  .ant-card {
+    .ant-card-actions {
+      > li {
+        --uno: flex items-center justify-center;
+        > span {
+          --uno: inline-flex items-center justify-center min-w-unset;
+        }
+      }
+    }
+  }
+}
