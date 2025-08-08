@@ -2,5 +2,7 @@ cargo clean
 rd /s /q dist
 rd /s /q target
 pnpm install
-pnpm tauri build
+pnpm tauri build 
+-> khi build mạng 3 chữ ở VN thường bị lỗi ko tải được NSIS
+-> tải thủ công về trước -> ném 'nsis-3.zip' vào %LOCALAPPDATA%\tauri
 pnpm tauri dev
