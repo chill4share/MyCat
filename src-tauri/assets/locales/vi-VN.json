@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "name": "Tiếng Việt"
+  },
+  "menu": {
+    "cat": "Cài đặt",
+    "general": "Chung",
+    "model": "Mô hình",
+    "shortcut": "Phím tắt",
+    "about": "Giới thiệu",
+    "preference": "Tùy chỉnh...",
+    "showCat": "Hiện Mèo",
+    "hideCat": "Ẩn Mèo",
+    "penetrable": "Click xuyên",
+    "windowSize": "Kích thước",
+    "opacity": "Độ mờ",
+    "default": "Mặc định"
+  },
+  "trayMenu": {
+    "checkUpdate": "Kiểm tra cập nhật",
+    "openSource": "Mã nguồn",
+    "version": "Phiên bản",
+    "restart": "Khởi động lại",
+    "exit": "Thoát"
+  },
+  "update": {
+    "checking": "Đang kiểm tra cập nhật...",
+    "latest": "Bạn đang dùng phiên bản mới nhất",
+    "modal": {
+      "title": "Đã tìm thấy phiên bản mới",
+      "cancel": "Để sau",
+      "ok": "Cập nhật ngay",
+      "version": "Phiên bản:",
+      "date": "Thời gian cập nhật:",
+      "log": "Thay đổi:"
+    }
+  },
+  "shortcut": {
+    "record": {
+      "press": "Nhấn phím/tổ hợp phím để ghi",
+      "click": "Click để ghi phím tắt"
+    }
+  },
+  "common": {
+    "loading": {
+      "resizing": "Đang đổi kích thước..."
+    }
+  },
+  "model": {
+    "actions": {
+      "create": "Tạo mô hình",
+      "convert": "Chuyển đổi mô hình",
+      "more": "Khám phá mô hình khác"
+    },
+    "delete": {
+      "success": "Xóa thành công",
+      "title": "Xóa mô hình",
+      "confirm": "Bạn chắc muốn xóa mô hình này?"
+    },
+    "import": {
+      "success": "Nhập thành công",
+      "tip": "Nhấp hoặc kéo tệp vào đây"
+    },
+    "load": {
+      "error": {
+        "notFound": "Không tìm thấy tệp cấu hình chính của mô hình. Vui lòng đảm bảo bộ tệp mô hình đầy đủ."
+      }
+    }
+  },
+  "general": {
+    "theme": {
+      "title": "Giao diện",
+      "auto": "Theo hệ thống",
+      "light": "Sáng",
+      "dark": "Tối"
+    },
+    "settings": {
+      "app": "Cài đặt ứng dụng",
+      "appearance": "Cài đặt giao diện",
+      "update": "Cài đặt cập nhật",
+      "launchStartup": "Khởi động cùng hệ thống",
+      "taskbar": {
+        "title": "Hiện biểu tượng trên thanh tác vụ (icon taskbar)",
+        "description": "Bật để có thể quay cửa sổ qua OBS."
+      },
+      "autoUpdate": "Tự động kiểm tra cập nhật"
+    },
+    "languages": {
+      "title": "Ngôn ngữ",
+      "openFolder": "Mở thư mục",
+      "customize": "Bạn có thể thêm hoặc chỉnh sửa các tệp ngôn ngữ thủ công trong thư mục này:"
+    }
+  },
+  "permissions": {
+    "title": "Cài đặt quyền",
+    "input": {
+      "title": "Quyền giám sát đầu vào",
+      "desc": "Bật quyền giám sát để nhận sự kiện bàn phím và chuột từ hệ thống nhằm phản hồi thao tác của bạn.",
+      "modal": {
+        "title": "Quyền giám sát đầu vào",
+        "content": "Nếu quyền đã được bật, hãy chọn và nhấn nút “-” để xóa, sau đó thêm lại thủ công và khởi động lại ứng dụng để đảm bảo quyền có hiệu lực.",
+        "ok": "Đi đến Bật"
+      },
+      "authorized": "Đã cấp quyền",
+      "unauthorized": "Cấp quyền"
+    }
+  },
+  "shortcuts": {
+    "title": "Phím tắt",
+    "items": {
+      "visibleCat": {
+        "title": "Hiện/Ẩn Mèo",
+        "desc": "Bật/tắt cửa sổ mèo."
+      },
+      "visiblePreference": {
+        "title": "Mở Tùy chỉnh",
+        "desc": "Bật/tắt cửa sổ tùy chỉnh."
+      },
+      "mirrorMode": {
+        "title": "Chế độ gương",
+        "desc": "Bật/tắt chế độ gương."
+      },
+      "penetrable": {
+        "title": "Click xuyên cửa sổ",
+        "desc": "Bật/tắt cho phép click xuyên cửa sổ mèo."
+      },
+      "alwaysOnTop": {
+        "title": "Luôn trên cùng",
+        "desc": "Bật/tắt giữ cửa sổ mèo luôn trên cùng."
+      }
+    }
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "version": "Phiên bản",
+    "checkUpdate": "Kiểm tra cập nhật",
+    "info": "Thông tin ứng dụng",
+    "infoDesc": "Sao chép thông tin để gửi bug.",
+    "copy": "Sao chép",
+    "copySuccess": "Đã sao chép",
+    "openSource": "Mã nguồn",
+    "feedback": "Báo lỗi",
+    "logs": "Nhật ký ứng dụng",
+    "viewLogs": "Xem nhật ký"
+  },
+  "modelSettings": {
+    "title": "Cài đặt Mô hình",
+    "mirrorMode": "Chế độ gương",
+    "mirrorModeDesc": "Bật để lật ngang mô hình.",
+    "singleMode": "Chỉ hiển thị phím cuối cùng",
+    "singleModeDesc": "Khi bật, mỗi tay mèo chỉ hiển thị phím vừa nhấn cuối cùng (tránh hiện nhiều tay khi nhấn nhiều phím cùng lúc).",
+    "mouseMirror": "Phản chiếu chuột",
+    "mouseMirrorDesc": "Khi bật, chuột của mô hình sẽ phản chiếu theo chuyển động chuột thực tế."
+  },
+  "windowSettings": {
+    "title": "Cài đặt Cửa sổ",
+    "penetrable": "Click xuyên",
+    "penetrableDesc": "Bật để cửa sổ không ảnh hưởng đến thao tác trên ứng dụng khác.",
+    "alwaysOnTop": "Luôn trên cùng",
+    "alwaysOnTopDesc": "Bật để cửa sổ luôn nằm trên ứng dụng khác.",
+    "size": "Kích thước",
+    "sizeDesc": "Di chuyển chuột đến mép cửa sổ hoặc giữ Shift và kéo chuột phải để thay đổi kích thước.",
+    "opacity": "Độ mờ"
+  }
+}
