@@ -1,0 +1,89 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Love Cat",
+  "version": "../package.json",
+  "identifier": "com.chill4share.LoveCat",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Love Cat",
+        "url": "index.html/#/",
+        "shadow": false,
+        "alwaysOnTop": true,
+        "transparent": true,
+        "decorations": false,
+        "acceptFirstMouse": true,
+        "skipTaskbar": true
+      },
+      {
+        "label": "preference",
+        "title": "Love Cat - Settings",
+        "url": "index.html/#/preference",
+        "visible": false,
+        "titleBarStyle": "Overlay",
+        "hiddenTitle": true,
+        "minWidth": 800,
+        "minHeight": 600
+      }
+    ],
+    "security": {
+      "csp": null,
+      "dangerousDisableAssetCspModification": true,
+      "assetProtocol": {
+        "enable": true,
+        "scope": {
+          "allow": [
+            "**/*"
+          ],
+          "requireLiteralLeadingDot": false
+        }
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "category": "Game",
+    "createUpdaterArtifacts": true,
+    "targets": [
+      "nsis",
+      "dmg",
+      "app",
+      "appimage",
+      "deb",
+      "rpm"
+    ],
+    "shortDescription": "Love Cat is a cute and fun application for cat lovers.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": [
+      "assets/tray.png",
+      "assets/models",
+      "assets/locales"
+    ]
+  },
+  "plugins": {
+    "updater": {
+      "dangerousInsecureTransportProtocol": true,
+      "pubkey": "deadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "endpoints": [
+        "https://github.com/chill4share/MyCat/...latest.json"
+      ]
+    },
+    "fs": {
+      "requireLiteralLeadingDot": false
+    }
+  }
+}
