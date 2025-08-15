@@ -47,6 +47,7 @@
     "is-url": "^1.2.4",
     "nanoid": "^5.1.5",
     "pinia": "^3.0.3",
+    "pinia-plugin-persistedstate": "^4.4.1",
     "pixi-live2d-display": "^0.4.0",
     "pixi.js": "^6.5.10",
     "tauri-plugin-macos-permissions-api": "^2.3.0",

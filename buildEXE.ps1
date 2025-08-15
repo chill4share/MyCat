@@ -1,99 +1,100 @@
-# buildEXE.ps1 - Build Tauri app + tao latest.json canh file exe (khong dung ConvertTo-Json)
+# buildEXE.ps1 - Build Tauri app + tao latest.json canh file exe
+
+function Log($msg, $color = "White") {
+    Write-Host ("[{0}] {1}" -f (Get-Date -Format "HH:mm:ss"), $msg) -ForegroundColor $color
+}
 
 # Cho phep chay script tam thoi
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
-Write-Host "=== BAT DAU BUILD TAURI APP ===" -ForegroundColor Cyan
 
-# 0. Don sach output cu nhung giu cache compile
-# Xoa dist (frontend)
-$distDir = "dist"
-if (Test-Path $distDir) {
-    Write-Host "Dang xoa thu muc dist cu..." -ForegroundColor Yellow
-    Remove-Item -Recurse -Force $distDir
-}
-
-# Xoa bundle cu (chi output build, khong xoa cache compile)
-$bundleDir = "target/release/bundle/nsis"
-if (Test-Path $bundleDir) {
-    Write-Host "Dang xoa output cu trong $bundleDir ..." -ForegroundColor Yellow
-    Remove-Item -Recurse -Force $bundleDir\*
-}
+Clear-Host
+Log "=== BAT DAU QUY TRINH BUILD TAURI ===" Cyan
 
 # 1. Load private key
 $keyPath = "src-tauri/private.key"
 if (-Not (Test-Path $keyPath)) {
-    Write-Host "Khong tim thay private.key tai $keyPath" -ForegroundColor Red
+    Log "Khong tim thay private.key tai $keyPath" Red
     exit 1
 }
 $env:TAURI_SIGNING_PRIVATE_KEY = Get-Content $keyPath -Raw
-Write-Host "Da nap private key" -ForegroundColor Green
+$env:TAURI_SIGNING_PRIVATE_KEY_PASSWORD = ""
+Log "Da nap private key" Green
 
 # 2. Lay version tu package.json
 $pkgPath = "package.json"
 if (-Not (Test-Path $pkgPath)) {
-    Write-Host "Khong tim thay package.json" -ForegroundColor Red
+    Log "Khong tim thay package.json" Red
     exit 1
 }
 $pkg = Get-Content $pkgPath | ConvertFrom-Json
 $version = $pkg.version
-Write-Host "Phien ban: $version" -ForegroundColor Yellow
+Log "Phien ban: $version" Yellow
 
-# 3. Build Tauri
-Write-Host "Dang build Tauri app..." -ForegroundColor Cyan
+# 3. Don output cu
+$outputDirs = @("dist", "target/release/bundle/nsis")
+foreach ($dir in $outputDirs) {
+    if (Test-Path $dir) {
+        Remove-Item $dir -Recurse -Force -ErrorAction SilentlyContinue
+        Log "Da xoa thu muc cu: $dir" DarkGray
+    }
+}
+
+# 4. Build Tauri
+Log "Dang build..." Cyan
 pnpm tauri build
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "Build that bai" -ForegroundColor Red
+    Log "Build that bai" Red
     exit 1
 }
+Log "Build ung dung thanh cong." Green
 
-# 4. Thu muc bundle (sau khi build)
+# 5. Thu muc bundle
 $bundleDir = "target/release/bundle/nsis"
 if (-Not (Test-Path $bundleDir)) {
-    $bundleDir = "src-tauri/target/release/bundle/nsis"
-}
-if (-Not (Test-Path $bundleDir)) {
-    Write-Host "Khong tim thay thu muc NSIS bundle" -ForegroundColor Red
+    Log "Khong tim thay thu muc NSIS bundle" Red
     exit 1
 }
 
-# 5. Lay file exe va sig
-Write-Host "Dang tim file exe..." -ForegroundColor Cyan
+# 6. Tim file exe moi nhat
 $exeFile = Get-ChildItem $bundleDir -Filter "*.exe" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 if (-Not $exeFile) {
-    Write-Host "Khong tim thay file exe" -ForegroundColor Red
+    Log "Khong tim thay file exe" Red
     exit 1
 }
 
-$sigFile = "$($exeFile.FullName).sig"
-if (-Not (Test-Path $sigFile)) {
-    Write-Host "Khong tim thay file sig" -ForegroundColor Red
+# 7. Tim file sig moi nhat
+$sigFile = Get-ChildItem $bundleDir -Filter "*.sig" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+if (-Not $sigFile) {
+    Log "Khong tim thay file sig" Red
     exit 1
 }
-$signature = Get-Content $sigFile -Raw
+$signature = Get-Content $sigFile.FullName -Raw
 
-Write-Host "File exe: $($exeFile.FullName)" -ForegroundColor Green
-Write-Host "File sig: $sigFile" -ForegroundColor Green
+Log "File exe: $($exeFile.Name)" Green
+Log "File sig: $($sigFile.Name)" Green
 
-# 6. Tao latest.json canh file exe (ghi thu cong)
-Write-Host "Dang tao latest.json..." -ForegroundColor Cyan
-$latestJsonPath = Join-Path $exeFile.DirectoryName "latest.json"
-$pubDate = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
-
-$latestJsonContent = @"
-{
-  "version": "$version",
-  "notes": "Update log",
-  "pub_date": "$pubDate",
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "$signature",
-      "url": "https://github.com/chill4share/MyCat/releases/download/v$version/$($exeFile.Name)"
+# 8. Tao latest.json (UTF-8 khong BOM)
+$latestJsonPath = Join-Path $bundleDir "latest.json"
+$latestData = @{
+    version   = $version
+    notes     = "Update log"
+    pub_date  = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
+    platforms = @{
+        "windows-x86_64" = @{
+            signature = $signature
+            url       = "https://github.com/chill4share/MyCat/releases/download/v$version/$($exeFile.Name)"
+        }
     }
-  }
 }
-"@
 
-$latestJsonContent | Out-File -FilePath $latestJsonPath -Encoding UTF8
-Write-Host "Da tao latest.json tai: $latestJsonPath" -ForegroundColor Green
+$utf8NoBom = New-Object System.Text.UTF8Encoding $false
+[System.IO.File]::WriteAllText($latestJsonPath, ($latestData | ConvertTo-Json -Depth 10), $utf8NoBom)
 
-Write-Host "=== HOAN TAT BUILD ===" -ForegroundColor Cyan
+Log "Da tao latest.json tai: $latestJsonPath" Green
+
+# 9. Hoan tat
+Log "=== HOAN TAT QUY TRINH BUILD ===" Cyan
+Log "Cac file can upload len GitHub Releases:" Yellow
+Log " - $($exeFile.Name)" White
+Log " - $($sigFile.Name)" White
+Log " - latest.json" White

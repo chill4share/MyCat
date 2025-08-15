@@ -77,9 +77,9 @@
   "plugins": {
     "updater": {
       "dangerousInsecureTransportProtocol": true,
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEIxOTIwRURCQzE2QTc5NDcKUldSSGVXckIydzZTc2RxQ2RNQXFjSytyUjNiam9PN1Z4alZzQWFhOG9telluMTJtRlF4WXNENzkK",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDgwRjNBQzQ3NjU2NkMzNTUKUldSVncyWmxSNnp6Z0tBY091Q3VPbkkvTjRsSzdtR0Ixb0tiRU8veUt2MmdHQ2EvUEVwRnd6SGwK",
       "endpoints": [
-        "https://github.com/chill4share/MyCat/releases/download/latest_json/latest.json"
+        "https://github.com/chill4share/MyCat/releases/latest/download/latest.json"
       ]
     },
     "fs": {

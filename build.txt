@@ -1,13 +1,7 @@
 cargo clean
-rd /s /q dist
-rd /s /q target
 pnpm install
 pnpm tauri build
 pnpm tauri dev
-TAURI_PRIVATE_KEY= <dán key vào đây>
- pnpm tauri build
-# Chỉ xóa output cũ
-Remove-Item -Recurse -Force target/release/bundle/*
-Remove-Item -Force target/release/*.exe
-Remove-Item -Force target/release/*.sig
-.\buildEXE.ps1
+npx tauri signer generate
+npx tauri signer generate --ci
+-> mở PS chạy: .\buildEXE.ps1
