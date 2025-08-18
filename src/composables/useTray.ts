@@ -91,7 +91,7 @@ export function useTray() {
         action: () => openUrl(GITHUB_LINK),
       }),
       MenuItem.new({
-        text: t('trayMenu.openSource'),
+        text: `${t('trayMenu.openSource')} (Chill4Share)`,
         action: () => openUrl(GITHUB_LINK_CHILL),
       }),
       PredefinedMenuItem.new({ item: 'Separator' }),

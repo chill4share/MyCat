@@ -102,7 +102,7 @@ function replaceBody(body: string) {
   return body
     .replace(/&nbsp;/g, '')
     .split('\n')
-    .map(line => line.replace(/\s*-\s+by\s+@.*/, ''))
+    .map(line => `* ${line.replace(/\s*-\s+by\s+@.*/, '')}`) // Thêm '* ' vào đầu mỗi dòng
     .join('\n')
 }
 

@@ -75,9 +75,18 @@ Log "File sig: $($sigFile.Name)" Green
 
 # 8. Tao latest.json (UTF-8 khong BOM)
 $latestJsonPath = Join-Path $bundleDir "latest.json"
+
+# Ghi chu: noi nhieu dong thanh mot string co \n
+$notesArray = @(
+    "Ghi chu dong 1: Them tinh nang moi.",
+    "Ghi chu dong 2: Sua loi quan trong.",
+    "Ghi chu dong 3: Cai thien giao dien nguoi dung."
+)
+$notesString = ($notesArray -join "`n")
+
 $latestData = @{
     version   = $version
-    notes     = "Update log"
+    notes     = $notesString
     pub_date  = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
     platforms = @{
         "windows-x86_64" = @{
