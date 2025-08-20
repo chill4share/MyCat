@@ -1,4 +1,5 @@
 MyCat 🐾
+
 MyCat là một phiên bản tùy biến mở rộng, và dịch đa ngôn ngữ của ứng dụng "Bongo Cat" nổi tiếng, cho phép bạn hiển thị một chú mèo (hoặc bất kỳ nhân vật nào khác) tương tác với chuột, bàn phím, và gamepad của bạn ngay trên màn hình desktop.
 
 Dự án này được xây dựng lại từ đầu bằng Tauri, Vue 3, và Vite, mang lại hiệu năng cao, dung lượng nhẹ và khả năng tùy biến mạnh mẽ.
@@ -38,7 +39,6 @@ Chung: Cài đặt các tùy chọn như khởi động cùng hệ thống, tỷ
 
 Phím tắt: Thiết lập các phím tắt toàn cục để điều khiển ứng dụng.
 
-
 🎨 Tùy biến: Thêm nhân vật của riêng bạn
 Đây là phần thú vị nhất! Bạn có thể dễ dàng thêm các nhân vật của riêng mình.
 
@@ -46,17 +46,29 @@ Cấu trúc thư mục
 Ứng dụng sẽ tự động nhận diện các model theo cấu trúc thư mục sau trong thư mục cài đặt (assets/models):
 
 assets/models/
+
 ├── TenNhanVat1/
+
 │   ├── che_do_1/
+
 │   │   ├── resources/
+
 │   │   │   ├── cover.png  (Ảnh bìa, gợi ý 612x354)
+
 │   │   │   └── ...
+
 │   │   ├── left-keys/     (Chứa các ảnh cho tay trái)
+
 │   │   └── right-keys/    (Chứa các ảnh cho tay phải)
+
 │   └── che_do_2/
+
 │       └── ...
+
 └── TenNhanVat2/
+
     └── ...
+    
 
 Các bước thực hiện:
 Tìm thư mục assets: Chuột phải vào nhân vật trên màn hình -> "Settings" -> tab "Mô hình". Click vào biểu tượng thư mục trên bất kỳ model nào để mở thư mục assets/models.
@@ -98,7 +110,9 @@ pnpm dev
 
 Build ứng dụng:
 
-pnpm tauri build -->> có thể mở PS để chạy trực tiếp lệnh build: .\buildEXE.ps1
+pnpm tauri build
+
+Mẹo: Bạn có thể mở PowerShell và chạy trực tiếp lệnh build: .\buildEXE.ps1
 
 🙏 Đóng góp
 Mọi đóng góp đều được chào đón! Vui lòng tạo một "Issue" để thảo luận về các thay đổi lớn hoặc tạo một "Pull Request" cho các bản sửa lỗi và cải tiến nhỏ.
