@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
+    /* ---- Target ---- */
     "target": "ES2020",
     "jsx": "preserve",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "useDefineForClassFields": true,
 
+    /* ---- Class fields ---- */
+    "useDefineForClassFields": true,
+    /* ---- Paths / Aliases ---- */
     "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "bundler",
@@ -13,17 +16,29 @@
     },
     "resolveJsonModule": true,
 
-    "types": ["vite/client", "vue"],
+    /* ---- Types ---- */
+    "types": [
+      "vite/client",
+      "vue",
+      "@tauri-apps/api",
+      "@tauri-apps/plugin-fs",
+      "@tauri-apps/plugin-dialog"
+    ],
     "allowImportingTsExtensions": true,
+    "allowJs": false,
 
+    /* ---- Strictness ---- */
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+
+    /* ---- Output ---- */
     "noEmit": true,
     "isolatedModules": true,
     "skipLibCheck": true
   },
+
   "references": [{ "path": "./tsconfig.node.json" }],
   "include": [
     "src/**/*.ts",
@@ -31,5 +46,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "src/**/*.json"
-  ]
+  ],
+
+  "exclude": ["node_modules", "dist"]
 }

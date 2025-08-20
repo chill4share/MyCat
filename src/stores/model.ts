@@ -1,4 +1,5 @@
 import { resolveResource } from '@tauri-apps/api/path'
+import { exists, readDir } from '@tauri-apps/plugin-fs'
 import { filter, find } from 'es-toolkit/compat'
 import { nanoid } from 'nanoid'
 import { defineStore } from 'pinia'
@@ -6,12 +7,16 @@ import { reactive, ref } from 'vue'
 
 import { join } from '@/utils/path'
 
-export type ModelMode = 'standard' | 'keyboard' | 'gamepad'
+/**
+ * ModelMode = string để tự do, không giới hạn 3 loại
+ */
+export type ModelMode = string
 
 export interface Model {
   id: string
-  path: string
-  mode: ModelMode
+  name: string // Tên model (Cat, Aiseya…)
+  path: string // path tới thư mục mode
+  mode: ModelMode // bất kỳ thư mục con nào
   isPreset: boolean
 }
 
@@ -32,52 +37,83 @@ interface Expression {
   Description?: string
 }
 
-export const useModelStore = defineStore('model', () => {
-  const models = ref<Model[]>([])
-  const currentModel = ref<Model>()
-  const motions = ref<MotionGroup>({})
-  const expressions = ref<Expression[]>([])
-  const supportKeys = reactive<Record<string, string>>({})
-  const pressedKeys = reactive<Record<string, string>>({})
+export const useModelStore = defineStore(
+  'model',
+  () => {
+    const models = ref<Model[]>([])
+    const currentModel = ref<Model>()
+    const motions = ref<MotionGroup>({})
+    const expressions = ref<Expression[]>([])
+    const supportKeys = reactive<Record<string, string>>({})
+    const pressedKeys = reactive<Record<string, string>>({})
 
-  const init = async () => {
-    const modelsPath = await resolveResource('assets/models')
+    const init = async () => {
+      const modelsRoot = await resolveResource('assets/models')
 
-    const nextModels = filter(models.value, { isPreset: false })
-    const presetModels = filter(models.value, { isPreset: true })
+      const userModels = filter(models.value, { isPreset: false })
+      const presetModels = filter(models.value, { isPreset: true })
 
-    const modes: ModelMode[] = ['gamepad', 'keyboard', 'standard']
+      const discovered: Model[] = []
 
-    for (const mode of modes) {
-      const matched = find(presetModels, { mode })
+      // Đọc tất cả thư mục model trong assets/models
+      const modelDirs = await readDir(modelsRoot).catch(() => [])
 
-      nextModels.unshift({
-        id: matched?.id ?? nanoid(),
-        mode,
-        isPreset: true,
-        path: join(modelsPath, mode),
-      })
+      for (const modelDir of modelDirs) {
+        if (!modelDir.isDirectory) continue
+
+        const modelName = modelDir.name
+
+        // ✅ Đọc toàn bộ subfolder thay vì fix 3 mode
+        const modeDirs = await readDir(join(modelsRoot, modelName)).catch(
+          () => [],
+        )
+        for (const modeDir of modeDirs) {
+          if (!modeDir.isDirectory) continue
+
+          const mode = modeDir.name
+          const modePath = join(modelsRoot, modelName, mode)
+
+          const ok = await exists(modePath).catch(() => false)
+          if (!ok) continue
+
+          discovered.push({
+            id: find(presetModels, { path: modePath })?.id ?? nanoid(),
+            name: modelName,
+            mode,
+            isPreset: true,
+            path: modePath,
+          })
+        }
+      }
+
+      // Sắp xếp: theo tên model, rồi theo mode alphabet
+      discovered.sort(
+        (a, b) => a.name.localeCompare(b.name) || a.mode.localeCompare(b.mode),
+      )
+
+      const nextModels = [...userModels, ...discovered]
+
+      // Giữ model cũ nếu còn, nếu không chọn cái đầu
+      const matched = find(nextModels, { id: currentModel.value?.id })
+      currentModel.value = matched ?? nextModels[0]
+
+      models.value = nextModels
     }
 
-    const matched = find(nextModels, { id: currentModel.value?.id })
-
-    currentModel.value = matched ?? nextModels[0]
-
-    models.value = nextModels
-  }
-
-  return {
-    models,
-    currentModel,
-    motions,
-    expressions,
-    supportKeys,
-    pressedKeys,
-    init,
-  }
-}, {
-  tauri: {
-    filterKeys: ['models', 'currentModel'],
-    filterKeysStrategy: 'pick',
+    return {
+      models,
+      currentModel,
+      motions,
+      expressions,
+      supportKeys,
+      pressedKeys,
+      init,
+    }
   },
-})
+  {
+    tauri: {
+      filterKeys: ['models', 'currentModel'],
+      filterKeysStrategy: 'pick',
+    },
+  },
+)

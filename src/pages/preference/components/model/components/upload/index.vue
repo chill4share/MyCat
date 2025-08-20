@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import type { ModelMode } from '@/stores/model'
-
 import { invoke } from '@tauri-apps/api/core'
 import { appDataDir } from '@tauri-apps/api/path'
 import { getCurrentWebviewWindow } from '@tauri-apps/api/webviewWindow'
 import { open } from '@tauri-apps/plugin-dialog'
-import { readDir } from '@tauri-apps/plugin-fs'
 import { message } from 'ant-design-vue'
 import { nanoid } from 'nanoid'
 import { onMounted, ref, useTemplateRef, watch } from 'vue'
@@ -31,7 +28,8 @@ onMounted(() => {
       const { x, y } = payload.position
 
       if (dropRef.value) {
-        const { left, right, top, bottom } = dropRef.value.getBoundingClientRect()
+        const { left, right, top, bottom }
+          = dropRef.value.getBoundingClientRect()
 
         const inBoundsX = x >= left && x <= right
         const inBoundsY = y >= top && y <= bottom
@@ -40,7 +38,6 @@ onMounted(() => {
       }
     } else if (type === 'drop' && dragenter.value) {
       dragenter.value = false
-
       selectPaths.value = payload.paths
     } else {
       dragenter.value = false
@@ -61,19 +58,10 @@ watch(selectPaths, async (paths) => {
     try {
       const id = nanoid()
 
-      let mode: ModelMode = 'standard'
-
-      const files = await readDir(join(fromPath, 'resources', 'right-keys')).catch(() => [])
-
-      if (files.length > 0) {
-        const fileNames = files.map(file => file.name.split('.')[0])
-
-        if (fileNames.includes('East')) {
-          mode = 'gamepad'
-        } else {
-          mode = 'keyboard'
-        }
-      }
+      // đọc cấu trúc folder: modelName/mode
+      const parts = fromPath.split(/[\\/]/).filter(Boolean)
+      const modelName = parts.length >= 2 ? parts[parts.length - 2] : 'Unknown'
+      const mode = parts.length >= 1 ? parts[parts.length - 1] : 'default'
 
       const toPath = join(await appDataDir(), 'custom-models', id)
 
@@ -82,10 +70,12 @@ watch(selectPaths, async (paths) => {
         toPath,
       })
 
+      // ✅ dùng name thay vì modelName
       modelStore.models.push({
         id,
-        path: toPath,
+        name: modelName,
         mode,
+        path: toPath,
         isPreset: false,
       })
 
@@ -105,7 +95,6 @@ watch(selectPaths, async (paths) => {
     @click="handleUpload"
   >
     <div class="i-solar:upload-square-outline text-12 text-primary" />
-
-    <span>{{ t('model.import.tip') }}</span>
+    <span>{{ t("model.import.tip") }}</span>
   </div>
 </template>

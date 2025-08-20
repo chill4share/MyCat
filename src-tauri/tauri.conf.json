@@ -30,8 +30,8 @@
         "visible": false,
         "titleBarStyle": "Overlay",
         "hiddenTitle": true,
-        "minWidth": 800,
-        "minHeight": 600
+        "minWidth": 600,
+        "minHeight": 400
       }
     ],
     "security": {
@@ -40,9 +40,7 @@
       "assetProtocol": {
         "enable": true,
         "scope": {
-          "allow": [
-            "**/*"
-          ],
+          "allow": ["**/*"],
           "requireLiteralLeadingDot": false
         }
       }
@@ -52,14 +50,7 @@
     "active": true,
     "category": "Game",
     "createUpdaterArtifacts": true,
-    "targets": [
-      "nsis",
-      "dmg",
-      "app",
-      "appimage",
-      "deb",
-      "rpm"
-    ],
+    "targets": ["nsis", "dmg", "app", "appimage", "deb", "rpm"],
     "shortDescription": "Love Cat is a cute and fun application for cat lovers.",
     "icon": [
       "icons/32x32.png",
@@ -68,11 +59,7 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
-    "resources": [
-      "assets/tray.png",
-      "assets/models",
-      "assets/locales"
-    ]
+    "resources": ["assets/**/*"]
   },
   "plugins": {
     "updater": {

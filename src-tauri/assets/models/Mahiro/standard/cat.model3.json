@@ -1,0 +1,53 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "haole.moc3",
+		"Textures": [
+			"haole.2048/texture_00.png"
+		],
+		"Physics": "haole.physics3.json",
+		"DisplayInfo": "haole.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "expression7",
+				"File": "expression7.exp3.json"
+			},
+			{
+				"Name": "expression8",
+				"File": "expression8.exp3.json"
+			},
+			{
+				"Name": "expression9",
+				"File": "expression9.exp3.json"
+			},
+			{
+				"Name": "expression10",
+				"File": "expression10.exp3.json"
+			},
+			{
+				"Name": "expression11",
+				"File": "expression11.exp3.json"
+			},
+			{
+				"Name": "expression12",
+				"File": "expression12.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

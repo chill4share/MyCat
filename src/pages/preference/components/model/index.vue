@@ -6,7 +6,7 @@ import { convertFileSrc } from '@tauri-apps/api/core'
 import { remove } from '@tauri-apps/plugin-fs'
 import { revealItemInDir } from '@tauri-apps/plugin-opener'
 import { useElementSize } from '@vueuse/core'
-import { Card, message, Popconfirm } from 'ant-design-vue'
+import { Card, message, Popconfirm, Tooltip } from 'ant-design-vue'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { MasonryGrid, MasonryGridItem } from 'vue3-masonry-css'
@@ -23,16 +23,15 @@ const firstItemRef = ref<HTMLElement>()
 
 const { height } = useElementSize(firstItemRef)
 
-function setFirstItemRef(el: Element | ComponentPublicInstance | null, index: number) {
+function setFirstItemRef(
+  el: Element | ComponentPublicInstance | null,
+  index: number,
+) {
   if (!el || index > 0) return
 
-  if ('$el' in el) {
-    return firstItemRef.value = el.$el
-  }
+  if ('$el' in el) return (firstItemRef.value = el.$el)
 
-  if (el instanceof HTMLElement) {
-    firstItemRef.value = el
-  }
+  if (el instanceof HTMLElement) firstItemRef.value = el
 }
 
 async function handleDelete(item: Model) {
@@ -40,16 +39,14 @@ async function handleDelete(item: Model) {
 
   try {
     await remove(path, { recursive: true })
-
     message.success(t('model.delete.success'))
   } catch (error) {
     message.error(String(error))
   } finally {
-    modelStore.models = modelStore.models.filter(item => item.id !== id)
+    modelStore.models = modelStore.models.filter(m => m.id !== id)
 
-    if (id === modelStore.currentModel?.id) {
+    if (id === modelStore.currentModel?.id)
       modelStore.currentModel = modelStore.models[0]
-    }
   }
 }
 </script>
@@ -67,45 +64,55 @@ async function handleDelete(item: Model) {
       v-for="(item, index) in modelStore.models"
       :key="item.id"
     >
-      <Card
-        :ref="(el) => setFirstItemRef(el, index)"
-        hoverable
-        size="small"
-        @click="modelStore.currentModel = item"
+      <Tooltip
+        placement="top"
+        :title="`${item.name} - ${item.mode}`"
       >
-        <template #cover>
-          <img
-            alt="example"
-            :src="convertFileSrc(join(item.path, 'resources', 'cover.png'))"
-          >
-        </template>
-
-        <template #actions>
-          <i
-            class="i-iconamoon:check-circle-1-bold text-4"
-            :class="{ 'text-success': item.id === modelStore.currentModel?.id }"
-          />
-
-          <i
-            class="i-iconamoon:link-external-bold text-4"
-            @click.stop="revealItemInDir(item.path)"
-          />
-
-          <template v-if="!item.isPreset">
-            <Popconfirm
-              :description="t('model.delete.confirm')"
-              placement="topRight"
-              :title="t('model.delete.title')"
-              @confirm="handleDelete(item)"
-            >
-              <i
-                class="i-iconamoon:trash-simple-bold text-4"
-                @click.stop
-              />
-            </Popconfirm>
+        <Card
+          :ref="(el) => setFirstItemRef(el, index)"
+          hoverable
+          size="small"
+          @click="modelStore.currentModel = item"
+        >
+          <template #cover>
+            <div class="aspect-video overflow-hidden">
+              <img
+                alt="cover"
+                class="size-full object-cover"
+                :src="convertFileSrc(join(item.path, 'resources', 'cover.png'))"
+              >
+            </div>
           </template>
-        </template>
-      </Card>
+
+          <template #actions>
+            <i
+              class="i-iconamoon:check-circle-1-bold text-4"
+              :class="{
+                'text-success': item.id === modelStore.currentModel?.id,
+              }"
+            />
+
+            <i
+              class="i-iconamoon:link-external-bold text-4"
+              @click.stop="revealItemInDir(item.path)"
+            />
+
+            <template v-if="!item.isPreset">
+              <Popconfirm
+                :description="t('model.delete.confirm')"
+                placement="topRight"
+                :title="t('model.delete.title')"
+                @confirm="handleDelete(item)"
+              >
+                <i
+                  class="i-iconamoon:trash-simple-bold text-4"
+                  @click.stop
+                />
+              </Popconfirm>
+            </template>
+          </template>
+        </Card>
+      </Tooltip>
     </MasonryGridItem>
   </MasonryGrid>
 

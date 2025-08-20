@@ -5,38 +5,38 @@ description = "A Tauri App"
 authors = [ "Chill4Share" ]
 edition = "2024"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [lib]
-# The `_lib` suffix may seem redundant but it is necessary
-# to make the lib name unique and wouldn't conflict with the bin name.
-# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
 name = "bongo_cat_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2", features = [] }
+# Sửa ở đây: kế thừa từ workspace
+tauri-build = { workspace = true, features = [] }
 
 [dependencies]
 tauri = { workspace = true, features = ["tray-icon", "protocol-asset", "macos-private-api", "image-png"] }
 serde = { workspace = true, features = ["derive"] }
 serde_json.workspace = true
 tauri-plugin-custom-window.workspace = true
-tauri-plugin-os = "2"
-tauri-plugin-process = "2"
-tauri-plugin-opener = "2"
-tauri-plugin-pinia = "3"
-tauri-plugin-log = "2"
-tauri-plugin-updater = "2"
-tauri-plugin-prevent-default = "1"
-tauri-plugin-single-instance = "2"
-tauri-plugin-autostart = "2"
-tauri-plugin-macos-permissions = "2"
-tauri-plugin-dialog = "2"
-tauri-plugin-fs = "2"
-fs_extra = "1"
-tauri-plugin-clipboard-manager = "2"
-tauri-plugin-global-shortcut = "2"
+fs_extra.workspace = true
+
+# Sửa ở đây: tất cả các plugin đều kế thừa từ workspace
+tauri-plugin-os = { workspace = true }
+tauri-plugin-process = { workspace = true }
+tauri-plugin-opener = { workspace = true }
+tauri-plugin-pinia = { workspace = true }
+tauri-plugin-log = { workspace = true }
+tauri-plugin-updater = { workspace = true }
+tauri-plugin-prevent-default = { workspace = true }
+tauri-plugin-single-instance = { workspace = true }
+tauri-plugin-autostart = { workspace = true }
+tauri-plugin-macos-permissions = { workspace = true }
+tauri-plugin-dialog = { workspace = true }
+tauri-plugin-fs = { workspace = true }
+tauri-plugin-clipboard-manager = { workspace = true }
+tauri-plugin-global-shortcut = { workspace = true }
+
+# Các dependency khác
 rdev = { git = "https://github.com/kunkunsh/rdev" }
 gilrs = { git = "https://github.com/ayangweb/gilrs", default-features = false, features = ["xinput"] }
 

@@ -1,10 +1,21 @@
 {
   "compilerOptions": {
+    /* Bật composite để hỗ trợ project references */
     "composite": true,
+
+    /* Module system */
     "module": "ESNext",
     "moduleResolution": "bundler",
+
+    /* Đảm bảo nhận biết Node globals */
+    "types": ["node"],
+    /* Node thường dùng nhiều import kiểu default */
     "allowSyntheticDefaultImports": true,
+
+    /* Tăng tốc build, bỏ qua check type của lib */
     "skipLibCheck": true
   },
-  "include": ["vite.config.ts"]
+
+  /* Chỉ cần include file config & script node */
+  "include": ["vite.config.ts", "scripts/**/*.ts"]
 }

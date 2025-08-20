@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { EditOutlined, MenuOutlined, SyncOutlined, UnorderedListOutlined } from '@ant-design/icons-vue'
+import {
+  EditOutlined,
+  MenuOutlined,
+  SyncOutlined,
+  UnorderedListOutlined,
+} from '@ant-design/icons-vue'
 import { openUrl } from '@tauri-apps/plugin-opener'
 import { FloatButton, FloatButtonGroup } from 'ant-design-vue'
 import { useI18n } from 'vue-i18n'
@@ -19,7 +24,7 @@ const { t } = useI18n()
 
     <FloatButton
       :tooltip="t('model.actions.create')"
-      @click="openUrl('https://juejin.cn/post/7509872655802269731')"
+      @click="openUrl('https://github.com/chill4share/MyCat')"
     >
       <template #icon>
         <EditOutlined />
@@ -37,7 +42,7 @@ const { t } = useI18n()
 
     <FloatButton
       :tooltip="t('model.actions.more')"
-      @click="openUrl('https://github.com/ayangweb/Awesome-BongoCat')"
+      @click="openUrl('https://github.com/chill4share/MyCat')"
     >
       <template #icon>
         <UnorderedListOutlined />

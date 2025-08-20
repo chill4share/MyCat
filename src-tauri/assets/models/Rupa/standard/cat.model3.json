@@ -1,0 +1,45 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "rupa live.moc3",
+		"Textures": [
+			"rupa live.2048/texture_00.png"
+		],
+		"Physics": "rupa live.physics3.json",
+		"DisplayInfo": "rupa live.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "expression1",
+				"File": "expression1.exp3.json"
+			},
+			{
+				"Name": "expression2",
+				"File": "expression2.exp3.json"
+			},
+			{
+				"Name": "expression3",
+				"File": "expression3.exp3.json"
+			},
+			{
+				"Name": "expression4",
+				"File": "expression4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

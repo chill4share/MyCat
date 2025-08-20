@@ -1,0 +1,160 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamMouseLeftDown",
+			"GroupId": "ParamGroup",
+			"Name": "mouse L"
+		},
+		{
+			"Id": "ParamMouseRightDown",
+			"GroupId": "ParamGroup",
+			"Name": "mouse R"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup",
+			"Name": "me L"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup",
+			"Name": "me R"
+		},
+		{
+			"Id": "ParamMouseX",
+			"GroupId": "ParamGroup",
+			"Name": "mouse x"
+		},
+		{
+			"Id": "ParamMouseY",
+			"GroupId": "ParamGroup",
+			"Name": "mouse y"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup2",
+			"Name": "kami R"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "ParamGroup2",
+			"Name": "kami z L"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "ParamGroup2",
+			"Name": "kami z R"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "ParamGroup2",
+			"Name": "kami ato"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "ParamGroup2",
+			"Name": "touku"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "ParamGroup2",
+			"Name": "daimao"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup2",
+			"Name": "kami L"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "",
+			"Name": "jyohou1"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "jyohou2"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "",
+			"Name": "jyouhou3"
+		},
+		{
+			"Id": "Param11",
+			"GroupId": "",
+			"Name": "jyohou4"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "Folder 1"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "wuli"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part10",
+			"Name": "486 live.psd(未找到对应图层)"
+		},
+		{
+			"Id": "Part8",
+			"Name": "486 live.psd(未找到对应图层)"
+		},
+		{
+			"Id": "Part4",
+			"Name": "486 live.psd(未找到对应图层)"
+		},
+		{
+			"Id": "Part",
+			"Name": "486 live.psd(未找到对应图层)"
+		},
+		{
+			"Id": "live",
+			"Name": "live"
+		},
+		{
+			"Id": "Part9",
+			"Name": "hohoe 1"
+		},
+		{
+			"Id": "Part5",
+			"Name": "buerjia 3"
+		},
+		{
+			"Id": "Part2",
+			"Name": "wuyu 2"
+		},
+		{
+			"Id": "Part3",
+			"Name": "hohoe 1"
+		},
+		{
+			"Id": "live2",
+			"Name": "live"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamMouseX",
+			"ParamMouseY"
+		]
+	]
+}

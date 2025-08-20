@@ -1,0 +1,20 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "aixin",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "haixiuu",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "beiaixin",
+			"Value": 1,
+			"Blend": "Add"
+		}
+	]
+}

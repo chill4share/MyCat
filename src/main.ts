@@ -5,7 +5,7 @@ import { createPinia } from 'pinia'
 import { createApp } from 'vue'
 
 import App from './App.vue'
-import { useLocale } from './composables/useLocale' // 👈 Import useLocale
+import { useLocale } from './composables/useLocale' // Import useLocale
 import { i18n } from './i18n'
 import router from './router'
 import 'virtual:uno.css'

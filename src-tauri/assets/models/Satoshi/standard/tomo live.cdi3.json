@@ -1,0 +1,120 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamMouseLeftDown",
+			"GroupId": "ParamGroup",
+			"Name": "M L"
+		},
+		{
+			"Id": "ParamMouseRightDown",
+			"GroupId": "ParamGroup",
+			"Name": "M R"
+		},
+		{
+			"Id": "ParamMouseX",
+			"GroupId": "ParamGroup",
+			"Name": "mouse x"
+		},
+		{
+			"Id": "ParamMouseY",
+			"GroupId": "ParamGroup",
+			"Name": "mouse y"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup",
+			"Name": "me L"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup",
+			"Name": "me R"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup2",
+			"Name": "G 1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup2",
+			"Name": "G 2"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "ParamGroup2",
+			"Name": "G 3"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "ParamGroup2",
+			"Name": "G 4"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "ParamGroup3",
+			"Name": "kami mimi L"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "ParamGroup3",
+			"Name": "kami chisaii"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "ParamGroup3",
+			"Name": "touku"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "ParamGroup3",
+			"Name": "fuku"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "param"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "gokigen"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "wuli"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "megami 2"
+		},
+		{
+			"Id": "Part2",
+			"Name": "nu 4"
+		},
+		{
+			"Id": "Part3",
+			"Name": "haixiu 3"
+		},
+		{
+			"Id": "Part4",
+			"Name": "base 1"
+		}
+	]
+}
