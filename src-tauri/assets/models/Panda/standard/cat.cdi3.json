@@ -4,12 +4,12 @@
 		{
 			"Id": "Paramhandshake",
 			"GroupId": "ParamGroup",
-			"Name": "挥手"
+			"Name": "Wave Hand"
 		},
 		{
 			"Id": "Param",
 			"GroupId": "ParamGroup",
-			"Name": "张嘴"
+			"Name": "Open Mouth"
 		},
 		{
 			"Id": "Param2",
@@ -24,52 +24,52 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "",
-			"Name": "鼠标X"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "",
-			"Name": "鼠标Y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "",
-			"Name": "鼠标左按下"
+			"Name": "Mouse Left Press Down"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "",
-			"Name": "鼠标右按下"
+			"Name": "Mouse Right Press Down"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "左手按下"
+			"Name": "Left Hand Press Down"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left Eye Open/Close"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right Eye"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breath"
 		}
 	],
 	"ParameterGroups": [
@@ -82,7 +82,7 @@
 	"Parts": [
 		{
 			"Id": "Part2",
-			"Name": "cat_mousepb.psd(未找到对应图层)"
+			"Name": "cat_mousepb.psd(Corresponding layer not found)"
 		}
 	],
 	"CombinedParameters": [

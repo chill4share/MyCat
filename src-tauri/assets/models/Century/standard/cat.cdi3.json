@@ -4,213 +4,213 @@
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "左手按下"
+			"Name": "Left Hand Down"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "",
-			"Name": "鼠标左键"
+			"Name": "Mouse Left Click"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "",
-			"Name": "鼠标右键"
+			"Name": "Mouse Right Click"
 		},
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY3",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamAngleZ",
 			"GroupId": "",
-			"Name": "角度 Z"
+			"Name": "Angle Z"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left Eye Open/Close"
 		},
 		{
 			"Id": "ParamEyeLSmile",
 			"GroupId": "",
-			"Name": "左眼　微笑"
+			"Name": "Left Eye Smile"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right Eye Open/Close"
 		},
 		{
 			"Id": "ParamEyeRSmile",
 			"GroupId": "",
-			"Name": "右眼　微笑"
+			"Name": "Right Eye Smile"
 		},
 		{
 			"Id": "ParamEyeBallX",
 			"GroupId": "",
-			"Name": "眼珠 X"
+			"Name": "Eyeball X"
 		},
 		{
 			"Id": "ParamEyeBallY",
 			"GroupId": "",
-			"Name": "眼珠 Y"
+			"Name": "Eyeball Y"
 		},
 		{
 			"Id": "ParamBrowLY",
 			"GroupId": "",
-			"Name": "左眉上下"
+			"Name": "Left Brow Up/Down"
 		},
 		{
 			"Id": "ParamBrowRY",
 			"GroupId": "",
-			"Name": "右眉　上下"
+			"Name": "Right Brow Up/Down"
 		},
 		{
 			"Id": "ParamBrowLX",
 			"GroupId": "",
-			"Name": "左眉　左右"
+			"Name": "Left Brow Left/Right"
 		},
 		{
 			"Id": "ParamBrowRX",
 			"GroupId": "",
-			"Name": "右眉　左右"
+			"Name": "Right Brow Left/Right"
 		},
 		{
 			"Id": "ParamBrowLAngle",
 			"GroupId": "",
-			"Name": "左眉　角度"
+			"Name": "Left Brow Angle"
 		},
 		{
 			"Id": "ParamBrowRAngle",
 			"GroupId": "",
-			"Name": "右眉　角度"
+			"Name": "Right Brow Angle"
 		},
 		{
 			"Id": "ParamBrowLForm",
 			"GroupId": "",
-			"Name": "左眉　変形"
+			"Name": "Left Brow Deform"
 		},
 		{
 			"Id": "ParamBrowRForm",
 			"GroupId": "",
-			"Name": "右眉　変形"
+			"Name": "Right Brow Deform"
 		},
 		{
 			"Id": "ParamMouthForm",
 			"GroupId": "",
-			"Name": "嘴　变形"
+			"Name": "Mouth Deform"
 		},
 		{
 			"Id": "ParamMouthOpenY",
 			"GroupId": "",
-			"Name": "嘴　张开和闭合"
+			"Name": "Mouth Open/Close"
 		},
 		{
 			"Id": "ParamCheek",
 			"GroupId": "",
-			"Name": "脸颊泛红"
+			"Name": "Cheek Blush"
 		},
 		{
 			"Id": "ParamBodyAngleX",
 			"GroupId": "",
-			"Name": "身体旋转　X"
+			"Name": "Body Rotation X"
 		},
 		{
 			"Id": "ParamBodyAngleY",
 			"GroupId": "",
-			"Name": "身体旋转　Y"
+			"Name": "Body Rotation Y"
 		},
 		{
 			"Id": "ParamBodyAngleZ",
 			"GroupId": "",
-			"Name": "身体旋转　Z"
+			"Name": "Body Rotation Z"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breathing"
 		},
 		{
 			"Id": "ParamHairFront",
 			"GroupId": "",
-			"Name": "摇动 前发"
+			"Name": "Hair Sway Front"
 		},
 		{
 			"Id": "ParamHairSide",
 			"GroupId": "",
-			"Name": "摇动 侧发"
+			"Name": "Hair Sway Side"
 		},
 		{
 			"Id": "ParamHairBack",
 			"GroupId": "",
-			"Name": "摇动 后发"
+			"Name": "Hair Sway Back"
 		}
 	],
 	"ParameterGroups": [],
 	"Parts": [
 		{
 			"Id": "Part",
-			"Name": "文件夹 12"
+			"Name": "Folder 12"
 		},
 		{
 			"Id": "Part12",
-			"Name": "文件夹 2"
+			"Name": "Folder 2"
 		},
 		{
 			"Id": "Part2",
-			"Name": "文件夹 11"
+			"Name": "Folder 11"
 		},
 		{
 			"Id": "Part3",
-			"Name": "文件夹 10"
+			"Name": "Folder 10"
 		},
 		{
 			"Id": "Part4",
-			"Name": "文件夹 9"
+			"Name": "Folder 9"
 		},
 		{
 			"Id": "Part7",
-			"Name": "头"
+			"Name": "Head"
 		},
 		{
 			"Id": "Part8",
-			"Name": "文件夹 6"
+			"Name": "Folder 6"
 		},
 		{
 			"Id": "Part11",
-			"Name": "文件夹 3"
+			"Name": "Folder 3"
 		},
 		{
 			"Id": "Part5",
-			"Name": "文件夹 8"
+			"Name": "Folder 8"
 		},
 		{
 			"Id": "Part6",
-			"Name": "文件夹 7"
+			"Name": "Folder 7"
 		},
 		{
 			"Id": "Part9",
-			"Name": "文件夹 5"
+			"Name": "Folder 5"
 		},
 		{
 			"Id": "Part10",
-			"Name": "文件夹 4"
+			"Name": "Folder 4"
 		}
 	]
 }

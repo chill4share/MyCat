@@ -4,22 +4,22 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamAngleZ",
 			"GroupId": "",
-			"Name": "角度 Z"
+			"Name": "Angle Z"
 		},
 		{
 			"Id": "Param16",
 			"GroupId": "",
-			"Name": "faxing"
+			"Name": "Hairstyle"
 		},
 		{
 			"Id": "Param17",
@@ -29,22 +29,22 @@
 		{
 			"Id": "Param14",
 			"GroupId": "",
-			"Name": "zui shengqi"
+			"Name": "Most Angry"
 		},
 		{
 			"Id": "Param15",
 			"GroupId": "",
-			"Name": "zui bufu"
+			"Name": "Most Unconvinced"
 		},
 		{
 			"Id": "Param13",
 			"GroupId": "",
-			"Name": "mei weiqu"
+			"Name": "Brow Aggrieved"
 		},
 		{
 			"Id": "Param12",
 			"GroupId": "",
-			"Name": "mei shengqi"
+			"Name": "Brow Angry"
 		},
 		{
 			"Id": "Param11",
@@ -54,17 +54,17 @@
 		{
 			"Id": "heilian",
 			"GroupId": "",
-			"Name": "heilian"
+			"Name": "Dark Face"
 		},
 		{
 			"Id": "aixin",
 			"GroupId": "",
-			"Name": "aixin"
+			"Name": "Heart"
 		},
 		{
 			"Id": "haixiuu",
 			"GroupId": "",
-			"Name": "haixiu"
+			"Name": "Shy"
 		},
 		{
 			"Id": "ParamMouseX",
@@ -79,37 +79,37 @@
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "",
-			"Name": "参数40"
+			"Name": "Parameter 40"
 		},
 		{
 			"Id": "beifamao",
 			"GroupId": "",
-			"Name": "beifamao"
+			"Name": "Back Hair"
 		},
 		{
 			"Id": "beiaixin",
 			"GroupId": "",
-			"Name": "beiaixin"
+			"Name": "Back Heart"
 		},
 		{
 			"Id": "beishengqi",
 			"GroupId": "",
-			"Name": "beishengqi"
+			"Name": "Back Angry"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "参数42"
+			"Name": "Parameter 42"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "",
-			"Name": "参数41"
+			"Name": "Parameter 41"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left Eye Open/Close"
 		},
 		{
 			"Id": "Param",
@@ -129,12 +129,12 @@
 		{
 			"Id": "ParamEyeLSmile",
 			"GroupId": "",
-			"Name": "左眼　微笑"
+			"Name": "Left Eye Smile"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right Eye"
 		},
 		{
 			"Id": "Param4",
@@ -154,97 +154,97 @@
 		{
 			"Id": "ParamEyeRSmile",
 			"GroupId": "",
-			"Name": "右眼　微笑"
+			"Name": "Right Eye Smile"
 		},
 		{
 			"Id": "ParamEyeBallX",
 			"GroupId": "",
-			"Name": "眼珠 X"
+			"Name": "Eyeball X"
 		},
 		{
 			"Id": "ParamEyeBallY",
 			"GroupId": "",
-			"Name": "眼珠 Y"
+			"Name": "Eyeball Y"
 		},
 		{
 			"Id": "ParamBrowLY",
 			"GroupId": "",
-			"Name": "左眉上下"
+			"Name": "Left Brow Up/Down"
 		},
 		{
 			"Id": "ParamBrowRY",
 			"GroupId": "",
-			"Name": "右眉　上下"
+			"Name": "Right Brow Up/Down"
 		},
 		{
 			"Id": "ParamBrowLX",
 			"GroupId": "",
-			"Name": "左眉　左右"
+			"Name": "Left Brow Left/Right"
 		},
 		{
 			"Id": "ParamBrowRX",
 			"GroupId": "",
-			"Name": "右眉　左右"
+			"Name": "Right Brow Left/Right"
 		},
 		{
 			"Id": "ParamBrowLAngle",
 			"GroupId": "",
-			"Name": "左眉　角度"
+			"Name": "Left Brow Angle"
 		},
 		{
 			"Id": "ParamBrowRAngle",
 			"GroupId": "",
-			"Name": "右眉　角度"
+			"Name": "Right Brow Angle"
 		},
 		{
 			"Id": "ParamBrowLForm",
 			"GroupId": "",
-			"Name": "左眉　変形"
+			"Name": "Left Brow Deform"
 		},
 		{
 			"Id": "ParamBrowRForm",
 			"GroupId": "",
-			"Name": "右眉　変形"
+			"Name": "Right Brow Deform"
 		},
 		{
 			"Id": "ParamMouthForm",
 			"GroupId": "",
-			"Name": "嘴　变形"
+			"Name": "Mouth Deform"
 		},
 		{
 			"Id": "ParamMouthOpenY",
 			"GroupId": "",
-			"Name": "嘴　张开和闭合"
+			"Name": "Mouth Open and Close"
 		},
 		{
 			"Id": "ParamCheek",
 			"GroupId": "",
-			"Name": "脸颊泛红"
+			"Name": "Cheek Blush"
 		},
 		{
 			"Id": "ParamBodyAngleX",
 			"GroupId": "",
-			"Name": "身体旋转　X"
+			"Name": "Body Rotation X"
 		},
 		{
 			"Id": "ParamBodyAngleY",
 			"GroupId": "",
-			"Name": "身体旋转　Y"
+			"Name": "Body Rotation Y"
 		},
 		{
 			"Id": "ParamBodyAngleZ",
 			"GroupId": "",
-			"Name": "身体旋转　Z"
+			"Name": "Body Rotation Z"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breathing"
 		},
 		{
 			"Id": "ParamHairFront",
 			"GroupId": "",
-			"Name": "摇动 前发"
+			"Name": "Sway Front Hair"
 		},
 		{
 			"Id": "Param9",
@@ -259,49 +259,49 @@
 		{
 			"Id": "ParamHairSide",
 			"GroupId": "",
-			"Name": "摇动 侧发"
+			"Name": "Sway Side Hair"
 		},
 		{
 			"Id": "ParamHairBack",
 			"GroupId": "",
-			"Name": "摇动 后发"
+			"Name": "Sway Back Hair"
 		},
 		{
 			"Id": "Param7",
 			"GroupId": "",
-			"Name": "kami1"
+			"Name": "Hair 1"
 		},
 		{
 			"Id": "Param8",
 			"GroupId": "",
-			"Name": "kami2"
+			"Name": "Hair 2"
 		}
 	],
 	"ParameterGroups": [],
 	"Parts": [
 		{
 			"Id": "Part26",
-			"Name": "HHHHHH.psd(未找到对应图层)"
+			"Name": "HHHHHH.psd(Layer not found)"
 		},
 		{
 			"Id": "Part24",
-			"Name": "HHHHHH.psd(未找到对应图层)"
+			"Name": "HHHHHH.psd(Layer not found)"
 		},
 		{
 			"Id": "Part22",
-			"Name": "HHHHHH.psd(未找到对应图层)"
+			"Name": "HHHHHH.psd(Layer not found)"
 		},
 		{
 			"Id": "Part",
-			"Name": "组 8"
+			"Name": "Group 8"
 		},
 		{
 			"Id": "Part2",
-			"Name": "组 2"
+			"Name": "Group 2"
 		},
 		{
 			"Id": "Part3",
-			"Name": "biao qig"
+			"Name": "Expression"
 		},
 		{
 			"Id": "Part4",
@@ -313,7 +313,7 @@
 		},
 		{
 			"Id": "Part6",
-			"Name": "组 5"
+			"Name": "Group 5"
 		},
 		{
 			"Id": "hand",
@@ -321,11 +321,11 @@
 		},
 		{
 			"Id": "Part7",
-			"Name": "组 4"
+			"Name": "Group 4"
 		},
 		{
 			"Id": "Part9",
-			"Name": "组 6"
+			"Name": "Group 6"
 		},
 		{
 			"Id": "hand3",
@@ -333,11 +333,11 @@
 		},
 		{
 			"Id": "Part20",
-			"Name": "组 4"
+			"Name": "Group 4"
 		},
 		{
 			"Id": "Part23",
-			"Name": "组 6"
+			"Name": "Group 6"
 		},
 		{
 			"Id": "hand2",
@@ -353,19 +353,19 @@
 		},
 		{
 			"Id": "Part8",
-			"Name": "组 7"
+			"Name": "Group 7"
 		},
 		{
 			"Id": "Part10",
-			"Name": "ma wei"
+			"Name": "Ponytail"
 		},
 		{
 			"Id": "Part19",
-			"Name": "组 9"
+			"Name": "Group 9"
 		},
 		{
 			"Id": "Part21",
-			"Name": "组 7"
+			"Name": "Group 7"
 		}
 	],
 	"CombinedParameters": [

@@ -4,82 +4,82 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamAngleZ",
 			"GroupId": "",
-			"Name": "角度 Z"
+			"Name": "Angle Z"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left Eye Open/Close"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right Eye"
 		},
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "",
-			"Name": "鼠标X"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "",
-			"Name": "鼠标Y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breath"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "",
-			"Name": "鼠标左键按下"
+			"Name": "Mouse Left Button Press Down"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "",
-			"Name": "鼠标右键按下"
+			"Name": "Mouse Right Button Press Down"
 		},
 		{
 			"Id": "ParamHairFront",
 			"GroupId": "",
-			"Name": "摇动"
+			"Name": "Sway"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "键盘按下"
+			"Name": "Keyboard Press Down"
 		},
 		{
 			"Id": "ParamHairBack",
 			"GroupId": "",
-			"Name": "披风"
+			"Name": "Cape"
 		}
 	],
 	"ParameterGroups": [],
 	"Parts": [
 		{
 			"Id": "Part",
-			"Name": "ｴﾌｶ�"
+			"Name": "ｴﾌｶ"
 		},
 		{
 			"Id": "Part2",
-			"Name": "ｺ�ｵ�ｽ�"
+			"Name": "ｺｵｽ"
 		},
 		{
 			"Id": "Part3",
-			"Name": "ﾁ�ｺ｣"
+			"Name": "ﾁｺ｣"
 		},
 		{
 			"Id": "Part4",
@@ -87,11 +87,11 @@
 		},
 		{
 			"Id": "Part5",
-			"Name": "ﾅ�ｷ郤�ｵ�ｽ�"
+			"Name": "ﾅｷ郤ｵｽ"
 		},
 		{
 			"Id": "Part6",
-			"Name": "ﾅ�ｷ�"
+			"Name": "ﾅｷ"
 		},
 		{
 			"Id": "Part7",
@@ -103,11 +103,11 @@
 		},
 		{
 			"Id": "Part9",
-			"Name": "ﾗ�ﾊﾖ"
+			"Name": "ﾗﾊﾖ"
 		},
 		{
 			"Id": "Part10",
-			"Name": "ﾊ�ｱ�"
+			"Name": "ﾊｱ"
 		},
 		{
 			"Id": "Part11",
@@ -115,11 +115,11 @@
 		},
 		{
 			"Id": "Part12",
-			"Name": "ﾗ�ﾉﾏｱﾛ"
+			"Name": "ﾗﾉﾏｱﾛ"
 		},
 		{
 			"Id": "Part13",
-			"Name": "ｺ�ﾄﾔ"
+			"Name": "ｺﾄﾔ"
 		},
 		{
 			"Id": "Part14",
@@ -127,11 +127,11 @@
 		},
 		{
 			"Id": "Part15",
-			"Name": "ﾗ�ﾒ｡ｸﾋ"
+			"Name": "ﾗﾒ｡ｸﾋ"
 		},
 		{
 			"Id": "Part16",
-			"Name": "ﾊﾖｱ�"
+			"Name": "ﾊﾖｱ"
 		}
 	],
 	"CombinedParameters": [

@@ -4,12 +4,12 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "ParamGroup",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "ParamGroup",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
@@ -110,7 +110,7 @@
 		},
 		{
 			"Id": "Part3",
-			"Name": "haixiu 3"
+			"Name": "Shy 3"
 		},
 		{
 			"Id": "Part4",

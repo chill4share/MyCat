@@ -4,17 +4,17 @@
 		{
 			"Id": "ParamHairFront",
 			"GroupId": "ParamGroup",
-			"Name": "摇动 前发"
+			"Name": "Sway Front Hair"
 		},
 		{
 			"Id": "ParamCheek",
 			"GroupId": "ParamGroup2",
-			"Name": "脸颊泛红"
+			"Name": "Cheek Blush"
 		},
 		{
 			"Id": "Param17",
 			"GroupId": "ParamGroup2",
-			"Name": "huishou"
+			"Name": "Wave Hand"
 		},
 		{
 			"Id": "Param12",
@@ -39,17 +39,17 @@
 		{
 			"Id": "Param10",
 			"GroupId": "ParamGroup2",
-			"Name": "5maozi"
+			"Name": "5 Hat"
 		},
 		{
 			"Id": "Param11",
 			"GroupId": "ParamGroup2",
-			"Name": "5chui"
+			"Name": "5 Hammer"
 		},
 		{
 			"Id": "Param8",
 			"GroupId": "ParamGroup2",
-			"Name": "zhamao"
+			"Name": "Frizzy Hair"
 		},
 		{
 			"Id": "Param9",
@@ -64,115 +64,115 @@
 		{
 			"Id": "Param",
 			"GroupId": "ParamGroup2",
-			"Name": "原嘴消失"
+			"Name": "Original Mouth Disappear"
 		},
 		{
 			"Id": "Param2",
 			"GroupId": "ParamGroup2",
-			"Name": "1嘴"
+			"Name": "1 Mouth"
 		},
 		{
 			"Id": "ParamMouthOpenY",
 			"GroupId": "ParamGroup2",
-			"Name": "3嘴开"
+			"Name": "3 Mouth Open"
 		},
 		{
 			"Id": "Param6",
 			"GroupId": "ParamGroup2",
-			"Name": "4猪鼻"
+			"Name": "4 Pig Nose"
 		},
 		{
 			"Id": "Param4",
 			"GroupId": "ParamGroup2",
-			"Name": "原眼消失"
+			"Name": "Original Eye Disappear"
 		},
 		{
 			"Id": "Param16",
 			"GroupId": "ParamGroup2",
-			"Name": "1yan"
+			"Name": "1 Eye"
 		},
 		{
 			"Id": "Param3",
 			"GroupId": "ParamGroup2",
-			"Name": "2笑眼"
+			"Name": "2 Smiling Eye"
 		},
 		{
 			"Id": "Param5",
 			"GroupId": "ParamGroup2",
-			"Name": "4眯眼"
+			"Name": "4 Squinting Eye"
 		},
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "",
-			"Name": "鼠标X"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "",
-			"Name": "鼠标Y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "",
-			"Name": "鼠标左按下"
+			"Name": "Mouse Left Down"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "",
-			"Name": "鼠标右按下"
+			"Name": "Mouse Right Down"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "左手按下"
+			"Name": "Left Hand Down"
 		},
 		{
 			"Id": "CatParamRightHandDown",
 			"GroupId": "",
-			"Name": "右手按下"
+			"Name": "Right Hand Down"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left Eye Open/Close"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right Eye"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breathing"
 		}
 	],
 	"ParameterGroups": [
 		{
 			"Id": "ParamGroup",
 			"GroupId": "",
-			"Name": "物理"
+			"Name": "Physics"
 		},
 		{
 			"Id": "ParamGroup2",
 			"GroupId": "",
-			"Name": "表情用"
+			"Name": "For Expressions"
 		}
 	],
 	"Parts": [
 		{
 			"Id": "chui",
-			"Name": "chui"
+			"Name": "Hammer"
 		}
 	],
 	"CombinedParameters": [

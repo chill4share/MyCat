@@ -4,218 +4,218 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "CatParamRightHandDown",
 			"GroupId": "",
-			"Name": "右手按下"
+			"Name": "Right hand press down"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "左手按下"
+			"Name": "Left hand press down"
 		},
 		{
 			"Id": "ParamAngleZ",
 			"GroupId": "",
-			"Name": "角度 Z"
+			"Name": "Angle Z"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left eye open/close"
 		},
 		{
 			"Id": "ParamEyeLSmile",
 			"GroupId": "",
-			"Name": "左眼　微笑"
+			"Name": "Left eye smile"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right eye"
 		},
 		{
 			"Id": "ParamEyeRSmile",
 			"GroupId": "",
-			"Name": "右眼　微笑"
+			"Name": "Right eye smile"
 		},
 		{
 			"Id": "Param3",
 			"GroupId": "",
-			"Name": "挥手"
+			"Name": "Wave hand"
 		},
 		{
 			"Id": "Param",
 			"GroupId": "ParamGroup",
-			"Name": "开启闪电"
+			"Name": "Turn on lightning"
 		},
 		{
 			"Id": "Param2",
 			"GroupId": "ParamGroup",
-			"Name": "闪电划过"
+			"Name": "Lightning flashes across"
 		},
 		{
 			"Id": "Param4",
 			"GroupId": "ParamGroup2",
-			"Name": "表情:thuglife"
+			"Name": "Expression:thuglife"
 		},
 		{
 			"Id": "Param5",
 			"GroupId": "ParamGroup2",
-			"Name": "表情:升天"
+			"Name": "Expression: Ascend to heaven"
 		},
 		{
 			"Id": "ParamEyeBallX",
 			"GroupId": "",
-			"Name": "眼球 X"
+			"Name": "Eyeball X"
 		},
 		{
 			"Id": "ParamEyeBallY",
 			"GroupId": "",
-			"Name": "眼球 Y"
+			"Name": "Eyeball Y"
 		},
 		{
 			"Id": "ParamBrowLY",
 			"GroupId": "",
-			"Name": "左眉上下"
+			"Name": "Left eyebrow up/down"
 		},
 		{
 			"Id": "ParamBrowRY",
 			"GroupId": "",
-			"Name": "右眉　上下"
+			"Name": "Right eyebrow up/down"
 		},
 		{
 			"Id": "ParamBrowLX",
 			"GroupId": "",
-			"Name": "左眉　左右"
+			"Name": "Left eyebrow left/right"
 		},
 		{
 			"Id": "ParamBrowRX",
 			"GroupId": "",
-			"Name": "右眉　左右"
+			"Name": "Right eyebrow left/right"
 		},
 		{
 			"Id": "ParamBrowLAngle",
 			"GroupId": "",
-			"Name": "左眉　角度"
+			"Name": "Left eyebrow angle"
 		},
 		{
 			"Id": "ParamBrowRAngle",
 			"GroupId": "",
-			"Name": "右眉　角度"
+			"Name": "Right eyebrow angle"
 		},
 		{
 			"Id": "ParamBrowLForm",
 			"GroupId": "",
-			"Name": "左眉　変形"
+			"Name": "Left eyebrow transform"
 		},
 		{
 			"Id": "ParamBrowRForm",
 			"GroupId": "",
-			"Name": "右眉　変形"
+			"Name": "Right eyebrow transform"
 		},
 		{
 			"Id": "ParamMouthForm",
 			"GroupId": "",
-			"Name": "嘴部　变形"
+			"Name": "Mouth transform"
 		},
 		{
 			"Id": "ParamMouthOpenY",
 			"GroupId": "",
-			"Name": "嘴巴　张开和闭合"
+			"Name": "Mouth open and close"
 		},
 		{
 			"Id": "ParamCheek",
 			"GroupId": "",
-			"Name": "脸颊"
+			"Name": "Cheek"
 		},
 		{
 			"Id": "ParamBodyAngleX",
 			"GroupId": "",
-			"Name": "身体旋转　X"
+			"Name": "Body rotation X"
 		},
 		{
 			"Id": "ParamBodyAngleY",
 			"GroupId": "",
-			"Name": "身体旋转　Y"
+			"Name": "Body rotation Y"
 		},
 		{
 			"Id": "ParamBodyAngleZ",
 			"GroupId": "",
-			"Name": "身体旋转　Z"
+			"Name": "Body rotation Z"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breath"
 		},
 		{
 			"Id": "ParamHairFront",
 			"GroupId": "",
-			"Name": "摇动　前发"
+			"Name": "Swing front hair"
 		},
 		{
 			"Id": "ParamHairSide",
 			"GroupId": "",
-			"Name": "摇动　侧发"
+			"Name": "Swing side hair"
 		},
 		{
 			"Id": "ParamHairBack",
 			"GroupId": "",
-			"Name": "摇动　后发"
+			"Name": "Swing back hair"
 		}
 	],
 	"ParameterGroups": [
 		{
 			"Id": "ParamGroup",
 			"GroupId": "",
-			"Name": "闪电"
+			"Name": "Lightning"
 		},
 		{
 			"Id": "ParamGroup2",
 			"GroupId": "",
-			"Name": "表情"
+			"Name": "Expression"
 		}
 	],
 	"Parts": [
 		{
 			"Id": "Part11",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part7",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part3",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part2",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part10",
-			"Name": "天使环"
+			"Name": "Angel halo"
 		},
 		{
 			"Id": "Part5",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "PartSketch0",
-			"Name": "[ 参考图 ]"
+			"Name": "[ Reference Image ]"
 		},
 		{
 			"Id": "Part8",
@@ -223,11 +223,11 @@
 		},
 		{
 			"Id": "Part6",
-			"Name": "闪电"
+			"Name": "Lightning"
 		},
 		{
 			"Id": "Part4",
-			"Name": "闪电"
+			"Name": "Lightning"
 		}
 	]
 }

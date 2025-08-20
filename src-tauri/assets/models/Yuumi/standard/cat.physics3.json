@@ -18,11 +18,11 @@
 		"PhysicsDictionary": [
 			{
 				"Id": "PhysicsSetting1",
-				"Name": "高光"
+				"Name": "Highlight"
 			},
 			{
 				"Id": "PhysicsSetting2",
-				"Name": "尾巴"
+				"Name": "Tail"
 			}
 		]
 	},

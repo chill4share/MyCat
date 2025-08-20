@@ -46,27 +46,27 @@
 			},
 			{
 				"Id": "PhysicsSetting8",
-				"Name": "辫子"
+				"Name": "Braid"
 			},
 			{
 				"Id": "PhysicsSetting9",
-				"Name": "耳朵"
+				"Name": "Ears"
 			},
 			{
 				"Id": "PhysicsSetting10",
-				"Name": "尾巴"
+				"Name": "Tail"
 			},
 			{
 				"Id": "PhysicsSetting11",
-				"Name": "尾巴蒙皮"
+				"Name": "Tail Skinning"
 			},
 			{
 				"Id": "PhysicsSetting12",
-				"Name": "蝴蝶结"
+				"Name": "Bow"
 			},
 			{
 				"Id": "PhysicsSetting13",
-				"Name": "斗篷"
+				"Name": "Cape"
 			}
 		]
 	},

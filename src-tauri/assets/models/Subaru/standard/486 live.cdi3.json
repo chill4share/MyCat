@@ -4,12 +4,12 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "ParamGroup",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "ParamGroup",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
@@ -69,7 +69,7 @@
 		{
 			"Id": "Param7",
 			"GroupId": "ParamGroup2",
-			"Name": "daimao"
+			"Name": "Sticking-out Hair (Ahoge)"
 		},
 		{
 			"Id": "Param",
@@ -112,19 +112,19 @@
 	"Parts": [
 		{
 			"Id": "Part10",
-			"Name": "486 live.psd(未找到对应图层)"
+			"Name": "486 live.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part8",
-			"Name": "486 live.psd(未找到对应图层)"
+			"Name": "486 live.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part4",
-			"Name": "486 live.psd(未找到对应图层)"
+			"Name": "486 live.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part",
-			"Name": "486 live.psd(未找到对应图层)"
+			"Name": "486 live.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "live",
@@ -136,11 +136,11 @@
 		},
 		{
 			"Id": "Part5",
-			"Name": "buerjia 3"
+			"Name": "Peko Lick 3"
 		},
 		{
 			"Id": "Part2",
-			"Name": "wuyu 2"
+			"Name": "Speechless 2"
 		},
 		{
 			"Id": "Part3",

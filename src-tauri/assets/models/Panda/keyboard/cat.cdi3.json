@@ -4,12 +4,12 @@
 		{
 			"Id": "Param2",
 			"GroupId": "ParamGroup",
-			"Name": "挥手"
+			"Name": "Wave hand"
 		},
 		{
 			"Id": "Param",
 			"GroupId": "ParamGroup",
-			"Name": "嘴巴动"
+			"Name": "Mouth movement"
 		},
 		{
 			"Id": "Param3",
@@ -24,37 +24,37 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "CatParamRightHandDown",
 			"GroupId": "",
-			"Name": "右手按下"
+			"Name": "Right hand press down"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "左手按下"
+			"Name": "Left hand press down"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left eye open/close"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right eye"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breath"
 		}
 	],
 	"ParameterGroups": [
@@ -67,11 +67,11 @@
 	"Parts": [
 		{
 			"Id": "Part3",
-			"Name": "cat.psd(未找到对应图层)"
+			"Name": "cat.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part",
-			"Name": "键盘 拷贝"
+			"Name": "Keyboard Copy"
 		}
 	],
 	"CombinedParameters": [

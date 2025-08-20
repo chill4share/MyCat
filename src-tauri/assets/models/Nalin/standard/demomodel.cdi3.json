@@ -4,229 +4,229 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "",
-			"Name": "鼠标X"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "",
-			"Name": "鼠标Y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "",
-			"Name": "鼠标左键按下"
+			"Name": "Mouse Left Click Down"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "",
-			"Name": "鼠标右键按下"
+			"Name": "Mouse Right Click Down"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "键盘按下"
+			"Name": "Keyboard Press"
 		},
 		{
 			"Id": "ParamAngleZ",
 			"GroupId": "",
-			"Name": "角度 Z"
+			"Name": "Angle Z"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left Eye Open/Close"
 		},
 		{
 			"Id": "ParamEyeLSmile",
 			"GroupId": "",
-			"Name": "左眼　微笑"
+			"Name": "Left Eye Smile"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right Eye"
 		},
 		{
 			"Id": "ParamEyeRSmile",
 			"GroupId": "",
-			"Name": "右眼　微笑"
+			"Name": "Right Eye Smile"
 		},
 		{
 			"Id": "Param3",
 			"GroupId": "",
-			"Name": "挥手"
+			"Name": "Wave Hand"
 		},
 		{
 			"Id": "Param",
 			"GroupId": "ParamGroup",
-			"Name": "开启闪电"
+			"Name": "Enable Lightning"
 		},
 		{
 			"Id": "Param2",
 			"GroupId": "ParamGroup",
-			"Name": "闪电划过"
+			"Name": "Lightning Flash"
 		},
 		{
 			"Id": "Param4",
 			"GroupId": "ParamGroup2",
-			"Name": "表情:thuglife"
+			"Name": "Expression: thuglife"
 		},
 		{
 			"Id": "Param5",
 			"GroupId": "ParamGroup2",
-			"Name": "表情:升天"
+			"Name": "Expression: Ascend"
 		},
 		{
 			"Id": "ParamEyeBallX",
 			"GroupId": "",
-			"Name": "眼球 X"
+			"Name": "Eyeball X"
 		},
 		{
 			"Id": "ParamEyeBallY",
 			"GroupId": "",
-			"Name": "眼球 Y"
+			"Name": "Eyeball Y"
 		},
 		{
 			"Id": "ParamBrowLY",
 			"GroupId": "",
-			"Name": "左眉上下"
+			"Name": "Left Brow Up/Down"
 		},
 		{
 			"Id": "ParamBrowRY",
 			"GroupId": "",
-			"Name": "右眉　上下"
+			"Name": "Right Brow Up/Down"
 		},
 		{
 			"Id": "ParamBrowLX",
 			"GroupId": "",
-			"Name": "左眉　左右"
+			"Name": "Left Brow Left/Right"
 		},
 		{
 			"Id": "ParamBrowRX",
 			"GroupId": "",
-			"Name": "右眉　左右"
+			"Name": "Right Brow Left/Right"
 		},
 		{
 			"Id": "ParamBrowLAngle",
 			"GroupId": "",
-			"Name": "左眉　角度"
+			"Name": "Left Brow Angle"
 		},
 		{
 			"Id": "ParamBrowRAngle",
 			"GroupId": "",
-			"Name": "右眉　角度"
+			"Name": "Right Brow Angle"
 		},
 		{
 			"Id": "ParamBrowLForm",
 			"GroupId": "",
-			"Name": "左眉　変形"
+			"Name": "Left Brow Deform"
 		},
 		{
 			"Id": "ParamBrowRForm",
 			"GroupId": "",
-			"Name": "右眉　変形"
+			"Name": "Right Brow Deform"
 		},
 		{
 			"Id": "ParamMouthForm",
 			"GroupId": "",
-			"Name": "嘴部　变形"
+			"Name": "Mouth Deform"
 		},
 		{
 			"Id": "ParamMouthOpenY",
 			"GroupId": "",
-			"Name": "嘴巴　张开和闭合"
+			"Name": "Mouth Open and Close"
 		},
 		{
 			"Id": "ParamCheek",
 			"GroupId": "",
-			"Name": "脸颊"
+			"Name": "Cheek"
 		},
 		{
 			"Id": "ParamBodyAngleX",
 			"GroupId": "",
-			"Name": "身体旋转　X"
+			"Name": "Body Rotation X"
 		},
 		{
 			"Id": "ParamBodyAngleY",
 			"GroupId": "",
-			"Name": "身体旋转　Y"
+			"Name": "Body Rotation Y"
 		},
 		{
 			"Id": "ParamBodyAngleZ",
 			"GroupId": "",
-			"Name": "身体旋转　Z"
+			"Name": "Body Rotation Z"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breathing"
 		},
 		{
 			"Id": "ParamHairFront",
 			"GroupId": "",
-			"Name": "摇动　前发"
+			"Name": "Sway Front Hair"
 		},
 		{
 			"Id": "ParamHairSide",
 			"GroupId": "",
-			"Name": "摇动　侧发"
+			"Name": "Sway Side Hair"
 		},
 		{
 			"Id": "ParamHairBack",
 			"GroupId": "",
-			"Name": "摇动　后发"
+			"Name": "Sway Back Hair"
 		}
 	],
 	"ParameterGroups": [
 		{
 			"Id": "ParamGroup",
 			"GroupId": "",
-			"Name": "闪电"
+			"Name": "Lightning"
 		},
 		{
 			"Id": "ParamGroup2",
 			"GroupId": "",
-			"Name": "表情"
+			"Name": "Expression"
 		}
 	],
 	"Parts": [
 		{
 			"Id": "Part11",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Layer not found)"
 		},
 		{
 			"Id": "Part7",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Layer not found)"
 		},
 		{
 			"Id": "Part3",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Layer not found)"
 		},
 		{
 			"Id": "Part2",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Layer not found)"
 		},
 		{
 			"Id": "Part",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Layer not found)"
 		},
 		{
 			"Id": "Part10",
-			"Name": "天使环"
+			"Name": "Angel Ring"
 		},
 		{
 			"Id": "Part5",
-			"Name": "demomodel.psd(未找到对应图层)"
+			"Name": "demomodel.psd(Layer not found)"
 		},
 		{
 			"Id": "Part8",
@@ -234,11 +234,11 @@
 		},
 		{
 			"Id": "Part6",
-			"Name": "闪电"
+			"Name": "Lightning"
 		},
 		{
 			"Id": "Part4",
-			"Name": "闪电"
+			"Name": "Lightning"
 		}
 	]
 }

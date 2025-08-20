@@ -9,72 +9,72 @@
 		{
 			"Id": "ParamBrowLForm",
 			"GroupId": "ParamGroup",
-			"Name": "左眉　変形"
+			"Name": "Left eyebrow transform"
 		},
 		{
 			"Id": "ParamBrowRForm",
 			"GroupId": "ParamGroup",
-			"Name": "右眉　変形"
+			"Name": "Right eyebrow transform"
 		},
 		{
 			"Id": "ParamBrowLY",
 			"GroupId": "ParamGroup",
-			"Name": "左眉上下"
+			"Name": "Left eyebrow up/down"
 		},
 		{
 			"Id": "ParamBrowRY",
 			"GroupId": "ParamGroup",
-			"Name": "右眉　上下"
+			"Name": "Right eyebrow up/down"
 		},
 		{
 			"Id": "ParamBrowLX",
 			"GroupId": "ParamGroup",
-			"Name": "左眉　左右"
+			"Name": "Left eyebrow left/right"
 		},
 		{
 			"Id": "ParamBrowLAngle",
 			"GroupId": "ParamGroup",
-			"Name": "左眉　角度"
+			"Name": "Left eyebrow angle"
 		},
 		{
 			"Id": "ParamBrowRX",
 			"GroupId": "ParamGroup",
-			"Name": "右眉　左右"
+			"Name": "Right eyebrow left/right"
 		},
 		{
 			"Id": "ParamBrowRAngle",
 			"GroupId": "ParamGroup",
-			"Name": "右眉　角度"
+			"Name": "Right eyebrow angle"
 		},
 		{
 			"Id": "ParamEyeLSmile",
 			"GroupId": "ParamGroup2",
-			"Name": "左眼　微笑"
+			"Name": "Left eye smile"
 		},
 		{
 			"Id": "ParamEyeRSmile",
 			"GroupId": "ParamGroup2",
-			"Name": "右眼　微笑"
+			"Name": "Right eye smile"
 		},
 		{
 			"Id": "ParamEyeBallX",
 			"GroupId": "ParamGroup2",
-			"Name": "眼珠 X"
+			"Name": "Eyeball X"
 		},
 		{
 			"Id": "ParamEyeBallY",
 			"GroupId": "ParamGroup2",
-			"Name": "眼珠 Y"
+			"Name": "Eyeball Y"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "ParamGroup10",
-			"Name": "右眼"
+			"Name": "Right eye"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "ParamGroup10",
-			"Name": "左眼　开闭"
+			"Name": "Left eye open/close"
 		},
 		{
 			"Id": "Param12",
@@ -144,172 +144,172 @@
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "ParamGroup7",
-			"Name": "鼠标X"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "ParamGroup7",
-			"Name": "鼠标Y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "ParamGroup7",
-			"Name": "左键"
+			"Name": "Left Click"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "ParamGroup7",
-			"Name": "左键"
+			"Name": "Left Click"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "ParamGroup8",
-			"Name": "键盘"
+			"Name": "Keyboard"
 		},
 		{
 			"Id": "ParamHairSide",
 			"GroupId": "ParamGroup9",
-			"Name": "摇动 侧发"
+			"Name": "Swing side hair"
 		},
 		{
 			"Id": "Param11",
 			"GroupId": "ParamGroup9",
-			"Name": "侧发"
+			"Name": "Side hair"
 		},
 		{
 			"Id": "Param_Angle_Rotation_1_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[0]尾巴"
+			"Name": "[0]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_2_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[1]尾巴"
+			"Name": "[1]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_3_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[2]尾巴"
+			"Name": "[2]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_4_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[3]尾巴"
+			"Name": "[3]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_5_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[4]尾巴"
+			"Name": "[4]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_6_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[5]尾巴"
+			"Name": "[5]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_7_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[6]尾巴"
+			"Name": "[6]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_8_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[7]尾巴"
+			"Name": "[7]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_9_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[8]尾巴"
+			"Name": "[8]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_10_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[9]尾巴"
+			"Name": "[9]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_11_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[10]尾巴"
+			"Name": "[10]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_12_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[11]尾巴"
+			"Name": "[11]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_13_ArtMesh122",
 			"GroupId": "ParamGroup11",
-			"Name": "[12]尾巴"
+			"Name": "[12]Tail"
 		},
 		{
 			"Id": "Param17",
 			"GroupId": "ParamGroup12",
-			"Name": "晃"
+			"Name": "Sway"
 		},
 		{
 			"Id": "Param18",
 			"GroupId": "ParamGroup13",
-			"Name": "斗篷"
+			"Name": "Cape"
 		},
 		{
 			"Id": "Param19",
 			"GroupId": "ParamGroup13",
-			"Name": "斗篷2"
+			"Name": "Cape2"
 		},
 		{
 			"Id": "Param20",
 			"GroupId": "ParamGroup14",
-			"Name": "光路徑"
+			"Name": "Light Path"
 		},
 		{
 			"Id": "Param21",
 			"GroupId": "ParamGroup14",
-			"Name": "消失"
+			"Name": "Disappear"
 		},
 		{
 			"Id": "Param22",
 			"GroupId": "ParamGroup14",
-			"Name": "手路径"
+			"Name": "Hand Path"
 		},
 		{
 			"Id": "Param23",
 			"GroupId": "ParamGroup14",
-			"Name": "星星消失"
+			"Name": "Stars Disappear"
 		},
 		{
 			"Id": "Param25",
 			"GroupId": "ParamGroup14",
-			"Name": "嘴"
+			"Name": "Mouth"
 		},
 		{
 			"Id": "Param26",
 			"GroupId": "ParamGroup15",
-			"Name": "花篮"
+			"Name": "Flower Basket"
 		},
 		{
 			"Id": "Param28",
 			"GroupId": "ParamGroup15",
-			"Name": "消失"
+			"Name": "Disappear"
 		},
 		{
 			"Id": "Param29",
 			"GroupId": "ParamGroup15",
-			"Name": "消失2"
+			"Name": "Disappear2"
 		},
 		{
 			"Id": "Param27",
 			"GroupId": "ParamGroup15",
-			"Name": "花消失"
+			"Name": "Flower Disappears"
 		},
 		{
 			"Id": "Param30",
 			"GroupId": "ParamGroup16",
-			"Name": "运动轨迹"
+			"Name": "Motion Path"
 		},
 		{
 			"Id": "Param31",
 			"GroupId": "ParamGroup16",
-			"Name": "消失"
+			"Name": "Disappear"
 		},
 		{
 			"Id": "Param36",
@@ -319,7 +319,7 @@
 		{
 			"Id": "Param32",
 			"GroupId": "ParamGroup17",
-			"Name": "托兽"
+			"Name": "Support Beast"
 		},
 		{
 			"Id": "Param33",
@@ -334,82 +334,82 @@
 		{
 			"Id": "Param35",
 			"GroupId": "ParamGroup18",
-			"Name": "尾巴消失"
+			"Name": "Tail Disappears"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breath"
 		},
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamAngleZ",
 			"GroupId": "",
-			"Name": "角度 Z"
+			"Name": "Angle Z"
 		},
 		{
 			"Id": "Param16",
 			"GroupId": "",
-			"Name": "尾巴总"
+			"Name": "Tail Master"
 		},
 		{
 			"Id": "Param24",
 			"GroupId": "",
-			"Name": "左手消失"
+			"Name": "Left Hand Disappears"
 		},
 		{
 			"Id": "Param37",
 			"GroupId": "",
-			"Name": "水印"
+			"Name": "Watermark"
 		},
 		{
 			"Id": "ParamMouthForm",
 			"GroupId": "",
-			"Name": "嘴　变形"
+			"Name": "Mouth transform"
 		},
 		{
 			"Id": "ParamMouthOpenY",
 			"GroupId": "",
-			"Name": "嘴　张开和闭合"
+			"Name": "Mouth open and close"
 		},
 		{
 			"Id": "ParamCheek",
 			"GroupId": "",
-			"Name": "脸颊泛红"
+			"Name": "Cheek Blush"
 		},
 		{
 			"Id": "ParamBodyAngleX",
 			"GroupId": "",
-			"Name": "身体旋转　X"
+			"Name": "Body Rotation X"
 		},
 		{
 			"Id": "ParamBodyAngleY",
 			"GroupId": "",
-			"Name": "身体旋转　Y"
+			"Name": "Body Rotation Y"
 		},
 		{
 			"Id": "ParamBodyAngleZ",
 			"GroupId": "",
-			"Name": "身体旋转　Z"
+			"Name": "Body Rotation Z"
 		},
 		{
 			"Id": "ParamHairFront",
 			"GroupId": "",
-			"Name": "摇动 前发"
+			"Name": "Swing front hair"
 		},
 		{
 			"Id": "ParamHairBack",
 			"GroupId": "",
-			"Name": "摇动 后发"
+			"Name": "Swing back hair"
 		}
 	],
 	"ParameterGroups": [
@@ -426,7 +426,7 @@
 		{
 			"Id": "ParamGroup10",
 			"GroupId": "",
-			"Name": "耳朵"
+			"Name": "Ears"
 		},
 		{
 			"Id": "ParamGroup3",
@@ -451,191 +451,191 @@
 		{
 			"Id": "ParamGroup7",
 			"GroupId": "",
-			"Name": "鼠标"
+			"Name": "Mouse"
 		},
 		{
 			"Id": "ParamGroup8",
 			"GroupId": "",
-			"Name": "键盘消失手"
+			"Name": "Keyboard Disappearing Hand"
 		},
 		{
 			"Id": "ParamGroup9",
 			"GroupId": "",
-			"Name": "侧发"
+			"Name": "Side Hair"
 		},
 		{
 			"Id": "ParamGroup11",
 			"GroupId": "",
-			"Name": "尾巴"
+			"Name": "Tail"
 		},
 		{
 			"Id": "ParamGroup12",
 			"GroupId": "",
-			"Name": "蝴蝶结"
+			"Name": "Bow"
 		},
 		{
 			"Id": "ParamGroup13",
 			"GroupId": "",
-			"Name": "斗篷"
+			"Name": "Cape"
 		},
 		{
 			"Id": "ParamGroup14",
 			"GroupId": "",
-			"Name": "哇"
+			"Name": "Wow"
 		},
 		{
 			"Id": "ParamGroup15",
 			"GroupId": "",
-			"Name": "撒花"
+			"Name": "Scatter Flowers"
 		},
 		{
 			"Id": "ParamGroup16",
 			"GroupId": "",
-			"Name": "叹气"
+			"Name": "Sigh"
 		},
 		{
 			"Id": "ParamGroup17",
 			"GroupId": "",
-			"Name": "睡觉"
+			"Name": "Sleep"
 		},
 		{
 			"Id": "ParamGroup18",
 			"GroupId": "",
-			"Name": "阿秋"
+			"Name": "Achoo"
 		}
 	],
 	"Parts": [
 		{
 			"Id": "Part59",
-			"Name": "温迪.psd(未找到对应图层)"
+			"Name": "Venti.psd(Corresponding layer not found)"
 		},
 		{
 			"Id": "Part8",
-			"Name": "精灵"
+			"Name": "Elf"
 		},
 		{
 			"Id": "Part",
-			"Name": "表情"
+			"Name": "Expression"
 		},
 		{
 			"Id": "Part11",
-			"Name": "模"
+			"Name": "Model"
 		},
 		{
 			"Id": "Part28",
-			"Name": "哇  光"
+			"Name": "Wow Light"
 		},
 		{
 			"Id": "PartSketch0",
-			"Name": "[ 参考图 ]"
+			"Name": "[ Reference Image ]"
 		},
 		{
 			"Id": "Part9",
-			"Name": "花"
+			"Name": "Flower"
 		},
 		{
 			"Id": "Part10",
-			"Name": "左腿"
+			"Name": "Left Leg"
 		},
 		{
 			"Id": "Part2",
-			"Name": "阿秋"
+			"Name": "Achoo"
 		},
 		{
 			"Id": "Part3",
-			"Name": "叹气"
+			"Name": "Sigh"
 		},
 		{
 			"Id": "Part4",
-			"Name": "睡觉"
+			"Name": "Sleep"
 		},
 		{
 			"Id": "Part5",
-			"Name": "撒花"
+			"Name": "Scatter Flowers"
 		},
 		{
 			"Id": "Part7",
-			"Name": "哇"
+			"Name": "Wow"
 		},
 		{
 			"Id": "Part12",
-			"Name": "花"
+			"Name": "Flower"
 		},
 		{
 			"Id": "Part13",
-			"Name": "帽子"
+			"Name": "Hat"
 		},
 		{
 			"Id": "Part14",
-			"Name": "前发"
+			"Name": "Front Hair"
 		},
 		{
 			"Id": "Part18",
-			"Name": "头"
+			"Name": "Head"
 		},
 		{
 			"Id": "Part15",
-			"Name": "猫耳 副本"
+			"Name": "Cat Ears Copy"
 		},
 		{
 			"Id": "Part22",
-			"Name": "蝴蝶结"
+			"Name": "Bow"
 		},
 		{
 			"Id": "Part23",
-			"Name": "斗篷前"
+			"Name": "Cape Front"
 		},
 		{
 			"Id": "Part24",
-			"Name": "键盘手"
+			"Name": "Keyboard Hand"
 		},
 		{
 			"Id": "Part25",
-			"Name": "撒花手"
+			"Name": "Flower Scattering Hand"
 		},
 		{
 			"Id": "Part26",
-			"Name": "鼠标  副本 2"
+			"Name": "Mouse Copy 2"
 		},
 		{
 			"Id": "Part27",
-			"Name": "键盘"
+			"Name": "Keyboard"
 		},
 		{
 			"Id": "ArtMesh122_Skinning",
-			"Name": "尾巴(蒙皮)"
+			"Name": "Tail(Skinning)"
 		},
 		{
 			"Id": "Part29",
-			"Name": "尾巴(旋转)"
+			"Name": "Tail(Rotation)"
 		},
 		{
 			"Id": "Part6",
-			"Name": "花"
+			"Name": "Flower"
 		},
 		{
 			"Id": "Part19",
-			"Name": "左眼"
+			"Name": "Left Eye"
 		},
 		{
 			"Id": "Part20",
-			"Name": "右眼"
+			"Name": "Right Eye"
 		},
 		{
 			"Id": "Part21",
-			"Name": "口腔"
+			"Name": "Mouth Interior"
 		},
 		{
 			"Id": "Part16",
-			"Name": "右"
+			"Name": "Right"
 		},
 		{
 			"Id": "Part30",
-			"Name": "左"
+			"Name": "Left"
 		},
 		{
 			"Id": "Part17",
-			"Name": "左"
+			"Name": "Left"
 		}
 	],
 	"CombinedParameters": [

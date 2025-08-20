@@ -4,22 +4,22 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "ParamGroup",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "ParamGroup",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "ParamGroup",
-			"Name": "mouseL"
+			"Name": "Mouse L"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "ParamGroup",
-			"Name": "mouseR"
+			"Name": "Mouse R"
 		},
 		{
 			"Id": "ParamMouseX",
@@ -34,67 +34,67 @@
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "ParamGroup",
-			"Name": "me L"
+			"Name": "Eye L"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "ParamGroup",
-			"Name": "me R"
+			"Name": "Eye R"
 		},
 		{
 			"Id": "Param8",
 			"GroupId": "ParamGroup",
-			"Name": "KUCHI"
+			"Name": "Mouth"
 		},
 		{
 			"Id": "Param",
 			"GroupId": "ParamGroup2",
-			"Name": "kami mae"
+			"Name": "Front Hair"
 		},
 		{
 			"Id": "Param2",
 			"GroupId": "ParamGroup2",
-			"Name": "kami migi"
+			"Name": "Right Hair"
 		},
 		{
 			"Id": "Param3",
 			"GroupId": "ParamGroup2",
-			"Name": "kami mimi r"
+			"Name": "Right Ear Hair"
 		},
 		{
 			"Id": "Param4",
 			"GroupId": "ParamGroup2",
-			"Name": "kami mimi l"
+			"Name": "Left Ear Hair"
 		},
 		{
 			"Id": "Param5",
 			"GroupId": "ParamGroup2",
-			"Name": "kami to"
+			"Name": "Top Hair"
 		},
 		{
 			"Id": "Param6",
 			"GroupId": "ParamGroup2",
-			"Name": "kami ato"
+			"Name": "Back Hair"
 		},
 		{
 			"Id": "Param7",
 			"GroupId": "ParamGroup3",
-			"Name": "jyohou1"
+			"Name": "Info 1"
 		},
 		{
 			"Id": "Param9",
 			"GroupId": "ParamGroup3",
-			"Name": "jyohou2"
+			"Name": "Info 2"
 		},
 		{
 			"Id": "Param10",
 			"GroupId": "ParamGroup3",
-			"Name": "jyohou3"
+			"Name": "Info 3"
 		},
 		{
 			"Id": "Param11",
 			"GroupId": "ParamGroup3",
-			"Name": "jyohou4"
+			"Name": "Info 4"
 		}
 	],
 	"ParameterGroups": [
@@ -106,7 +106,7 @@
 		{
 			"Id": "ParamGroup2",
 			"GroupId": "",
-			"Name": "wuli"
+			"Name": "Physics"
 		},
 		{
 			"Id": "ParamGroup3",
@@ -117,43 +117,43 @@
 	"Parts": [
 		{
 			"Id": "Part16",
-			"Name": "mmk live.psd(未找到对应图层)"
+			"Name": "mmk live.psd(Layer not found)"
 		},
 		{
 			"Id": "Part14",
-			"Name": "mmk live.psd(未找到对应图层)"
+			"Name": "mmk live.psd(Layer not found)"
 		},
 		{
 			"Id": "Part12",
-			"Name": "zhongzhi"
+			"Name": "Middle Finger"
 		},
 		{
 			"Id": "Part7",
-			"Name": "jyohou12"
+			"Name": "Info 12"
 		},
 		{
 			"Id": "Part",
-			"Name": "部件1"
+			"Name": "Part 1"
 		},
 		{
 			"Id": "Part6",
-			"Name": "manzouku 3"
+			"Name": "Satisfied 3"
 		},
 		{
 			"Id": "Part2",
-			"Name": "bishi"
+			"Name": "Contempt"
 		},
 		{
 			"Id": "Part5",
-			"Name": "leng"
+			"Name": "Cold"
 		},
 		{
 			"Id": "Part3",
-			"Name": "me r 1"
+			"Name": "Eye R 1"
 		},
 		{
 			"Id": "Part4",
-			"Name": "me l 1"
+			"Name": "Eye L 1"
 		}
 	],
 	"CombinedParameters": [

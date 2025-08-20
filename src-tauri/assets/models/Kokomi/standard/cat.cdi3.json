@@ -4,246 +4,246 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamAngleZ",
 			"GroupId": "",
-			"Name": "角度 Z"
+			"Name": "Angle Z"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left Eye Open/Close"
 		},
 		{
 			"Id": "ParamEyeLSmile",
 			"GroupId": "",
-			"Name": "左眼　微笑"
+			"Name": "Left Eye Smile"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right Eye"
 		},
 		{
 			"Id": "ParamEyeRSmile",
 			"GroupId": "",
-			"Name": "右眼　微笑"
+			"Name": "Right Eye Smile"
 		},
 		{
 			"Id": "Param7",
 			"GroupId": "",
-			"Name": "右眼xy1"
+			"Name": "Right Eye XY1"
 		},
 		{
 			"Id": "Param8",
 			"GroupId": "",
-			"Name": "右眼xy2"
+			"Name": "Right Eye XY2"
 		},
 		{
 			"Id": "Param9",
 			"GroupId": "",
-			"Name": "左眼xy1"
+			"Name": "Left Eye XY1"
 		},
 		{
 			"Id": "Param10",
 			"GroupId": "",
-			"Name": "左眼xy2"
+			"Name": "Left Eye XY2"
 		},
 		{
 			"Id": "ParamEyeBallX",
 			"GroupId": "",
-			"Name": "眼珠 X"
+			"Name": "Eyeball X"
 		},
 		{
 			"Id": "ParamEyeBallY",
 			"GroupId": "",
-			"Name": "眼珠 Y"
+			"Name": "Eyeball Y"
 		},
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "",
-			"Name": "鼠标x"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "",
-			"Name": "鼠标y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "",
-			"Name": "鼠标左键按下"
+			"Name": "Mouse Left Click Down"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "",
-			"Name": "鼠标右键按下"
+			"Name": "Mouse Right Click Down"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "键盘按下"
+			"Name": "Keyboard Press"
 		},
 		{
 			"Id": "ParamBrowLY",
 			"GroupId": "",
-			"Name": "左眉上下"
+			"Name": "Left Brow Up/Down"
 		},
 		{
 			"Id": "ParamBrowRY",
 			"GroupId": "",
-			"Name": "右眉　上下"
+			"Name": "Right Brow Up/Down"
 		},
 		{
 			"Id": "ParamBrowLX",
 			"GroupId": "",
-			"Name": "左眉　左右"
+			"Name": "Left Brow Left/Right"
 		},
 		{
 			"Id": "ParamBrowRX",
 			"GroupId": "",
-			"Name": "右眉　左右"
+			"Name": "Right Brow Left/Right"
 		},
 		{
 			"Id": "ParamBrowLAngle",
 			"GroupId": "",
-			"Name": "左眉　角度"
+			"Name": "Left Brow Angle"
 		},
 		{
 			"Id": "ParamBrowRAngle",
 			"GroupId": "",
-			"Name": "右眉　角度"
+			"Name": "Right Brow Angle"
 		},
 		{
 			"Id": "ParamBrowLForm",
 			"GroupId": "",
-			"Name": "左眉　変形"
+			"Name": "Left Brow Deform"
 		},
 		{
 			"Id": "ParamBrowRForm",
 			"GroupId": "",
-			"Name": "右眉　変形"
+			"Name": "Right Brow Deform"
 		},
 		{
 			"Id": "ParamMouthForm",
 			"GroupId": "",
-			"Name": "嘴　变形"
+			"Name": "Mouth Deform"
 		},
 		{
 			"Id": "ParamMouthOpenY",
 			"GroupId": "",
-			"Name": "嘴　张开和闭合"
+			"Name": "Mouth Open and Close"
 		},
 		{
 			"Id": "ParamCheek",
 			"GroupId": "",
-			"Name": "脸颊泛红"
+			"Name": "Cheek Blush"
 		},
 		{
 			"Id": "ParamBodyAngleX",
 			"GroupId": "",
-			"Name": "身体旋转　X"
+			"Name": "Body Rotation X"
 		},
 		{
 			"Id": "ParamBodyAngleY",
 			"GroupId": "",
-			"Name": "身体旋转　Y"
+			"Name": "Body Rotation Y"
 		},
 		{
 			"Id": "ParamBodyAngleZ",
 			"GroupId": "",
-			"Name": "身体旋转　Z"
+			"Name": "Body Rotation Z"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breathing"
 		},
 		{
 			"Id": "ParamHairFront",
 			"GroupId": "",
-			"Name": "摇动 前发"
+			"Name": "Sway Front Hair"
 		},
 		{
 			"Id": "ParamHairSide",
 			"GroupId": "",
-			"Name": "摇动 侧发"
+			"Name": "Sway Side Hair"
 		},
 		{
 			"Id": "ParamHairBack",
 			"GroupId": "",
-			"Name": "摇动 后发"
+			"Name": "Sway Back Hair"
 		},
 		{
 			"Id": "Param",
 			"GroupId": "",
-			"Name": "睡觉"
+			"Name": "Sleep"
 		},
 		{
 			"Id": "Param2",
 			"GroupId": "",
-			"Name": "惊讶"
+			"Name": "Surprised"
 		},
 		{
 			"Id": "Param3",
 			"GroupId": "",
-			"Name": "脸红"
+			"Name": "Blush"
 		},
 		{
 			"Id": "Param4",
 			"GroupId": "",
-			"Name": "脸黑"
+			"Name": "Face Shadow"
 		},
 		{
 			"Id": "Param5",
 			"GroupId": "",
-			"Name": "豆豆嘴"
+			"Name": "Dot Mouth"
 		},
 		{
 			"Id": "Param6",
 			"GroupId": "",
-			"Name": "撇嘴"
+			"Name": "Pout"
 		},
 		{
 			"Id": "Param12",
 			"GroupId": "",
-			"Name": "头发摆动1"
+			"Name": "Hair Sway 1"
 		},
 		{
 			"Id": "Param11",
 			"GroupId": "",
-			"Name": "头发摆动2"
+			"Name": "Hair Sway 2"
 		},
 		{
 			"Id": "Param13",
 			"GroupId": "",
-			"Name": "头发摆动3"
+			"Name": "Hair Sway 3"
 		}
 	],
 	"ParameterGroups": [],
 	"Parts": [
 		{
 			"Id": "Part",
-			"Name": "新建组"
+			"Name": "New Group"
 		},
 		{
 			"Id": "Part2",
-			"Name": "右眼"
+			"Name": "Right Eye"
 		},
 		{
 			"Id": "Part3",
-			"Name": "左眼"
+			"Name": "Left Eye"
 		},
 		{
 			"Id": "Part4",
-			"Name": "新建组"
+			"Name": "New Group"
 		}
 	],
 	"CombinedParameters": [

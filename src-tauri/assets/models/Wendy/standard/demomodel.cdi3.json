@@ -4,100 +4,100 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "",
-			"Name": "左键"
+			"Name": "Left Click"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "",
-			"Name": "右键"
+			"Name": "Right Click"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "键盘"
+			"Name": "Keyboard"
 		},
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "",
-			"Name": "鼠标X"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "",
-			"Name": "鼠标Y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "Param",
 			"GroupId": "ParamGroup",
-			"Name": "隐藏"
+			"Name": "Hide"
 		},
 		{
 			"Id": "Param2",
 			"GroupId": "ParamGroup",
-			"Name": "生气表情"
+			"Name": "Angry Expression"
 		}
 	],
 	"ParameterGroups": [
 		{
 			"Id": "ParamGroup",
 			"GroupId": "",
-			"Name": "严肃"
+			"Name": "Serious"
 		}
 	],
 	"Parts": [
 		{
 			"Id": "Part9",
-			"Name": "温蒂"
+			"Name": "Wendy"
 		},
 		{
 			"Id": "Part",
-			"Name": "温蒂"
+			"Name": "Wendy"
 		},
 		{
 			"Id": "Part8",
-			"Name": "阿比"
+			"Name": "Abby"
 		},
 		{
 			"Id": "Part12",
-			"Name": "脸"
+			"Name": "Face"
 		},
 		{
 			"Id": "Part2",
-			"Name": "头"
+			"Name": "Head"
 		},
 		{
 			"Id": "Part3",
-			"Name": "脸"
+			"Name": "Face"
 		},
 		{
 			"Id": "Part4",
-			"Name": "袖子2"
+			"Name": "Sleeve 2"
 		},
 		{
 			"Id": "Part5",
-			"Name": "袖子1"
+			"Name": "Sleeve 1"
 		},
 		{
 			"Id": "Part6",
-			"Name": "键盘按下"
+			"Name": "Keyboard Press"
 		},
 		{
 			"Id": "Part7",
-			"Name": "键盘"
+			"Name": "Keyboard"
 		},
 		{
 			"Id": "Part16",
-			"Name": "鼠标"
+			"Name": "Mouse"
 		}
 	],
 	"CombinedParameters": [

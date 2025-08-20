@@ -4,7 +4,7 @@
 		{
 			"Id": "Param133",
 			"GroupId": "",
-			"Name": "水印"
+			"Name": "Watermark"
 		},
 		{
 			"Id": "Param",
@@ -14,47 +14,47 @@
 		{
 			"Id": "ParamBrowLForm",
 			"GroupId": "ParamGroup",
-			"Name": "左眉　変形"
+			"Name": "Left eyebrow transform"
 		},
 		{
 			"Id": "ParamBrowRForm",
 			"GroupId": "ParamGroup",
-			"Name": "右眉　変形"
+			"Name": "Right eyebrow transform"
 		},
 		{
 			"Id": "ParamBrowLY",
 			"GroupId": "ParamGroup",
-			"Name": "左眉上下"
+			"Name": "Left eyebrow up/down"
 		},
 		{
 			"Id": "ParamBrowRY",
 			"GroupId": "ParamGroup",
-			"Name": "右眉　上下"
+			"Name": "Right eyebrow up/down"
 		},
 		{
 			"Id": "ParamBrowLX",
 			"GroupId": "ParamGroup",
-			"Name": "左眉　左右"
+			"Name": "Left eyebrow left/right"
 		},
 		{
 			"Id": "ParamBrowRX",
 			"GroupId": "ParamGroup",
-			"Name": "右眉　左右"
+			"Name": "Right eyebrow left/right"
 		},
 		{
 			"Id": "ParamBrowLAngle",
 			"GroupId": "ParamGroup",
-			"Name": "左眉　角度"
+			"Name": "Left eyebrow angle"
 		},
 		{
 			"Id": "ParamBrowRAngle",
 			"GroupId": "ParamGroup",
-			"Name": "右眉　角度"
+			"Name": "Right eyebrow angle"
 		},
 		{
 			"Id": "Param2",
 			"GroupId": "ParamGroup",
-			"Name": "左眉 生气"
+			"Name": "Left eyebrow angry"
 		},
 		{
 			"Id": "Param3",
@@ -69,37 +69,37 @@
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "ParamGroup2",
-			"Name": "右眼"
+			"Name": "Right eye"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "ParamGroup2",
-			"Name": "左眼　开闭"
+			"Name": "Left eye open/close"
 		},
 		{
 			"Id": "ParamEyeBallX",
 			"GroupId": "ParamGroup2",
-			"Name": "眼珠 X"
+			"Name": "Eyeball X"
 		},
 		{
 			"Id": "ParamEyeBallY",
 			"GroupId": "ParamGroup2",
-			"Name": "眼珠 Y"
+			"Name": "Eyeball Y"
 		},
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "ParamGroup3",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "ParamGroup3",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamAngleZ",
 			"GroupId": "ParamGroup3",
-			"Name": "角度 Z"
+			"Name": "Angle Z"
 		},
 		{
 			"Id": "Param5",
@@ -134,7 +134,7 @@
 		{
 			"Id": "ParamEyeLSmile",
 			"GroupId": "ParamGroup6",
-			"Name": "左眼　微笑"
+			"Name": "Left eye smile"
 		},
 		{
 			"Id": "Param12",
@@ -364,407 +364,407 @@
 		{
 			"Id": "Param57",
 			"GroupId": "ParamGroup10",
-			"Name": "尾1"
+			"Name": "Tail1"
 		},
 		{
 			"Id": "Param58",
 			"GroupId": "ParamGroup10",
-			"Name": "尾1"
+			"Name": "Tail1"
 		},
 		{
 			"Id": "Param59",
 			"GroupId": "ParamGroup10",
-			"Name": "尾2"
+			"Name": "Tail2"
 		},
 		{
 			"Id": "Param60",
 			"GroupId": "ParamGroup10",
-			"Name": "尾2"
+			"Name": "Tail2"
 		},
 		{
 			"Id": "Param61",
 			"GroupId": "ParamGroup10",
-			"Name": "遮挡1"
+			"Name": "Occlusion1"
 		},
 		{
 			"Id": "Param62",
 			"GroupId": "ParamGroup10",
-			"Name": "遮挡1"
+			"Name": "Occlusion1"
 		},
 		{
 			"Id": "Param63",
 			"GroupId": "ParamGroup10",
-			"Name": "遮挡1"
+			"Name": "Occlusion1"
 		},
 		{
 			"Id": "Param64",
 			"GroupId": "ParamGroup10",
-			"Name": "牌"
+			"Name": "Card"
 		},
 		{
 			"Id": "Param65",
 			"GroupId": "ParamGroup10",
-			"Name": "牌"
+			"Name": "Card"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "ParamGroup11",
-			"Name": "按键手消失"
+			"Name": "Key-press hand disappear"
 		},
 		{
 			"Id": "Param66",
 			"GroupId": "ParamGroup11",
-			"Name": "左手消失"
+			"Name": "Left hand disappear"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "ParamGroup11",
-			"Name": "左键"
+			"Name": "Left click"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "ParamGroup11",
-			"Name": "右键"
+			"Name": "Right click"
 		},
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "ParamGroup11",
-			"Name": "鼠标X"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "ParamGroup11",
-			"Name": "鼠标Y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "Param74",
 			"GroupId": "ParamGroup12",
-			"Name": "黑眼消失"
+			"Name": "Dark eyes disappear"
 		},
 		{
 			"Id": "Param72",
 			"GroupId": "ParamGroup12",
-			"Name": "啧"
+			"Name": "Tsk"
 		},
 		{
 			"Id": "Param68",
 			"GroupId": "ParamGroup12",
-			"Name": "啧转向"
+			"Name": "Tsk turn"
 		},
 		{
 			"Id": "Param67",
 			"GroupId": "ParamGroup12",
-			"Name": "啧路径"
+			"Name": "Tsk path"
 		},
 		{
 			"Id": "Param73",
 			"GroupId": "ParamGroup12",
-			"Name": "ze摇晃"
+			"Name": "Tsk sway"
 		},
 		{
 			"Id": "Param69",
 			"GroupId": "ParamGroup12",
-			"Name": "啧悬浮X"
+			"Name": "Tsk float X"
 		},
 		{
 			"Id": "Param70",
 			"GroupId": "ParamGroup12",
-			"Name": "啧悬浮Y"
+			"Name": "Tsk float Y"
 		},
 		{
 			"Id": "Param71",
 			"GroupId": "ParamGroup12",
-			"Name": "啧悬浮Z"
+			"Name": "Tsk float Z"
 		},
 		{
 			"Id": "Param77",
 			"GroupId": "ParamGroup13",
-			"Name": "困消失手"
+			"Name": "Sleepy disappear hand"
 		},
 		{
 			"Id": "Param130",
 			"GroupId": "ParamGroup13",
-			"Name": "困转"
+			"Name": "Sleepy turn"
 		},
 		{
 			"Id": "Param75",
 			"GroupId": "ParamGroup13",
-			"Name": "困1"
+			"Name": "Sleepy1"
 		},
 		{
 			"Id": "Param76",
 			"GroupId": "ParamGroup13",
-			"Name": "困1"
+			"Name": "Sleepy1"
 		},
 		{
 			"Id": "Param84",
 			"GroupId": "ParamGroup13",
-			"Name": "困"
+			"Name": "Sleepy"
 		},
 		{
 			"Id": "Param79",
 			"GroupId": "ParamGroup13",
-			"Name": "困1转向"
+			"Name": "Sleepy1 turn"
 		},
 		{
 			"Id": "Param78",
 			"GroupId": "ParamGroup13",
-			"Name": "困路径1"
+			"Name": "Sleepy path 1"
 		},
 		{
 			"Id": "Param80",
 			"GroupId": "ParamGroup13",
-			"Name": "困1摇晃"
+			"Name": "Sleepy1 sway"
 		},
 		{
 			"Id": "Param85",
 			"GroupId": "ParamGroup13",
-			"Name": "困2转向"
+			"Name": "Sleepy2 turn"
 		},
 		{
 			"Id": "Param86",
 			"GroupId": "ParamGroup13",
-			"Name": "困路径2"
+			"Name": "Sleepy path 2"
 		},
 		{
 			"Id": "Param87",
 			"GroupId": "ParamGroup13",
-			"Name": "困2摇晃"
+			"Name": "Sleepy2 sway"
 		},
 		{
 			"Id": "Param81",
 			"GroupId": "ParamGroup13",
-			"Name": "困悬浮X"
+			"Name": "Sleepy float X"
 		},
 		{
 			"Id": "Param82",
 			"GroupId": "ParamGroup13",
-			"Name": "困悬浮Y"
+			"Name": "Sleepy float Y"
 		},
 		{
 			"Id": "Param83",
 			"GroupId": "ParamGroup13",
-			"Name": "困悬浮Z"
+			"Name": "Sleepy float Z"
 		},
 		{
 			"Id": "Param126",
 			"GroupId": "ParamGroup14",
-			"Name": "猫耳猫尾"
+			"Name": "Cat ears cat tail"
 		},
 		{
 			"Id": "Param101",
 			"GroupId": "ParamGroup14",
-			"Name": "恼"
+			"Name": "Annoyed"
 		},
 		{
 			"Id": "Param91",
 			"GroupId": "ParamGroup14",
-			"Name": "恼变化"
+			"Name": "Annoyed change"
 		},
 		{
 			"Id": "Param92",
 			"GroupId": "ParamGroup14",
-			"Name": "恼3转向"
+			"Name": "Annoyed3 turn"
 		},
 		{
 			"Id": "Param93",
 			"GroupId": "ParamGroup14",
-			"Name": "恼路径3"
+			"Name": "Annoyed path 3"
 		},
 		{
 			"Id": "Param94",
 			"GroupId": "ParamGroup14",
-			"Name": "恼3摇晃"
+			"Name": "Annoyed3 sway"
 		},
 		{
 			"Id": "Param95",
 			"GroupId": "ParamGroup14",
-			"Name": "恼2转向"
+			"Name": "Annoyed2 turn"
 		},
 		{
 			"Id": "Param96",
 			"GroupId": "ParamGroup14",
-			"Name": "恼路径2"
+			"Name": "Annoyed path 2"
 		},
 		{
 			"Id": "Param97",
 			"GroupId": "ParamGroup14",
-			"Name": "恼2摇晃"
+			"Name": "Annoyed2 sway"
 		},
 		{
 			"Id": "Param98",
 			"GroupId": "ParamGroup14",
-			"Name": "恼1转向"
+			"Name": "Annoyed1 turn"
 		},
 		{
 			"Id": "Param99",
 			"GroupId": "ParamGroup14",
-			"Name": "恼路径1"
+			"Name": "Annoyed path 1"
 		},
 		{
 			"Id": "Param100",
 			"GroupId": "ParamGroup14",
-			"Name": "恼1摇晃"
+			"Name": "Annoyed1 sway"
 		},
 		{
 			"Id": "Param102",
 			"GroupId": "ParamGroup14",
-			"Name": "恼悬浮X"
+			"Name": "Annoyed float X"
 		},
 		{
 			"Id": "Param103",
 			"GroupId": "ParamGroup14",
-			"Name": "恼悬浮Y"
+			"Name": "Annoyed float Y"
 		},
 		{
 			"Id": "Param104",
 			"GroupId": "ParamGroup14",
-			"Name": "恼悬浮Z"
+			"Name": "Annoyed float Z"
 		},
 		{
 			"Id": "Param105",
 			"GroupId": "ParamGroup15",
-			"Name": "问号"
+			"Name": "Question mark"
 		},
 		{
 			"Id": "Param106",
 			"GroupId": "ParamGroup15",
-			"Name": "问号转向"
+			"Name": "Question mark turn"
 		},
 		{
 			"Id": "Param107",
 			"GroupId": "ParamGroup15",
-			"Name": "问号路径"
+			"Name": "Question mark path"
 		},
 		{
 			"Id": "Param108",
 			"GroupId": "ParamGroup15",
-			"Name": "问号摇晃"
+			"Name": "Question mark sway"
 		},
 		{
 			"Id": "Param109",
 			"GroupId": "ParamGroup15",
-			"Name": "问号悬浮X"
+			"Name": "Question mark float X"
 		},
 		{
 			"Id": "Param110",
 			"GroupId": "ParamGroup15",
-			"Name": "问号悬浮Y"
+			"Name": "Question mark float Y"
 		},
 		{
 			"Id": "Param111",
 			"GroupId": "ParamGroup15",
-			"Name": "问号悬浮Z"
+			"Name": "Question mark float Z"
 		},
 		{
 			"Id": "Param112",
 			"GroupId": "ParamGroup16",
-			"Name": "桌子移开"
+			"Name": "Table move away"
 		},
 		{
 			"Id": "Param113",
 			"GroupId": "ParamGroup16",
-			"Name": "桌子物理"
+			"Name": "Table physics"
 		},
 		{
 			"Id": "Param114",
 			"GroupId": "ParamGroup16",
-			"Name": "桌子物理"
+			"Name": "Table physics"
 		},
 		{
 			"Id": "Param125",
 			"GroupId": "ParamGroup17",
-			"Name": "下地"
+			"Name": "Land"
 		},
 		{
 			"Id": "Param116",
 			"GroupId": "ParamGroup17",
-			"Name": "拿面具的手"
+			"Name": "Mask-holding hand"
 		},
 		{
 			"Id": "Param119",
 			"GroupId": "ParamGroup17",
-			"Name": "面具和手消失"
+			"Name": "Mask and hand disappear"
 		},
 		{
 			"Id": "Param117",
 			"GroupId": "ParamGroup17",
-			"Name": "拿面具的手物理"
+			"Name": "Mask-holding hand physics"
 		},
 		{
 			"Id": "Param115",
 			"GroupId": "ParamGroup17",
-			"Name": "面具消失(光)"
+			"Name": "Mask disappear (light)"
 		},
 		{
 			"Id": "Param118",
 			"GroupId": "ParamGroup17",
-			"Name": "面具消失"
+			"Name": "Mask disappear"
 		},
 		{
 			"Id": "Param131",
 			"GroupId": "ParamGroup17",
-			"Name": "面具透明"
+			"Name": "Mask transparent"
 		},
 		{
 			"Id": "Param124",
 			"GroupId": "ParamGroup17",
-			"Name": "武器和手消失"
+			"Name": "Weapon and hand disappear"
 		},
 		{
 			"Id": "Param120",
 			"GroupId": "ParamGroup17",
-			"Name": "拿武器的手"
+			"Name": "Weapon-holding hand"
 		},
 		{
 			"Id": "Param121",
 			"GroupId": "ParamGroup17",
-			"Name": "拿武器的手"
+			"Name": "Weapon-holding hand"
 		},
 		{
 			"Id": "Param122",
 			"GroupId": "ParamGroup17",
-			"Name": "武器消失发光"
+			"Name": "Weapon disappear glow"
 		},
 		{
 			"Id": "Param123",
 			"GroupId": "ParamGroup17",
-			"Name": "武器消失"
+			"Name": "Weapon disappear"
 		},
 		{
 			"Id": "Param132",
 			"GroupId": "ParamGroup17",
-			"Name": "武器透明"
+			"Name": "Weapon transparent"
 		},
 		{
 			"Id": "Param128",
 			"GroupId": "ParamGroup18",
-			"Name": "尾巴向下"
+			"Name": "Tail down"
 		},
 		{
 			"Id": "Param127",
 			"GroupId": "ParamGroup18",
-			"Name": "尾巴总"
+			"Name": "Tail master"
 		},
 		{
 			"Id": "Param129",
 			"GroupId": "ParamGroup20",
-			"Name": "尾巴猫耳消失"
+			"Name": "Tail cat ears disappear"
 		},
 		{
 			"Id": "ParamEyeRSmile",
 			"GroupId": "",
-			"Name": "右眼　微笑"
+			"Name": "Right eye smile"
 		},
 		{
 			"Id": "ParamMouthForm",
 			"GroupId": "",
-			"Name": "嘴　变形"
+			"Name": "Mouth transform"
 		},
 		{
 			"Id": "ParamMouthOpenY",
 			"GroupId": "",
-			"Name": "嘴　张开和闭合"
+			"Name": "Mouth open and close"
 		},
 		{
 			"Id": "Param11",
@@ -774,97 +774,97 @@
 		{
 			"Id": "ParamCheek",
 			"GroupId": "",
-			"Name": "脸颊泛红"
+			"Name": "Cheek blush"
 		},
 		{
 			"Id": "ParamBodyAngleX",
 			"GroupId": "",
-			"Name": "身体旋转　X"
+			"Name": "Body rotation X"
 		},
 		{
 			"Id": "ParamBodyAngleY",
 			"GroupId": "",
-			"Name": "身体旋转　Y"
+			"Name": "Body rotation Y"
 		},
 		{
 			"Id": "ParamBodyAngleZ",
 			"GroupId": "",
-			"Name": "身体旋转　Z"
+			"Name": "Body rotation Z"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breath"
 		},
 		{
 			"Id": "ParamHairFront",
 			"GroupId": "",
-			"Name": "摇动 前发"
+			"Name": "Swing front hair"
 		},
 		{
 			"Id": "ParamHairSide",
 			"GroupId": "",
-			"Name": "摇动 侧发"
+			"Name": "Swing side hair"
 		},
 		{
 			"Id": "ParamHairBack",
 			"GroupId": "",
-			"Name": "摇动 后发"
+			"Name": "Swing back hair"
 		},
 		{
 			"Id": "Param_Angle_Rotation_1_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[0]尾巴"
+			"Name": "[0]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_2_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[1]尾巴"
+			"Name": "[1]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_3_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[2]尾巴"
+			"Name": "[2]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_4_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[3]尾巴"
+			"Name": "[3]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_5_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[4]尾巴"
+			"Name": "[4]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_6_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[5]尾巴"
+			"Name": "[5]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_7_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[6]尾巴"
+			"Name": "[6]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_8_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[7]尾巴"
+			"Name": "[7]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_9_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[8]尾巴"
+			"Name": "[8]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_10_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[9]尾巴"
+			"Name": "[9]Tail"
 		},
 		{
 			"Id": "Param_Angle_Rotation_11_ArtMesh235",
 			"GroupId": "ParamGroup19",
-			"Name": "[10]尾巴"
+			"Name": "[10]Tail"
 		}
 	],
 	"ParameterGroups": [
@@ -906,181 +906,181 @@
 		{
 			"Id": "ParamGroup8",
 			"GroupId": "",
-			"Name": "头发物理"
+			"Name": "Hair Physics"
 		},
 		{
 			"Id": "ParamGroup9",
 			"GroupId": "",
-			"Name": "猫耳"
+			"Name": "Cat Ears"
 		},
 		{
 			"Id": "ParamGroup10",
 			"GroupId": "",
-			"Name": "身体物理"
+			"Name": "Body Physics"
 		},
 		{
 			"Id": "ParamGroup11",
 			"GroupId": "",
-			"Name": "鼠标"
+			"Name": "Mouse"
 		},
 		{
 			"Id": "ParamGroup12",
 			"GroupId": "",
-			"Name": "啧"
+			"Name": "Tsk"
 		},
 		{
 			"Id": "ParamGroup13",
 			"GroupId": "",
-			"Name": "困"
+			"Name": "Sleepy"
 		},
 		{
 			"Id": "ParamGroup14",
 			"GroupId": "",
-			"Name": "恼"
+			"Name": "Annoyed"
 		},
 		{
 			"Id": "ParamGroup15",
 			"GroupId": "",
-			"Name": "问号"
+			"Name": "Question Mark"
 		},
 		{
 			"Id": "ParamGroup16",
 			"GroupId": "",
-			"Name": "桌子"
+			"Name": "Table"
 		},
 		{
 			"Id": "ParamGroup17",
 			"GroupId": "",
-			"Name": "武器"
+			"Name": "Weapon"
 		},
 		{
 			"Id": "ParamGroup18",
 			"GroupId": "",
-			"Name": "尾巴"
+			"Name": "Tail"
 		},
 		{
 			"Id": "ParamGroup20",
 			"GroupId": "",
-			"Name": "尾巴猫耳消失"
+			"Name": "Tail Cat Ears Disappear"
 		},
 		{
 			"Id": "ParamGroup19",
 			"GroupId": "",
-			"Name": "尾巴"
+			"Name": "Tail"
 		}
 	],
 	"Parts": [
 		{
 			"Id": "Part2",
-			"Name": "组 2 副本"
+			"Name": "Group 2 Copy"
 		},
 		{
 			"Id": "Part3",
-			"Name": "表情 副本"
+			"Name": "Expression Copy"
 		},
 		{
 			"Id": "Part10",
-			"Name": "前发 副本"
+			"Name": "Front Hair Copy"
 		},
 		{
 			"Id": "Part11",
-			"Name": "中发"
+			"Name": "Middle Hair"
 		},
 		{
 			"Id": "Part12",
-			"Name": "脸 副本 2"
+			"Name": "Face Copy 2"
 		},
 		{
 			"Id": "Part16",
-			"Name": "猫耳"
+			"Name": "Cat Ears"
 		},
 		{
 			"Id": "Part19",
-			"Name": "后发 副本"
+			"Name": "Back Hair Copy"
 		},
 		{
 			"Id": "Part20",
-			"Name": "身体 副本"
+			"Name": "Body Copy"
 		},
 		{
 			"Id": "Part21",
-			"Name": "武器手"
+			"Name": "Weapon Hand"
 		},
 		{
 			"Id": "Part23",
-			"Name": "鼠标  副本"
+			"Name": "Mouse Copy"
 		},
 		{
 			"Id": "Part24",
-			"Name": "键盘和鼠标垫 副本"
+			"Name": "Keyboard and Mousepad Copy"
 		},
 		{
 			"Id": "Part25",
-			"Name": "桌子 副本"
+			"Name": "Table Copy"
 		},
 		{
 			"Id": "Part29",
-			"Name": "腿"
+			"Name": "Leg"
 		},
 		{
 			"Id": "ArtMesh235_Skinning",
-			"Name": "尾巴(蒙皮)"
+			"Name": "Tail(Skinning)"
 		},
 		{
 			"Id": "Part5",
-			"Name": "尾巴(旋转)"
+			"Name": "Tail(Rotation)"
 		},
 		{
 			"Id": "Part4",
-			"Name": "武器"
+			"Name": "Weapon"
 		},
 		{
 			"Id": "Part6",
-			"Name": "问号"
+			"Name": "Question Mark"
 		},
 		{
 			"Id": "Part7",
-			"Name": "恼"
+			"Name": "Annoyed"
 		},
 		{
 			"Id": "Part8",
-			"Name": "困"
+			"Name": "Sleepy"
 		},
 		{
 			"Id": "Part9",
-			"Name": "啧"
+			"Name": "Tsk"
 		},
 		{
 			"Id": "Part33",
-			"Name": "zuoz眼"
+			"Name": "left eye"
 		},
 		{
 			"Id": "Part31",
-			"Name": "you眼"
+			"Name": "right eye"
 		},
 		{
 			"Id": "Part15",
-			"Name": "嘴巴"
+			"Name": "Mouth"
 		},
 		{
 			"Id": "Part28",
-			"Name": "you"
+			"Name": "Right"
 		},
 		{
 			"Id": "Part17",
-			"Name": "左"
+			"Name": "Left"
 		},
 		{
 			"Id": "Part26",
-			"Name": "装饰"
+			"Name": "Decoration"
 		},
 		{
 			"Id": "Part30",
-			"Name": "壺"
+			"Name": "Pot"
 		},
 		{
 			"Id": "Part27",
-			"Name": "花"
+			"Name": "Flower"
 		}
 	],
 	"CombinedParameters": [
@@ -1105,4 +1105,5 @@
 			"Param121"
 		]
 	]
+}
 }

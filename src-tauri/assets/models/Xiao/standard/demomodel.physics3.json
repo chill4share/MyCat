@@ -50,151 +50,151 @@
 			},
 			{
 				"Id": "PhysicsSetting9",
-				"Name": "z1头发"
+				"Name": "z1 Hair"
 			},
 			{
 				"Id": "PhysicsSetting10",
-				"Name": "z2头发"
+				"Name": "z2 Hair"
 			},
 			{
 				"Id": "PhysicsSetting11",
-				"Name": "z3头发3"
+				"Name": "z3 Hair3"
 			},
 			{
 				"Id": "PhysicsSetting12",
-				"Name": "z4头发3"
+				"Name": "z4 Hair3"
 			},
 			{
 				"Id": "PhysicsSetting13",
-				"Name": "z5头发"
+				"Name": "z5 Hair"
 			},
 			{
 				"Id": "PhysicsSetting14",
-				"Name": "z6头发"
+				"Name": "z6 Hair"
 			},
 			{
 				"Id": "PhysicsSetting15",
-				"Name": "z7头发"
+				"Name": "z7 Hair"
 			},
 			{
 				"Id": "PhysicsSetting16",
-				"Name": "z8头发"
+				"Name": "z8 Hair"
 			},
 			{
 				"Id": "PhysicsSetting17",
-				"Name": "z9头发"
+				"Name": "z9 Hair"
 			},
 			{
 				"Id": "PhysicsSetting18",
-				"Name": "z10头发"
+				"Name": "z10 Hair"
 			},
 			{
 				"Id": "PhysicsSetting19",
-				"Name": "z11头发"
+				"Name": "z11 Hair"
 			},
 			{
 				"Id": "PhysicsSetting20",
-				"Name": "z12头发"
+				"Name": "z12 Hair"
 			},
 			{
 				"Id": "PhysicsSetting21",
-				"Name": "兽耳"
+				"Name": "Animal Ears"
 			},
 			{
 				"Id": "PhysicsSetting22",
-				"Name": "st物理"
+				"Name": "Body Physics"
 			},
 			{
 				"Id": "PhysicsSetting23",
-				"Name": "腿"
+				"Name": "Leg"
 			},
 			{
 				"Id": "PhysicsSetting24",
-				"Name": "ze"
+				"Name": "Tsk"
 			},
 			{
 				"Id": "PhysicsSetting25",
-				"Name": "问号"
+				"Name": "Question Mark"
 			},
 			{
 				"Id": "PhysicsSetting26",
-				"Name": "困"
+				"Name": "Sleepy"
 			},
 			{
 				"Id": "PhysicsSetting27",
-				"Name": "困(2)"
+				"Name": "Sleepy(2)"
 			},
 			{
 				"Id": "PhysicsSetting28",
-				"Name": "恼"
+				"Name": "Annoyed"
 			},
 			{
 				"Id": "PhysicsSetting29",
-				"Name": "啧惯性"
+				"Name": "Tsk Inertia"
 			},
 			{
 				"Id": "PhysicsSetting30",
-				"Name": "问号惯性"
+				"Name": "Question Mark Inertia"
 			},
 			{
 				"Id": "PhysicsSetting31",
-				"Name": "困惯性"
+				"Name": "Sleepy Inertia"
 			},
 			{
 				"Id": "PhysicsSetting32",
-				"Name": "困惯性(2)"
+				"Name": "Sleepy Inertia(2)"
 			},
 			{
 				"Id": "PhysicsSetting33",
-				"Name": "恼惯性"
+				"Name": "Annoyed Inertia"
 			},
 			{
 				"Id": "PhysicsSetting34",
-				"Name": "啧悬浮X"
+				"Name": "Tsk Float X"
 			},
 			{
 				"Id": "PhysicsSetting35",
-				"Name": "问号悬浮X"
+				"Name": "Question Mark Float X"
 			},
 			{
 				"Id": "PhysicsSetting36",
-				"Name": "困悬浮X"
+				"Name": "Sleepy Float X"
 			},
 			{
 				"Id": "PhysicsSetting37",
-				"Name": "恼悬浮X"
+				"Name": "Annoyed Float X"
 			},
 			{
 				"Id": "PhysicsSetting38",
-				"Name": "啧悬浮Y"
+				"Name": "Tsk Float Y"
 			},
 			{
 				"Id": "PhysicsSetting39",
-				"Name": "问号悬浮Y"
+				"Name": "Question Mark Float Y"
 			},
 			{
 				"Id": "PhysicsSetting40",
-				"Name": "困悬浮Y"
+				"Name": "Sleepy Float Y"
 			},
 			{
 				"Id": "PhysicsSetting41",
-				"Name": "恼悬浮Y"
+				"Name": "Annoyed Float Y"
 			},
 			{
 				"Id": "PhysicsSetting42",
-				"Name": "桌子物理"
+				"Name": "Table Physics"
 			},
 			{
 				"Id": "PhysicsSetting43",
-				"Name": "武器物理"
+				"Name": "Weapon Physics"
 			},
 			{
 				"Id": "PhysicsSetting44",
-				"Name": "尾巴总"
+				"Name": "Tail Master"
 			},
 			{
 				"Id": "PhysicsSetting45",
-				"Name": "尾巴蒙皮组(2)"
+				"Name": "Tail Skinning Group(2)"
 			}
 		]
 	},

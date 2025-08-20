@@ -19,23 +19,23 @@
 		"PhysicsDictionary": [
 			{
 				"Id": "PhysicsSetting1",
-				"Name": "身体物理xyz"
+				"Name": "Body Physics XYZ"
 			},
 			{
 				"Id": "PhysicsSetting2",
-				"Name": "耳朵xz"
+				"Name": "Ear XZ"
 			},
 			{
 				"Id": "PhysicsSetting3",
-				"Name": "耳朵y"
+				"Name": "Ear Y"
 			},
 			{
 				"Id": "PhysicsSetting4",
-				"Name": "围巾"
+				"Name": "Scarf"
 			},
 			{
 				"Id": "PhysicsSetting5",
-				"Name": "气泡"
+				"Name": "Bubble"
 			}
 		]
 	},

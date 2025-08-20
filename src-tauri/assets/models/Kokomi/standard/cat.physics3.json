@@ -18,11 +18,11 @@
 		"PhysicsDictionary": [
 			{
 				"Id": "PhysicsSetting1",
-				"Name": "右眼Q弹"
+				"Name": "Right Eye Bounce"
 			},
 			{
 				"Id": "PhysicsSetting2",
-				"Name": "左眼Q弹"
+				"Name": "Left Eye Bounce"
 			},
 			{
 				"Id": "PhysicsSetting3",

@@ -4,62 +4,62 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度 X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度 Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamAngleZ",
 			"GroupId": "",
-			"Name": "角度 Z"
+			"Name": "Angle Z"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼　开闭"
+			"Name": "Left Eye Open/Close"
 		},
 		{
 			"Id": "ParamEyeLSmile",
 			"GroupId": "",
-			"Name": "左眼　微笑"
+			"Name": "Left Eye Smile"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right Eye Open/Close"
 		},
 		{
 			"Id": "ParamEyeRSmile",
 			"GroupId": "",
-			"Name": "右眼　微笑"
+			"Name": "Right Eye Smile"
 		},
 		{
 			"Id": "ParamCheek",
 			"GroupId": "",
-			"Name": "脸颊泛红"
+			"Name": "Cheek Blush"
 		},
 		{
 			"Id": "ParamBodyAngleX",
 			"GroupId": "",
-			"Name": "身体旋转　X"
+			"Name": "Body Rotation X"
 		},
 		{
 			"Id": "ParamBodyAngleY",
 			"GroupId": "",
-			"Name": "身体旋转　Y"
+			"Name": "Body Rotation Y"
 		},
 		{
 			"Id": "ParamBodyAngleZ",
 			"GroupId": "",
-			"Name": "身体旋转　Z"
+			"Name": "Body Rotation Z"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
-			"Name": "呼吸"
+			"Name": "Breathing"
 		},
 		{
 			"Id": "Param11",
@@ -69,178 +69,178 @@
 		{
 			"Id": "Param12",
 			"GroupId": "ParamGroup3",
-			"Name": "气泡"
+			"Name": "Bubble"
 		},
 		{
 			"Id": "Param17",
 			"GroupId": "ParamGroup4",
-			"Name": "上"
+			"Name": "Up"
 		},
 		{
 			"Id": "Param18",
 			"GroupId": "ParamGroup4",
-			"Name": "下"
+			"Name": "Down"
 		},
 		{
 			"Id": "Param19",
 			"GroupId": "ParamGroup4",
-			"Name": "左"
+			"Name": "Left"
 		},
 		{
 			"Id": "Param20",
 			"GroupId": "ParamGroup4",
-			"Name": "右"
+			"Name": "Right"
 		},
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "ParamGroup2",
-			"Name": "鼠标X"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "ParamGroup2",
-			"Name": "鼠标Y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "ParamGroup2",
-			"Name": "鼠标左键按下"
+			"Name": "Mouse Left Click"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "ParamGroup2",
-			"Name": "鼠标右键按下"
+			"Name": "Mouse Right Click"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "ParamGroup2",
-			"Name": "键盘按下"
+			"Name": "Keyboard Press"
 		},
 		{
 			"Id": "Param",
 			"GroupId": "ParamGroup",
-			"Name": "身体物理x"
+			"Name": "Body Physics X"
 		},
 		{
 			"Id": "Param2",
 			"GroupId": "ParamGroup",
-			"Name": "身体物理y"
+			"Name": "Body Physics Y"
 		},
 		{
 			"Id": "Param9",
 			"GroupId": "ParamGroup",
-			"Name": "围巾1"
+			"Name": "Scarf 1"
 		},
 		{
 			"Id": "Param10",
 			"GroupId": "ParamGroup",
-			"Name": "围巾2"
+			"Name": "Scarf 2"
 		},
 		{
 			"Id": "Param3",
 			"GroupId": "ParamGroup",
-			"Name": "左耳1"
+			"Name": "Left Ear 1"
 		},
 		{
 			"Id": "Param4",
 			"GroupId": "ParamGroup",
-			"Name": "左耳2"
+			"Name": "Left Ear 2"
 		},
 		{
 			"Id": "Param5",
 			"GroupId": "ParamGroup",
-			"Name": "左耳3"
+			"Name": "Left Ear 3"
 		},
 		{
 			"Id": "Param6",
 			"GroupId": "ParamGroup",
-			"Name": "右耳1"
+			"Name": "Right Ear 1"
 		},
 		{
 			"Id": "Param7",
 			"GroupId": "ParamGroup",
-			"Name": "右耳2"
+			"Name": "Right Ear 2"
 		},
 		{
 			"Id": "Param8",
 			"GroupId": "ParamGroup",
-			"Name": "右耳3"
+			"Name": "Right Ear 3"
 		},
 		{
 			"Id": "Param13",
 			"GroupId": "ParamGroup",
-			"Name": "气泡橙1"
+			"Name": "Orange Bubble 1"
 		},
 		{
 			"Id": "Param14",
 			"GroupId": "ParamGroup",
-			"Name": "气泡橙2"
+			"Name": "Orange Bubble 2"
 		},
 		{
 			"Id": "Param15",
 			"GroupId": "ParamGroup",
-			"Name": "气泡白1"
+			"Name": "White Bubble 1"
 		},
 		{
 			"Id": "Param16",
 			"GroupId": "ParamGroup",
-			"Name": "气泡白2"
+			"Name": "White Bubble 2"
 		}
 	],
 	"ParameterGroups": [
 		{
 			"Id": "ParamGroup3",
 			"GroupId": "",
-			"Name": "表情"
+			"Name": "Expressions"
 		},
 		{
 			"Id": "ParamGroup4",
 			"GroupId": "",
-			"Name": "键盘"
+			"Name": "Keyboard"
 		},
 		{
 			"Id": "ParamGroup2",
 			"GroupId": "",
-			"Name": "鼠标"
+			"Name": "Mouse"
 		},
 		{
 			"Id": "ParamGroup",
 			"GroupId": "",
-			"Name": "物理"
+			"Name": "Physics"
 		}
 	],
 	"Parts": [
 		{
 			"Id": "Part",
-			"Name": "杂"
+			"Name": "Misc"
 		},
 		{
 			"Id": "Part2",
-			"Name": "桌面"
+			"Name": "Desktop"
 		},
 		{
 			"Id": "Part6",
-			"Name": "邦布本体"
+			"Name": "Main Body"
 		},
 		{
 			"Id": "Part3",
-			"Name": "键盘按键"
+			"Name": "Keyboard Keys"
 		},
 		{
 			"Id": "Part4",
-			"Name": "鼠标"
+			"Name": "Mouse"
 		},
 		{
 			"Id": "Part5",
-			"Name": "桌子"
+			"Name": "Table"
 		},
 		{
 			"Id": "Part7",
-			"Name": "围巾"
+			"Name": "Scarf"
 		},
 		{
 			"Id": "Part8",
-			"Name": "身体"
+			"Name": "Body"
 		}
 	],
 	"CombinedParameters": [

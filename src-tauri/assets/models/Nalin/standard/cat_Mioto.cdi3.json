@@ -4,102 +4,102 @@
 		{
 			"Id": "ParamAngleX",
 			"GroupId": "",
-			"Name": "角度X"
+			"Name": "Angle X"
 		},
 		{
 			"Id": "ParamAngleY",
 			"GroupId": "",
-			"Name": "角度Y"
+			"Name": "Angle Y"
 		},
 		{
 			"Id": "ParamMouseX",
 			"GroupId": "",
-			"Name": "鼠标X"
+			"Name": "Mouse X"
 		},
 		{
 			"Id": "ParamMouseY",
 			"GroupId": "",
-			"Name": "鼠标Y"
+			"Name": "Mouse Y"
 		},
 		{
 			"Id": "ParamEyeLOpen",
 			"GroupId": "",
-			"Name": "左眼"
+			"Name": "Left Eye"
 		},
 		{
 			"Id": "ParamEyeROpen",
 			"GroupId": "",
-			"Name": "右眼"
+			"Name": "Right Eye"
 		},
 		{
 			"Id": "ParamMouseLeftDown",
 			"GroupId": "",
-			"Name": "左键"
+			"Name": "Left Click"
 		},
 		{
 			"Id": "ParamMouseRightDown",
 			"GroupId": "",
-			"Name": "右键"
+			"Name": "Right Click"
 		},
 		{
 			"Id": "CatParamLeftHandDown",
 			"GroupId": "",
-			"Name": "键盘"
+			"Name": "Keyboard"
 		}
 	],
 	"ParameterGroups": [],
 	"Parts": [
 		{
 			"Id": "Part",
-			"Name": "澪音"
+			"Name": "Mioto"
 		},
 		{
 			"Id": "Part8",
-			"Name": "桌子"
+			"Name": "Table"
 		},
 		{
 			"Id": "Part2",
-			"Name": "头"
+			"Name": "Head"
 		},
 		{
 			"Id": "Part5",
-			"Name": "手_键盘"
+			"Name": "Hand_Keyboard"
 		},
 		{
 			"Id": "Part6",
-			"Name": "身子"
+			"Name": "Body"
 		},
 		{
 			"Id": "Part7",
-			"Name": "手_鼠标"
+			"Name": "Hand_Mouse"
 		},
 		{
 			"Id": "Part9",
-			"Name": "标准模式"
+			"Name": "Standard Mode"
 		},
 		{
 			"Id": "Part3",
-			"Name": "眼睛_左"
+			"Name": "Eye_Left"
 		},
 		{
 			"Id": "Part4",
-			"Name": "眼睛_右"
+			"Name": "Eye_Right"
 		},
 		{
 			"Id": "Part10",
-			"Name": "交互"
+			"Name": "Interaction"
 		},
 		{
 			"Id": "Part13",
-			"Name": "本体"
+			"Name": "Main Body"
 		},
 		{
 			"Id": "Part11",
-			"Name": "鼠标"
+			"Name": "Mouse"
 		},
 		{
 			"Id": "Part12",
-			"Name": "键盘"
+			"Name": "Keyboard"
 		}
 	],
 	"CombinedParameters": [
