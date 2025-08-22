@@ -1,144 +1,150 @@
-import type { CursorPoint } from '@/utils/monitor'
+import type { CursorPoint } from "@/utils/monitor";
 
-import { LogicalSize } from '@tauri-apps/api/dpi'
-import { resolveResource, sep } from '@tauri-apps/api/path'
-import { getCurrentWebviewWindow } from '@tauri-apps/api/webviewWindow'
-import { message } from 'ant-design-vue'
-import { isNil, round } from 'es-toolkit'
-import { nth } from 'es-toolkit/compat'
-import { ref } from 'vue'
+import { LogicalSize } from "@tauri-apps/api/dpi";
+import { resolveResource, sep } from "@tauri-apps/api/path";
+import { getCurrentWebviewWindow } from "@tauri-apps/api/webviewWindow";
+import { message } from "ant-design-vue";
+import { isNil, round } from "es-toolkit";
+import { nth } from "es-toolkit/compat";
+import { ref } from "vue";
 
-import live2d from '../utils/live2d'
+import live2d from "../utils/live2d";
 
-import { useCatStore } from '@/stores/cat'
-import { useModelStore } from '@/stores/model'
-import { getCursorMonitor } from '@/utils/monitor'
+import { useCatStore } from "@/stores/cat";
+import { useModelStore } from "@/stores/model";
+import { getCursorMonitor } from "@/utils/monitor";
 
-const appWindow = getCurrentWebviewWindow()
+const appWindow = getCurrentWebviewWindow();
 
 export interface ModelSize {
-  width: number
-  height: number
+  width: number;
+  height: number;
 }
 
+// Flag để tránh load 2 lần (VD: Vue StrictMode mount/unmount)
+let initialized = false;
+
 export function useModel() {
-  const modelStore = useModelStore()
-  const catStore = useCatStore()
-  const modelSize = ref<ModelSize>()
+  const modelStore = useModelStore();
+  const catStore = useCatStore();
+  const modelSize = ref<ModelSize>();
 
   async function handleLoad() {
     try {
-      if (!modelStore.currentModel) return
+      if (!modelStore.currentModel) return;
 
-      const { path } = modelStore.currentModel
+      // nếu đã init rồi thì bỏ qua
+      if (initialized) return;
+      initialized = true;
 
-      await resolveResource(path)
+      // dọn model cũ trước khi load
+      handleDestroy();
 
-      const { width, height, ...rest } = await live2d.load(path)
+      const { path } = modelStore.currentModel;
+      await resolveResource(path);
 
-      modelSize.value = { width, height }
+      const { width, height, ...rest } = await live2d.load(path);
 
-      handleResize()
+      modelSize.value = { width, height };
 
-      Object.assign(modelStore, rest)
+      await handleResize();
+
+      Object.assign(modelStore, rest);
     } catch (error) {
-      message.error(String(error))
+      message.error(String(error));
     }
   }
 
   function handleDestroy() {
-    live2d.destroy()
+    live2d.destroy();
   }
 
   async function handleResize() {
-    if (!modelSize.value) return
+    if (!modelSize.value) return;
 
-    live2d.resizeModel(modelSize.value)
+    live2d.resizeModel(modelSize.value);
 
-    const { width, height } = modelSize.value
+    const { width, height } = modelSize.value;
 
     if (round(innerWidth / innerHeight, 1) !== round(width / height, 1)) {
       await appWindow.setSize(
         new LogicalSize({
           width: innerWidth,
           height: Math.ceil(innerWidth * (height / width)),
-        }),
-      )
+        })
+      );
     }
 
-    const size = await appWindow.size()
-
-    catStore.scale = round((size.width / width) * 100)
+    const size = await appWindow.size();
+    catStore.scale = round((size.width / width) * 100);
   }
 
   const handlePress = (key: string) => {
-    const path = modelStore.supportKeys[key]
-
-    if (!path) return
+    const path = modelStore.supportKeys[key];
+    if (!path) return;
 
     if (catStore.singleMode) {
-      const dirName = nth(path.split(sep()), -2)!
+      const dirName = nth(path.split(sep()), -2)!;
 
-      const filterKeys = Object.entries(modelStore.pressedKeys).filter(([, value]) => {
-        return value.includes(dirName)
-      })
+      const filterKeys = Object.entries(modelStore.pressedKeys).filter(
+        ([, value]) => value.includes(dirName)
+      );
 
       for (const [key] of filterKeys) {
-        handleRelease(key)
+        handleRelease(key);
       }
     }
 
-    modelStore.pressedKeys[key] = path
-  }
+    modelStore.pressedKeys[key] = path;
+  };
 
   const handleRelease = (key: string) => {
-    delete modelStore.pressedKeys[key]
-  }
+    delete modelStore.pressedKeys[key];
+  };
 
   function handleKeyChange(isLeft = true, pressed = true) {
-    const id = isLeft ? 'CatParamLeftHandDown' : 'CatParamRightHandDown'
-
-    live2d.setParameterValue(id, pressed)
+    const id = isLeft ? "CatParamLeftHandDown" : "CatParamRightHandDown";
+    live2d.setParameterValue(id, pressed);
   }
 
   function handleMouseChange(key: string, pressed = true) {
-    const id = key === 'Left' ? 'ParamMouseLeftDown' : 'ParamMouseRightDown'
-
-    live2d.setParameterValue(id, pressed)
+    const id = key === "Left" ? "ParamMouseLeftDown" : "ParamMouseRightDown";
+    live2d.setParameterValue(id, pressed);
   }
 
   async function handleMouseMove(point: CursorPoint) {
-    const monitor = await getCursorMonitor(point)
+    const monitor = await getCursorMonitor(point);
+    if (!monitor) return;
 
-    if (!monitor) return
+    const { size, position, cursorPoint } = monitor;
 
-    const { size, position, cursorPoint } = monitor
+    const xRatio = (cursorPoint.x - position.x) / size.width;
+    const yRatio = (cursorPoint.y - position.y) / size.height;
 
-    const xRatio = (cursorPoint.x - position.x) / size.width
-    const yRatio = (cursorPoint.y - position.y) / size.height
+    for (const id of [
+      "ParamMouseX",
+      "ParamMouseY",
+      "ParamAngleX",
+      "ParamAngleY",
+    ]) {
+      const { min, max } = live2d.getParameterRange(id);
+      if (isNil(min) || isNil(max)) continue;
 
-    for (const id of ['ParamMouseX', 'ParamMouseY', 'ParamAngleX', 'ParamAngleY']) {
-      const { min, max } = live2d.getParameterRange(id)
-
-      if (isNil(min) || isNil(max)) continue
-
-      const isXAxis = id.endsWith('X')
-
-      const ratio = isXAxis ? xRatio : yRatio
-      let value = max - (ratio * (max - min))
+      const isXAxis = id.endsWith("X");
+      const ratio = isXAxis ? xRatio : yRatio;
+      let value = max - ratio * (max - min);
 
       if (isXAxis && catStore.mouseMirror) {
-        value *= -1
+        value *= -1;
       }
 
-      live2d.setParameterValue(id, value)
+      live2d.setParameterValue(id, value);
     }
   }
 
   async function handleAxisChange(id: string, value: number) {
-    const { min, max } = live2d.getParameterRange(id)
-
-    live2d.setParameterValue(id, Math.max(min, value * max))
+    const { min, max } = live2d.getParameterRange(id);
+    live2d.setParameterValue(id, Math.max(min, value * max));
   }
 
   return {
@@ -152,5 +158,5 @@ export function useModel() {
     handleMouseChange,
     handleMouseMove,
     handleAxisChange,
-  }
+  };
 }

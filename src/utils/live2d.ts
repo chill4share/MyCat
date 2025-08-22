@@ -50,7 +50,10 @@ class Live2d {
     modelSettings.replaceFiles((file) => convertFileSrc(join(path, file)))
 
     this.model = await Live2DModel.from(modelSettings)
-    this.app?.stage.addChild(this.model)
+
+    if (this.app) {
+      this.app.stage.addChild(this.model)
+    }
 
     const { width, height } = this.model
     const { motions, expressions } = modelSettings
@@ -67,6 +70,7 @@ class Live2d {
       } else {
         this.app?.stage.removeChild(this.model)
       }
+
       this.model.destroy({
         children: true,
         texture: true,
@@ -76,6 +80,17 @@ class Live2d {
       console.warn('[live2d.destroy] warning:', err)
     } finally {
       this.model = null
+    }
+  }
+
+  /** Hủy toàn bộ app (khi thoát app hoặc reload cứng) */
+  public destroyApp() {
+    try {
+      this.destroy()
+      this.app?.destroy(true, { children: true, texture: true, baseTexture: true })
+      this.app = null
+    } catch (err) {
+      console.warn('[live2d.destroyApp] warning:', err)
     }
   }
 
