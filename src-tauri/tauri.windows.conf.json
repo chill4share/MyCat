@@ -4,14 +4,9 @@
     "windows": {
       "digestAlgorithm": "sha256",
       "nsis": {
-        "template": "tauri.nsi.template",
-        "languages": [
-          "English",
-          "Vietnamese",
-          "SimpChinese"
-        ],
         "installMode": "both",
-        "displayLanguageSelector": true
+        "languages": ["English"],
+        "displayLanguageSelector": false
       }
     }
   }
