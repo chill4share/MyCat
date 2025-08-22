@@ -9,7 +9,7 @@ export const useGeneralStore = defineStore('general', () => {
   const taskbarVisibility = ref(false)
   const theme = ref<'auto' | Theme>('auto')
   const isDark = ref(false)
-  // Stores the selected language for i18n
+  // i18n
   const locale = ref<string>('')
 
   return {

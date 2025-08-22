@@ -7,7 +7,6 @@ import { Cubism4ModelSettings, Live2DModel } from 'pixi-live2d-display'
 import { Application, Ticker } from 'pixi.js'
 
 import { join } from './path'
-
 import { i18n } from '@/i18n'
 
 Live2DModel.registerTicker(Ticker)
@@ -16,13 +15,12 @@ class Live2d {
   private app: Application | null = null
   public model: Live2DModel | null = null
 
-  constructor() { }
+  constructor() {}
 
   private initApp() {
     if (this.app) return
 
     const view = document.getElementById('live2dCanvas') as HTMLCanvasElement
-
     this.app = new Application({
       view,
       resizeTo: window,
@@ -33,19 +31,15 @@ class Live2d {
 
   public async load(path: string) {
     this.initApp()
-
-    this.destroy()
+    this.destroy() // dọn model cũ trước khi load mới
 
     const files = await readDir(path)
-
     const modelFile = files.find(file => file.name.endsWith('.model3.json'))
-
     if (!modelFile) {
       throw new Error(i18n.global.t('model.load.error.notFound'))
     }
 
     const modelPath = join(path, modelFile.name)
-
     const modelJSON = JSON.parse(await readTextFile(modelPath))
 
     const modelSettings = new Cubism4ModelSettings({
@@ -53,34 +47,41 @@ class Live2d {
       url: convertFileSrc(modelPath),
     })
 
-    modelSettings.replaceFiles((file) => {
-      return convertFileSrc(join(path, file))
-    })
+    modelSettings.replaceFiles((file) => convertFileSrc(join(path, file)))
 
     this.model = await Live2DModel.from(modelSettings)
-
     this.app?.stage.addChild(this.model)
 
     const { width, height } = this.model
     const { motions, expressions } = modelSettings
 
-    return {
-      width,
-      height,
-      motions,
-      expressions,
-    }
+    return { width, height, motions, expressions }
   }
 
+  /** Hủy model hiện tại một cách an toàn */
   public destroy() {
-    this.model?.destroy()
+    if (!this.model) return
+    try {
+      if (this.model.parent) {
+        this.model.parent.removeChild(this.model)
+      } else {
+        this.app?.stage.removeChild(this.model)
+      }
+      this.model.destroy({
+        children: true,
+        texture: true,
+        baseTexture: true,
+      })
+    } catch (err) {
+      console.warn('[live2d.destroy] warning:', err)
+    } finally {
+      this.model = null
+    }
   }
 
   public resizeModel(modelSize: ModelSize) {
     if (!this.model) return
-
     const { width, height } = modelSize
-
     const scaleX = innerWidth / width
     const scaleY = innerHeight / height
     const scale = Math.min(scaleX, scaleY)
@@ -88,7 +89,10 @@ class Live2d {
     this.model.scale.set(scale)
     this.model.x = innerWidth / 2
     this.model.y = innerHeight / 2
-    this.model.anchor.set(0.5)
+
+    // anchor có thể không tồn tại, nên check an toàn
+    const anyModel = this.model as unknown as { anchor?: { set?: (x: number, y?: number) => void } }
+    anyModel.anchor?.set?.(0.5)
   }
 
   public playMotion(group: string, index: number) {
@@ -101,30 +105,22 @@ class Live2d {
 
   public getCoreModel() {
     const internalModel = this.model?.internalModel as Cubism4InternalModel
-
     return internalModel?.coreModel
   }
 
   public getParameterRange(id: string) {
     const coreModel = this.getCoreModel()
-
     const index = coreModel?.getParameterIndex(id)
     const min = coreModel?.getParameterMinimumValue(index)
     const max = coreModel?.getParameterMaximumValue(index)
-
-    return {
-      min,
-      max,
-    }
+    return { min, max }
   }
 
   public setParameterValue(id: string, value: number | boolean) {
     const coreModel = this.getCoreModel()
-
     return coreModel?.setParameterValueById?.(id, Number(value))
   }
 }
 
 const live2d = new Live2d()
-
 export default live2d

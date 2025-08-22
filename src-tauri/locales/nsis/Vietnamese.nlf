@@ -10,177 +10,177 @@ NLF v6
 1258
 # RTL - anything else than RTL means LTR
 -
-# Translation by NGUYỄN Mạnh Hùng <loveleeyoungae@yahoo.com>
+# Translation by Chill4Share <chill4share@gmail.com>
 # ^Branding
 Nullsoft Install System %s
 # ^SetupCaption
-Cài đặt $(^Name)
+Cài đặt $(^Name)
 # ^UninstallCaption
-Gỡ bỏ $(^Name)
+Gỡ bỏ $(^Name)
 # ^LicenseSubCaption
-: Thỏa thuận Giấy phép
+: Thỏa thuận Giấy phép
 # ^ComponentsSubCaption
-: Tùy chọn Cài đặt
+: Tùy chọn Cài đặt
 # ^DirSubCaption
-: Thư mục Cài đặt
+: Thư mục Cài đặt
 # ^InstallingSubCaption
-: Cài đặt
+: Cài đặt
 # ^CompletedSubCaption
-: Hoàn thành
+: Hoàn thành
 # ^UnComponentsSubCaption
-: Tùy chọn Gỡ bỏ
+: Tùy chọn Gỡ bỏ
 # ^UnDirSubCaption
-: Thư mục Gỡ bỏ
+: Thư mục Gỡ bỏ
 # ^ConfirmSubCaption
-: Xác nhận
+: Xác nhận
 # ^UninstallingSubCaption
-: Gỡ bỏ
+: Gỡ bỏ
 # ^UnCompletedSubCaption
-: Hoàn thành
+: Hoàn thành
 # ^BackBtn
-< &Lùi
+< &Lùi
 # ^NextBtn
-&Tiến >
+&Tiến >
 # ^AgreeBtn
-Tô&i đồng ý
+Tô&i đồng ý
 # ^AcceptBtn
-Tô&i chấp thuận các điều khoản của Thỏa thuận Giấy phép
+Tô&i chấp thuận các điều khoản của Thỏa thuận Giấy phép
 # ^DontAcceptBtn
-Tôi &không chấp thuận các điều khoản của Thỏa thuận Giấy phép
+Tôi &không chấp thuận các điều khoản của Thỏa thuận Giấy phép
 # ^InstallBtn
-&Cài đặt
+&Cài đặt
 # ^UninstallBtn
-&Gỡ bỏ
+&Gỡ bỏ
 # ^CancelBtn
-Hủy bỏ
+Hủy bỏ
 # ^CloseBtn
-Đón&g
+Đón&g
 # ^BrowseBtn
-Du&yệt...
+Du&yệt...
 # ^ShowDetailsBtn
-&Hiện chi tiết
+&Hiện chi tiết
 # ^ClickNext
-Nhấn Tiến để tiếp tục.
+Nhấn Tiến để tiếp tục.
 # ^ClickInstall
-Nhấn “Cài đặt” để bắt đầu việc cài đặt.
+Nhấn “Cài đặt” để bắt đầu việc cài đặt.
 # ^ClickUninstall
-Nhấn “Gỡ bỏ” để bắt đầu việc gỡ bỏ.
+Nhấn “Gỡ bỏ” để bắt đầu việc gỡ bỏ.
 # ^Name
 Tên
 # ^Completed
-Hoàn thành
+Hoàn thành
 # ^LicenseText
-Vui lòng xem xét thỏa thuận giấy phép trước khi cài đặt $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy nhấn “Tôi đồng ý”.
+Vui lòng xem xét thỏa thuận giấy phép trước khi cài đặt $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy nhấn “Tôi đồng ý”.
 # ^LicenseTextCB
-Vui lòng xem xét thỏa thuận giấy phép trước khi cài đặt $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy nhấn ô bên dưới. $_CLICK
+Vui lòng xem xét thỏa thuận giấy phép trước khi cài đặt $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy nhấn ô bên dưới. $_CLICK
 # ^LicenseTextRB
-Vui lòng xem xét thỏa thuận giấy phép trước khi cài đặt $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy chọn ô đầu tiên bên dưới. $_CLICK
+Vui lòng xem xét thỏa thuận giấy phép trước khi cài đặt $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy chọn ô đầu tiên bên dưới. $_CLICK
 # ^UnLicenseText
-Vui lòng xem xét thỏa thuận giấy phép trước khi gỡ bỏ $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy nhấn “Tôi đồng ý”.
+Vui lòng xem xét thỏa thuận giấy phép trước khi gỡ bỏ $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy nhấn “Tôi đồng ý”.
 # ^UnLicenseTextCB
-Vui lòng xem xét thỏa thuận giấy phép trước khi gỡ bỏ $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy nhấn ô bên dưới. $_CLICK
+Vui lòng xem xét thỏa thuận giấy phép trước khi gỡ bỏ $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy nhấn ô bên dưới. $_CLICK
 # ^UnLicenseTextRB
-Vui lòng xem xét thỏa thuận giấy phép trước khi gỡ bỏ $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy chọn ô đầu tiên bên dưới. $_CLICK
+Vui lòng xem xét thỏa thuận giấy phép trước khi gỡ bỏ $(^NameDA). Nếu bạn chấp thuận tất cả các điều khoản của thỏa thuận, hãy chọn ô đầu tiên bên dưới. $_CLICK
 # ^Custom
-Tùy biến
+Tùy biến
 # ^ComponentsText
-Chọn thành phần mà bạn muốn cài đặt và không chọn các thành phần mà bạn không muốn cài đặt. $_CLICK
+Chọn thành phần mà bạn muốn cài đặt và không chọn các thành phần mà bạn không muốn cài đặt. $_CLICK
 # ^ComponentsSubText1
-Chọn kiểu cài đặt:
+Chọn kiểu cài đặt:
 # ^ComponentsSubText2_NoInstTypes
-Chọn thành phần để cài đặt:
+Chọn thành phần để cài đặt:
 # ^ComponentsSubText2
-Hoặc, chọn thành phần phụ mà bạn muốn cài đặt:
+Hoặc, chọn thành phần phụ mà bạn muốn cài đặt:
 # ^UnComponentsText
-Chọn thành phần mà bạn muốn gỡ bỏ và không chọn các thành phần mà bạn không muốn gỡ bỏ. $_CLICK
+Chọn thành phần mà bạn muốn gỡ bỏ và không chọn các thành phần mà bạn không muốn gỡ bỏ. $_CLICK
 # ^UnComponentsSubText1
-Chọn kiểu gỡ bỏ:
+Chọn kiểu gỡ bỏ:
 # ^UnComponentsSubText2_NoInstTypes
-Chọn thành phần để gỡ bỏ:
+Chọn thành phần để gỡ bỏ:
 # ^UnComponentsSubText2
-Hoặc, chọn thành phần phụ mà bạn muốn gỡ bỏ:
+Hoặc, chọn thành phần phụ mà bạn muốn gỡ bỏ:
 # ^DirText
-Trình trợ lí sẽ cài đặt $(^NameDA) vào thư mục sau. Để cài đặt vào một thư mục khác, hãy nhấn Duyệt để chọn thư mục. $_CLICK
+Trình trợ lí sẽ cài đặt $(^NameDA) vào thư mục sau. Để cài đặt vào một thư mục khác, hãy nhấn Duyệt để chọn thư mục. $_CLICK
 # ^DirSubText
-Thư mục đích
+Thư mục đích
 # ^DirBrowseText
-Chọn thư mục để cài đặt $(^NameDA):
+Chọn thư mục để cài đặt $(^NameDA):
 # ^UnDirText
-Trình trợ lí sẽ gỡ bỏ $(^NameDA) khỏi thư mục sau. Để gỡ bỏ khỏi một thư mục khác, hãy nhấn Duyệt để chọn thư mục. $_CLICK
+Trình trợ lí sẽ gỡ bỏ $(^NameDA) khỏi thư mục sau. Để gỡ bỏ khỏi một thư mục khác, hãy nhấn Duyệt để chọn thư mục. $_CLICK
 # ^UnDirSubText
 ""
 # ^UnDirBrowseText
-Chọn thư mục để gỡ bỏ $(^NameDA):
+Chọn thư mục để gỡ bỏ $(^NameDA):
 # ^SpaceAvailable
-"Dung lượng hiện có: "
+"Dung lượng hiện có: "
 # ^SpaceRequired
-"Dung lượng yêu cầu: "
+"Dung lượng yêu cầu: "
 # ^UninstallingText
-$(^NameDA) sẽ bị gỡ bỏ khỏi thư mục sau. $_CLICK
+$(^NameDA) sẽ bị gỡ bỏ khỏi thư mục sau. $_CLICK
 # ^UninstallingSubText
-Đang gỡ bỏ khỏi:
+Đang gỡ bỏ khỏi:
 # ^FileError
-Lỗi khi mở tập tin để ghi: \r\n\r\n$0\r\n\r\nNhấn “Hủy bỏ” để ngừng việc cài đặt,\r\n“Thử lại” để thử lần nữa, hoặc\r\n“Bỏ qua” để bỏ qua tập tin này.
+Lỗi khi mở tập tin để ghi: \r\n\r\n$0\r\n\r\nNhấn “Hủy bỏ” để ngừng việc cài đặt,\r\n“Thử lại” để thử lần nữa, hoặc\r\n“Bỏ qua” để bỏ qua tập tin này.
 # ^FileError_NoIgnore
-Lỗi khi mở tập tin để ghi: \r\n\r\n$0\r\n\r\nNhấn “Thử lại” để thử lần nữa, hoặc\r\n“Hủy bỏ” để ngừng việc cài đặt.
+Lỗi khi mở tập tin để ghi: \r\n\r\n$0\r\n\r\nNhấn “Thử lại” để thử lần nữa, hoặc\r\n“Hủy bỏ” để ngừng việc cài đặt.
 # ^CantWrite
-"Không thể ghi: "
+"Không thể ghi: "
 # ^CopyFailed
-Sao chép bị thất bại
+Sao chép bị thất bại
 # ^CopyTo
-"Sao chép vào "
+"Sao chép vào "
 # ^Registering
-"Đang đăng kí: "
+"Đang đăng kí: "
 # ^Unregistering
-"Đang hủy đăng kí: "
+"Đang hủy đăng kí: "
 # ^SymbolNotFound
-"Không thể tìm thấy biểu tượng: "
+"Không thể tìm thấy biểu tượng: "
 # ^CouldNotLoad
-"Không thể nạp: "
+"Không thể nạp: "
 # ^CreateFolder
-"Tạo thư mục: "
+"Tạo thư mục: "
 # ^CreateShortcut
-"Tạo lối tắt: "
+"Tạo lối tắt: "
 # ^CreatedUninstaller
-"Tạo trình gỡ bỏ: "
+"Tạo trình gỡ bỏ: "
 # ^Delete
-"Xóa tập tin: "
+"Xóa tập tin: "
 # ^DeleteOnReboot
-"Xóa khi khởi động lại: "
+"Xóa khi khởi động lại: "
 # ^ErrorCreatingShortcut
-"Lỗi khi tạo lối tắt: "
+"Lỗi khi tạo lối tắt: "
 # ^ErrorCreating
-"Lỗi khi tạo: "
+"Lỗi khi tạo: "
 # ^ErrorDecompressing
-Lỗi khi giải nén dữ liệu! Có thể trình cài đặt đã bị hỏng?
+Lỗi khi giải nén dữ liệu! Có thể trình cài đặt đã bị hỏng?
 # ^ErrorRegistering
-Lỗi khi đăng kí DLL
+Lỗi khi đăng kí DLL
 # ^ExecShell
 "ExecShell: "
 # ^Exec
-"Thực thi: "
+"Thực thi: "
 # ^Extract
-"Trích xuất: "
+"Trích xuất: "
 # ^ErrorWriting
-"Trích xuất: lôi khi ghi vào tập tin "
+"Trích xuất: lôi khi ghi vào tập tin "
 # ^InvalidOpcode
-Trình cài đặt bị hỏng: mã tác vụ bất hợp lệ
+Trình cài đặt bị hỏng: mã tác vụ bất hợp lệ
 # ^NoOLE
-"Không có OLE cho: "
+"Không có OLE cho: "
 # ^OutputFolder
-"Thư mục đầu ra: "
+"Thư mục đầu ra: "
 # ^RemoveFolder
-"Xóa thư mục: "
+"Xóa thư mục: "
 # ^RenameOnReboot
-"Đổi tên khi khởi động lại: "
+"Đổi tên khi khởi động lại: "
 # ^Rename
-"Đổi tên: "
+"Đổi tên: "
 # ^Skipped
-"Đã bỏ qua: "
+"Đã bỏ qua: "
 # ^CopyDetails
-Sao chép Chi tiết vào Clipboard
+Sao chép Chi tiết vào Clipboard
 # ^LogInstall
-Lưu kí quá trình cài đặt
+Lưu kí quá trình cài đặt
 # ^Byte
 B
 # ^Kilo
@@ -189,3 +189,60 @@ B
  M
 # ^Giga
  G
+#
+# Custom Tauri messages
+#
+^silentDowngrades
+Một phiên bản mới hơn đã được cài đặt. Việc hạ cấp trong chế độ im lặng (silent mode) không được phép.
+^appRunning
+Ứng dụng đang chạy. Vui lòng đóng ứng dụng trước khi tiếp tục.
+^appRunningOkKill
+Ứng dụng đang chạy. Nhấn "OK" để đóng ứng dụng và tiếp tục.
+^failedToKillApp
+Không thể đóng ứng dụng đang chạy. Vui lòng đóng thủ công và thử lại.
+^webview2AbortError
+Cần có Microsoft Edge WebView2 Runtime để chạy ứng dụng này.
+^webview2Downloading
+Đang tải xuống Microsoft Edge WebView2 Runtime...
+^webview2DownloadSuccess
+Đã tải xuống Microsoft Edge WebView2 Runtime thành công.
+^webview2DownloadError
+Không thể tải xuống Microsoft Edge WebView2 Runtime.
+^installingWebview2
+Đang cài đặt Microsoft Edge WebView2 Runtime...
+^webview2InstallSuccess
+Đã cài đặt Microsoft Edge WebView2 Runtime thành công.
+^webview2InstallError
+Không thể cài đặt Microsoft Edge WebView2 Runtime.
+^alreadyInstalled
+Một phiên bản của ứng dụng này đã được cài đặt.
+^chooseMaintenanceOption
+Chọn thao tác bạn muốn thực hiện.
+^olderOrUnknownVersionInstalled
+Một phiên bản cũ hơn hoặc không rõ của ứng dụng này đã được tìm thấy.
+^newerVersionInstalled
+Một phiên bản mới hơn của ứng dụng này đã được cài đặt.
+^choowHowToInstall
+Chọn cách thức bạn muốn cài đặt.
+^uninstallBeforeInstalling
+Gỡ bỏ trước khi cài đặt
+^dontUninstall
+Không gỡ bỏ (giữ lại dữ liệu người dùng)
+^dontUninstallDowngrade
+Không gỡ bỏ (không khuyến nghị hạ cấp)
+^addOrReinstall
+Thêm tính năng hoặc Cài đặt lại
+^uninstallApp
+Gỡ bỏ ứng dụng
+^unableToUninstall
+Không thể tự động gỡ bỏ phiên bản hiện tại. Vui lòng gỡ bỏ thủ công qua Control Panel.
+^older
+(phiên bản cũ hơn)
+^unknown
+(không rõ)
+^alreadyInstalledLong
+Ứng dụng này đã được cài đặt.
+^createDesktop
+Tạo lối tắt trên Màn hình chính
+^deleteAppData
+Xóa dữ liệu của ứng dụng
