@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { InputNumber, Slider, Switch } from 'ant-design-vue'
-import { useI18n } from 'vue-i18n'
+import { InputNumber, Slider, Switch } from "ant-design-vue";
+import { useI18n } from "vue-i18n";
 
-import ProList from '@/components/pro-list/index.vue'
-import ProListItem from '@/components/pro-list-item/index.vue'
-import { useCatStore } from '@/stores/cat'
+import ProList from "@/components/pro-list/index.vue";
+import ProListItem from "@/components/pro-list-item/index.vue";
+import { useCatStore } from "@/stores/cat";
 
-const { t } = useI18n()
-const catStore = useCatStore()
+const { t } = useI18n();
+const catStore = useCatStore();
 </script>
 
 <template>
@@ -53,21 +53,12 @@ const catStore = useCatStore()
       :description="t('windowSettings.sizeDesc')"
       :title="t('windowSettings.size')"
     >
-      <InputNumber
-        v-model:value="catStore.scale"
-        class="w-28"
-        :min="1"
-      >
-        <template #addonAfter>
-          %
-        </template>
+      <InputNumber v-model:value="catStore.scale" class="w-28" :min="1">
+        <template #addonAfter> % </template>
       </InputNumber>
     </ProListItem>
 
-    <ProListItem
-      :title="t('windowSettings.opacity')"
-      vertical
-    >
+    <ProListItem :title="t('windowSettings.opacity')" vertical>
       <Slider
         v-model:value="catStore.opacity"
         class="m-0!"

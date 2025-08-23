@@ -1,55 +1,55 @@
 <script setup lang="ts">
-import { Flex } from 'ant-design-vue'
-import { onMounted, ref } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { Flex } from "ant-design-vue";
+import { onMounted, ref } from "vue";
+import { useI18n } from "vue-i18n";
 
-import About from './components/about/index.vue'
-import Cat from './components/cat/index.vue'
-import General from './components/general/index.vue'
-import Model from './components/model/index.vue'
-import Shortcut from './components/shortcut/index.vue'
+import About from "./components/about/index.vue";
+import Cat from "./components/cat/index.vue";
+import General from "./components/general/index.vue";
+import Model from "./components/model/index.vue";
+import Shortcut from "./components/shortcut/index.vue";
 
-import UpdateApp from '@/components/update-app/index.vue'
-import { useTray } from '@/composables/useTray'
-import { useAppStore } from '@/stores/app'
-import { isMac } from '@/utils/platform'
+import UpdateApp from "@/components/update-app/index.vue";
+import { useTray } from "@/composables/useTray";
+import { useAppStore } from "@/stores/app";
+import { isMac } from "@/utils/platform";
 
-const { t } = useI18n()
-const { createTray } = useTray()
-const appStore = useAppStore()
-const current = ref(0)
+const { t } = useI18n();
+const { createTray } = useTray();
+const appStore = useAppStore();
+const current = ref(0);
 
 onMounted(async () => {
-  createTray()
-})
+  createTray();
+});
 
 const menus = [
   {
-    labelKey: 'menu.cat',
-    icon: 'i-solar:cat-bold',
+    labelKey: "menu.cat",
+    icon: "i-solar:cat-bold",
     component: Cat,
   },
   {
-    labelKey: 'menu.general',
-    icon: 'i-solar:settings-minimalistic-bold',
+    labelKey: "menu.general",
+    icon: "i-solar:settings-minimalistic-bold",
     component: General,
   },
   {
-    labelKey: 'menu.model',
-    icon: 'i-solar:magic-stick-3-bold',
+    labelKey: "menu.model",
+    icon: "i-solar:magic-stick-3-bold",
     component: Model,
   },
   {
-    labelKey: 'menu.shortcut',
-    icon: 'i-solar:keyboard-bold',
+    labelKey: "menu.shortcut",
+    icon: "i-solar:keyboard-bold",
     component: Shortcut,
   },
   {
-    labelKey: 'menu.about',
-    icon: 'i-solar:info-circle-bold',
+    labelKey: "menu.about",
+    icon: "i-solar:info-circle-bold",
     component: About,
   },
-]
+];
 </script>
 
 <template>
@@ -61,11 +61,7 @@ const menus = [
     >
       <div class="flex flex-col items-center gap-2">
         <div class="b b-color-2 rounded-2xl b-solid">
-          <img
-            class="size-15"
-            data-tauri-drag-region
-            src="/logo.png"
-          >
+          <img class="size-15" data-tauri-drag-region src="/logo.png" />
         </div>
 
         <span class="font-bold">{{ appStore.name }}</span>
@@ -76,15 +72,17 @@ const menus = [
           v-for="(item, index) in menus"
           :key="item.labelKey"
           class="size-20 flex flex-col cursor-pointer items-center justify-center gap-2 rounded-lg hover:bg-color-7 dark:text-color-2 text-color-3 transition"
-          :class="{ 'bg-color-2! text-primary-5 dark:text-primary-7 font-bold dark:bg-color-8!': current === index }"
+          :class="{
+            'bg-color-2! text-primary-5 dark:text-primary-7 font-bold dark:bg-color-8!':
+              current === index,
+          }"
           @click="current = index"
         >
-          <div
-            class="size-8"
-            :class="item.icon"
-          />
+          <div class="size-8" :class="item.icon" />
 
-          <span class="flex items-center justify-center text-center">{{ t(item.labelKey) }}</span>
+          <span class="flex items-center justify-center text-center">{{
+            t(item.labelKey)
+          }}</span>
         </div>
       </div>
     </div>
