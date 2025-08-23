@@ -21,9 +21,6 @@ export interface ModelSize {
   height: number;
 }
 
-// Flag để tránh load 2 lần (VD: Vue StrictMode mount/unmount)
-let initialized = false;
-
 export function useModel() {
   const modelStore = useModelStore();
   const catStore = useCatStore();
@@ -33,21 +30,15 @@ export function useModel() {
     try {
       if (!modelStore.currentModel) return;
 
-      // nếu đã init rồi thì bỏ qua
-      if (initialized) return;
-      initialized = true;
-
-      // dọn model cũ trước khi load
-      handleDestroy();
-
       const { path } = modelStore.currentModel;
+
       await resolveResource(path);
 
       const { width, height, ...rest } = await live2d.load(path);
 
       modelSize.value = { width, height };
 
-      await handleResize();
+      handleResize();
 
       Object.assign(modelStore, rest);
     } catch (error) {
@@ -76,18 +67,22 @@ export function useModel() {
     }
 
     const size = await appWindow.size();
+
     catStore.scale = round((size.width / width) * 100);
   }
 
   const handlePress = (key: string) => {
     const path = modelStore.supportKeys[key];
+
     if (!path) return;
 
     if (catStore.singleMode) {
       const dirName = nth(path.split(sep()), -2)!;
 
       const filterKeys = Object.entries(modelStore.pressedKeys).filter(
-        ([, value]) => value.includes(dirName)
+        ([, value]) => {
+          return value.includes(dirName);
+        }
       );
 
       for (const [key] of filterKeys) {
@@ -104,16 +99,19 @@ export function useModel() {
 
   function handleKeyChange(isLeft = true, pressed = true) {
     const id = isLeft ? "CatParamLeftHandDown" : "CatParamRightHandDown";
+
     live2d.setParameterValue(id, pressed);
   }
 
   function handleMouseChange(key: string, pressed = true) {
     const id = key === "Left" ? "ParamMouseLeftDown" : "ParamMouseRightDown";
+
     live2d.setParameterValue(id, pressed);
   }
 
   async function handleMouseMove(point: CursorPoint) {
     const monitor = await getCursorMonitor(point);
+
     if (!monitor) return;
 
     const { size, position, cursorPoint } = monitor;
@@ -128,9 +126,11 @@ export function useModel() {
       "ParamAngleY",
     ]) {
       const { min, max } = live2d.getParameterRange(id);
+
       if (isNil(min) || isNil(max)) continue;
 
       const isXAxis = id.endsWith("X");
+
       const ratio = isXAxis ? xRatio : yRatio;
       let value = max - ratio * (max - min);
 
@@ -144,6 +144,7 @@ export function useModel() {
 
   async function handleAxisChange(id: string, value: number) {
     const { min, max } = live2d.getParameterRange(id);
+
     live2d.setParameterValue(id, Math.max(min, value * max));
   }
 
