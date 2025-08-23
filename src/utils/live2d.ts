@@ -74,30 +74,13 @@ class Live2d {
         return await (this.lastLoadPromise as Promise<LoadResult>);
       }
 
-      const oldModel = this.model;
+      this.destroy();
 
       this.model = createdModel;
       this.app?.stage.addChild(this.model);
 
       const { width, height } = this.model;
       const { motions, expressions } = modelSettings;
-
-      if (oldModel) {
-        setTimeout(() => {
-          try {
-            if (oldModel.parent) {
-              oldModel.parent.removeChild(oldModel);
-            }
-            oldModel.destroy({
-              children: true,
-              texture: true,
-              baseTexture: true,
-            });
-          } catch (err) {
-            console.warn("[live2d.destroy.old] warning:", err);
-          }
-        }, 0);
-      }
 
       return { width, height, motions, expressions };
     })();

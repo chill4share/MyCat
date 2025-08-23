@@ -1,80 +1,80 @@
-import { resolveResource } from '@tauri-apps/api/path'
-import { exists, readDir } from '@tauri-apps/plugin-fs'
-import { filter, find } from 'es-toolkit/compat'
-import { nanoid } from 'nanoid'
-import { defineStore } from 'pinia'
-import { reactive, ref } from 'vue'
+import { resolveResource } from "@tauri-apps/api/path";
+import { exists, readDir } from "@tauri-apps/plugin-fs";
+import { filter, find } from "es-toolkit/compat";
+import { nanoid } from "nanoid";
+import { defineStore } from "pinia";
+import { reactive, ref } from "vue";
 
-import { join } from '@/utils/path'
+import { join } from "@/utils/path";
 
 /**
  * ModelMode = string để tự do, không giới hạn 3 loại
  */
-export type ModelMode = string
+export type ModelMode = string;
 
 export interface Model {
-  id: string
-  name: string // Tên model (Cat, Aiseya…)
-  path: string // path tới thư mục mode
-  mode: ModelMode // bất kỳ thư mục con nào
-  isPreset: boolean
+  id: string;
+  name: string; // Tên model (Cat, Aiseya…)
+  path: string; // path tới thư mục mode
+  mode: ModelMode; // bất kỳ thư mục con nào
+  isPreset: boolean;
 }
 
 interface Motion {
-  Name: string
-  File: string
-  Sound?: string
-  FadeInTime: number
-  FadeOutTime: number
-  Description?: string
+  Name: string;
+  File: string;
+  Sound?: string;
+  FadeInTime: number;
+  FadeOutTime: number;
+  Description?: string;
 }
 
-type MotionGroup = Record<string, Motion[]>
+type MotionGroup = Record<string, Motion[]>;
 
 interface Expression {
-  Name: string
-  File: string
-  Description?: string
+  Name: string;
+  File: string;
+  Description?: string;
 }
 
 export const useModelStore = defineStore(
-  'model',
+  "model",
   () => {
-    const models = ref<Model[]>([])
-    const currentModel = ref<Model>()
-    const motions = ref<MotionGroup>({})
-    const expressions = ref<Expression[]>([])
-    const supportKeys = reactive<Record<string, string>>({})
-    const pressedKeys = reactive<Record<string, string>>({})
+    const models = ref<Model[]>([]);
+    const currentModel = ref<Model>();
+    const motions = ref<MotionGroup>({});
+    const expressions = ref<Expression[]>([]);
+    const supportKeys = reactive<Record<string, string>>({});
+    const pressedKeys = reactive<Record<string, string>>({});
 
     const init = async () => {
-      const modelsRoot = await resolveResource('assets/models')
+      const modelsRoot = await resolveResource("assets/models");
 
-      const userModels = filter(models.value, { isPreset: false })
-      const presetModels = filter(models.value, { isPreset: true })
+      const userModels = filter(models.value, { isPreset: false });
+      const presetModels = filter(models.value, { isPreset: true });
 
-      const discovered: Model[] = []
+      const discovered: Model[] = [];
 
       // Đọc tất cả thư mục model trong assets/models
-      const modelDirs = await readDir(modelsRoot).catch(() => [])
+      const modelDirs = await readDir(modelsRoot).catch(() => []);
 
       for (const modelDir of modelDirs) {
-        if (!modelDir.isDirectory) continue
+        if (!modelDir.isDirectory) continue;
 
-        const modelName = modelDir.name
+        const modelName = modelDir.name;
 
-        // ✅ Đọc toàn bộ subfolder thay vì fix 3 mode
+        // Đọc toàn bộ subfolder thay vì fix 3 mode
         const modeDirs = await readDir(join(modelsRoot, modelName)).catch(
-          () => [],
-        )
+          () => []
+        );
         for (const modeDir of modeDirs) {
-          if (!modeDir.isDirectory) continue
+          if (!modeDir.isDirectory) continue;
 
-          const mode = modeDir.name
-          const modePath = join(modelsRoot, modelName, mode)
+          const mode = modeDir.name;
+          const modePath = join(modelsRoot, modelName, mode);
 
-          const ok = await exists(modePath).catch(() => false)
-          if (!ok) continue
+          const ok = await exists(modePath).catch(() => false);
+          if (!ok) continue;
 
           discovered.push({
             id: find(presetModels, { path: modePath })?.id ?? nanoid(),
@@ -82,23 +82,23 @@ export const useModelStore = defineStore(
             mode,
             isPreset: true,
             path: modePath,
-          })
+          });
         }
       }
 
       // Sắp xếp: theo tên model, rồi theo mode alphabet
       discovered.sort(
-        (a, b) => a.name.localeCompare(b.name) || a.mode.localeCompare(b.mode),
-      )
+        (a, b) => a.name.localeCompare(b.name) || a.mode.localeCompare(b.mode)
+      );
 
-      const nextModels = [...userModels, ...discovered]
+      const nextModels = [...userModels, ...discovered];
 
-      // Giữ model cũ nếu còn, nếu không chọn cái đầu
-      const matched = find(nextModels, { id: currentModel.value?.id })
-      currentModel.value = matched ?? nextModels[0]
+      // Giữ model cũ nếu còn, nếu không chọn cái đầu (Bongo cat)
+      const matched = find(nextModels, { id: currentModel.value?.id });
+      currentModel.value = matched ?? nextModels[3];
 
-      models.value = nextModels
-    }
+      models.value = nextModels;
+    };
 
     return {
       models,
@@ -108,12 +108,12 @@ export const useModelStore = defineStore(
       supportKeys,
       pressedKeys,
       init,
-    }
+    };
   },
   {
     tauri: {
-      filterKeys: ['models', 'currentModel'],
-      filterKeysStrategy: 'pick',
+      filterKeys: ["models", "currentModel"],
+      filterKeysStrategy: "pick",
     },
-  },
-)
+  }
+);
