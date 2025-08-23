@@ -6,12 +6,11 @@ import { readDir, readTextFile } from "@tauri-apps/plugin-fs";
 import { Cubism4ModelSettings, Live2DModel } from "pixi-live2d-display";
 import { Application, Ticker } from "pixi.js";
 
-import { join } from "./path";
 import { i18n } from "@/i18n";
+import { join } from "./path";
 
 Live2DModel.registerTicker(Ticker);
 
-// --- thêm token để phân biệt lượt load ---
 let _loadToken = 0;
 
 type LoadResult = {
@@ -24,10 +23,7 @@ type LoadResult = {
 class Live2d {
   private app: Application | null = null;
   public model: Live2DModel | null = null;
-
   private lastLoadPromise: Promise<LoadResult> | null = null;
-
-  constructor() {}
 
   private initApp() {
     if (this.app) return;
@@ -67,7 +63,6 @@ class Live2d {
 
       const createdModel = await Live2DModel.from(modelSettings);
 
-      // nếu có lượt load mới hơn -> hủy model vừa tạo, trả về kết quả của lần mới
       if (token !== _loadToken) {
         try {
           createdModel.destroy({
@@ -79,29 +74,31 @@ class Live2d {
         return await (this.lastLoadPromise as Promise<LoadResult>);
       }
 
-      // huỷ model cũ sau khi model mới đã tạo xong
-      if (this.model) {
-        try {
-          if (this.model.parent) {
-            this.model.parent.removeChild(this.model);
-          } else {
-            this.app?.stage.removeChild(this.model);
-          }
-          this.model.destroy({
-            children: true,
-            texture: true,
-            baseTexture: true,
-          });
-        } catch (err) {
-          console.warn("[live2d.destroy-old] warning:", err);
-        }
-      }
+      const oldModel = this.model;
 
       this.model = createdModel;
       this.app?.stage.addChild(this.model);
 
       const { width, height } = this.model;
       const { motions, expressions } = modelSettings;
+
+      if (oldModel) {
+        setTimeout(() => {
+          try {
+            if (oldModel.parent) {
+              oldModel.parent.removeChild(oldModel);
+            }
+            oldModel.destroy({
+              children: true,
+              texture: true,
+              baseTexture: true,
+            });
+          } catch (err) {
+            console.warn("[live2d.destroy.old] warning:", err);
+          }
+        }, 0);
+      }
+
       return { width, height, motions, expressions };
     })();
 
@@ -109,7 +106,6 @@ class Live2d {
     return await loadPromise;
   }
 
-  /** Hủy model hiện tại một cách an toàn */
   public destroy() {
     if (!this.model) return;
     try {
@@ -141,7 +137,6 @@ class Live2d {
     this.model.x = innerWidth / 2;
     this.model.y = innerHeight / 2;
 
-    // anchor có thể không tồn tại, nên check an toàn
     const anyModel = this.model as unknown as {
       anchor?: { set?: (x: number, y?: number) => void };
     };

@@ -6,7 +6,7 @@ import { getCurrentWebviewWindow } from "@tauri-apps/api/webviewWindow";
 import { message } from "ant-design-vue";
 import { isNil, round } from "es-toolkit";
 import { nth } from "es-toolkit/compat";
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 import live2d from "../utils/live2d";
 
@@ -26,20 +26,28 @@ export function useModel() {
   const catStore = useCatStore();
   const modelSize = ref<ModelSize>();
 
+  const targetMouseParams = ref({
+    ParamMouseX: 0,
+    ParamMouseY: 0,
+    ParamAngleX: 0,
+    ParamAngleY: 0,
+  });
+
+  const smoothedMouseParams = ref({
+    ParamMouseX: 0,
+    ParamMouseY: 0,
+    ParamAngleX: 0,
+    ParamAngleY: 0,
+  });
+
   async function handleLoad() {
     try {
       if (!modelStore.currentModel) return;
-
       const { path } = modelStore.currentModel;
-
       await resolveResource(path);
-
       const { width, height, ...rest } = await live2d.load(path);
-
       modelSize.value = { width, height };
-
       handleResize();
-
       Object.assign(modelStore, rest);
     } catch (error) {
       message.error(String(error));
@@ -52,11 +60,8 @@ export function useModel() {
 
   async function handleResize() {
     if (!modelSize.value) return;
-
     live2d.resizeModel(modelSize.value);
-
     const { width, height } = modelSize.value;
-
     if (round(innerWidth / innerHeight, 1) !== round(width / height, 1)) {
       await appWindow.setSize(
         new LogicalSize({
@@ -65,31 +70,24 @@ export function useModel() {
         })
       );
     }
-
     const size = await appWindow.size();
-
     catStore.scale = round((size.width / width) * 100);
   }
 
   const handlePress = (key: string) => {
     const path = modelStore.supportKeys[key];
-
     if (!path) return;
-
     if (catStore.singleMode) {
       const dirName = nth(path.split(sep()), -2)!;
-
       const filterKeys = Object.entries(modelStore.pressedKeys).filter(
         ([, value]) => {
           return value.includes(dirName);
         }
       );
-
       for (const [key] of filterKeys) {
         handleRelease(key);
       }
     }
-
     modelStore.pressedKeys[key] = path;
   };
 
@@ -99,54 +97,65 @@ export function useModel() {
 
   function handleKeyChange(isLeft = true, pressed = true) {
     const id = isLeft ? "CatParamLeftHandDown" : "CatParamRightHandDown";
-
     live2d.setParameterValue(id, pressed);
   }
 
   function handleMouseChange(key: string, pressed = true) {
     const id = key === "Left" ? "ParamMouseLeftDown" : "ParamMouseRightDown";
-
     live2d.setParameterValue(id, pressed);
   }
 
   async function handleMouseMove(point: CursorPoint) {
     const monitor = await getCursorMonitor(point);
-
     if (!monitor) return;
-
     const { size, position, cursorPoint } = monitor;
-
     const xRatio = (cursorPoint.x - position.x) / size.width;
     const yRatio = (cursorPoint.y - position.y) / size.height;
-
-    for (const id of [
+    const paramIds = [
       "ParamMouseX",
       "ParamMouseY",
       "ParamAngleX",
       "ParamAngleY",
-    ]) {
+    ];
+    for (const id of paramIds) {
       const { min, max } = live2d.getParameterRange(id);
-
       if (isNil(min) || isNil(max)) continue;
-
       const isXAxis = id.endsWith("X");
-
       const ratio = isXAxis ? xRatio : yRatio;
       let value = max - ratio * (max - min);
-
       if (isXAxis && catStore.mouseMirror) {
         value *= -1;
       }
-
-      live2d.setParameterValue(id, value);
+      targetMouseParams.value[id as keyof typeof targetMouseParams.value] =
+        value;
     }
   }
 
   async function handleAxisChange(id: string, value: number) {
     const { min, max } = live2d.getParameterRange(id);
-
     live2d.setParameterValue(id, Math.max(min, value * max));
   }
+
+  const SMOOTHING_FACTOR = 0.15;
+
+  function update() {
+    for (const id in targetMouseParams.value) {
+      const key = id as keyof typeof targetMouseParams.value;
+      const target = targetMouseParams.value[key];
+      const current = smoothedMouseParams.value[key];
+      if (Math.abs(target - current) < 0.01) {
+        continue;
+      }
+      const smoothedValue = current + (target - current) * SMOOTHING_FACTOR;
+      smoothedMouseParams.value[key] = smoothedValue;
+      live2d.setParameterValue(id, smoothedValue);
+    }
+    requestAnimationFrame(update);
+  }
+
+  onMounted(() => {
+    update();
+  });
 
   return {
     modelSize,
