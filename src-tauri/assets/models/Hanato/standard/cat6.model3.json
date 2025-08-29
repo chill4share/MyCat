@@ -1,0 +1,75 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "test.moc3",
+		"Textures": [
+			"test.1024/texture_00.png",
+			"test.1024/texture_01.png",
+			"test.1024/texture_02.png"
+		],
+		
+		"Physics": "test.physics3.json",
+		"DisplayInfo": "test.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "motion00",
+				"File": "motion00.exp3.json"
+			},
+			{
+				"Name": "motion01",
+				"File": "motion01.exp3.json"
+			},
+			{
+				"Name": "motion02",
+				"File": "motion02.exp3.json"
+			},
+			{
+				"Name": "motion03",
+				"File": "motion03.exp3.json"
+			},
+			{
+				"Name": "motion04",
+				"File": "motion04.exp3.json"
+			},
+			{
+				"Name": "motion05",
+				"File": "motion05.exp3.json"
+			},
+			{
+				"Name": "motion06",
+				"File": "motion06.exp3.json"
+			},
+			{
+				"Name": "motion07",
+				"File": "motion07.exp3.json"
+			}
+		],
+		"Motions": {
+			"CAT_motion": [
+				{
+					"File": "Scene1.motion3.json",
+					"FadeInTime": 0,
+					"FadeOutTime": 0
+				},
+				{
+					"File": "Scene2.motion3.json",
+					"FadeInTime": 0,
+					"FadeOutTime": 0
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

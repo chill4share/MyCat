@@ -1,0 +1,40 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "test.moc3",
+		"Textures": [
+			"test.1024/texture_00.png",
+			"test.1024/texture_01.png",
+			"test.1024/texture_02.png"
+		],
+		"Motions": {
+			"CAT_motion": [
+				{
+					"File": "Scene1.motion3.json",
+					"FadeInTime": 0,
+					"FadeOutTime": 0
+				},
+				{
+					"File": "Scene2.motion3.json",
+					"FadeInTime": 0,
+					"FadeOutTime": 0
+				},
+			]
+		}
+	},
+		"Physics": "test.physics3.json",
+		"DisplayInfo": "test.cdi3.json",
+		
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

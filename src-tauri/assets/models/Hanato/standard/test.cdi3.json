@@ -1,0 +1,312 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamMouseX",
+			"GroupId": "ParamGroup",
+			"Name": "Mouse X"
+		},
+		{
+			"Id": "ParamMouseY",
+			"GroupId": "ParamGroup",
+			"Name": "Mouse Y"
+		},
+		{
+			"Id": "ParamMouseLeftDown",
+			"GroupId": "ParamGroup",
+			"Name": "Mouse Left Click"
+		},
+		{
+			"Id": "ParamMouseRightDown",
+			"GroupId": "ParamGroup",
+			"Name": "Mouse Right Click"
+		},
+		{
+			"Id": "CatParamLeftHandDown",
+			"GroupId": "ParamGroup",
+			"Name": "Key Press"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "Angle X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "Angle Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "Angle Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "Left Eye Open/Close"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "Left Eye Smile"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "Right Eye"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "Right Eye Smile"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "Eyeball X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "Eyeball Y"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "Highlight Size"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "",
+			"Name": "Eyeball Size"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "Left Brow Up/Down"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "",
+			"Name": "Left Brow Deform"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "Right Brow Up/Down"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "",
+			"Name": "Right Brow Deform"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "",
+			"Name": "Left Brow Left/Right"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "",
+			"Name": "Right Brow Left/Right"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "",
+			"Name": "Left Brow Angle"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "",
+			"Name": "Right Brow Angle"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "Mouth Deform"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "Mouth Open/Close"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "",
+			"Name": "Blush"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "",
+			"Name": "Crying Eyes"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "",
+			"Name": "Tears Forming"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "",
+			"Name": "Tears Appear"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "Tears Opacity"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "Body Rotation X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "Body Rotation Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "Body Rotation Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "Breathing"
+		},
+		{
+			"Id": "ParamHair",
+			"GroupId": "",
+			"Name": "Hair Ears"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "",
+			"Name": "Tassel Sway"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "Front Hair Sway"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "Side Hair Sway"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "Back Hair Sway"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "Bongo Cat"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "Folder 4"
+		},
+		{
+			"Id": "Part2",
+			"Name": "[Tears]"
+		},
+		{
+			"Id": "Part3",
+			"Name": "[Blush]"
+		},
+		{
+			"Id": "Part4",
+			"Name": "Front Hair"
+		},
+		{
+			"Id": "Part5",
+			"Name": "Ears"
+		},
+		{
+			"Id": "Part7",
+			"Name": "[Crying]"
+		},
+		{
+			"Id": "Part8",
+			"Name": "Right Eye r"
+		},
+		{
+			"Id": "Part9",
+			"Name": "Left Eye l"
+		},
+		{
+			"Id": "Part6",
+			"Name": "Mouth"
+		},
+		{
+			"Id": "Part10",
+			"Name": "Eyeball r"
+		},
+		{
+			"Id": "Part11",
+			"Name": "Eyeball l"
+		},
+		{
+			"Id": "Part12",
+			"Name": "Scarf"
+		},
+		{
+			"Id": "Part13",
+			"Name": "Arms"
+		},
+		{
+			"Id": "Part16",
+			"Name": "Main"
+		},
+		{
+			"Id": "Part19",
+			"Name": "Back Hair"
+		},
+		{
+			"Id": "Part15",
+			"Name": "Arm l"
+		},
+		{
+			"Id": "Part14",
+			"Name": "Arm r"
+		},
+		{
+			"Id": "Part17",
+			"Name": "Mouse"
+		},
+		{
+			"Id": "Part18",
+			"Name": "Keyboard"
+		},
+		{
+			"Id": "Part20",
+			"Name": "Braids"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamMouseX",
+			"ParamMouseY"
+		],
+		[
+			"ParamAngleX",
+			"ParamAngleY"
+		],
+		[
+			"ParamEyeBallX",
+			"ParamEyeBallY"
+		],
+		[
+			"ParamMouthForm",
+			"ParamMouthOpenY"
+		]
+	]
+}
