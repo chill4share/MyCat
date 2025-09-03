@@ -13,6 +13,11 @@ use tauri_plugin_custom_window::{
 };
 use utils::fs_extra::copy_dir;
 
+#[tauri::command]
+fn is_ready() -> bool {
+    true
+}
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     let app = tauri::Builder::default()
@@ -20,7 +25,6 @@ pub fn run() {
             let app_handle = app.handle();
 
             let main_window = app.get_webview_window(MAIN_WINDOW_LABEL).unwrap();
-
             let preference_window = app.get_webview_window(PREFERENCE_WINDOW_LABEL).unwrap();
 
             setup::default(&app_handle, main_window.clone(), preference_window.clone());
@@ -31,7 +35,8 @@ pub fn run() {
             copy_dir,
             start_device_listening,
             start_gamepad_listing,
-            stop_gamepad_listing
+            stop_gamepad_listing,
+            is_ready
         ])
         .plugin(tauri_plugin_custom_window::init())
         .plugin(tauri_plugin_os::init())
@@ -63,7 +68,6 @@ pub fn run() {
         .on_window_event(|window, event| match event {
             WindowEvent::CloseRequested { api, .. } => {
                 let _ = window.hide();
-
                 api.prevent_close();
             }
             _ => {}
@@ -71,13 +75,11 @@ pub fn run() {
         .build(tauri::generate_context!())
         .expect("error while running tauri application");
 
-    app.run(|app_handle, event| match event {
+    app.run(|_app_handle, event| match event {
         #[cfg(target_os = "macos")]
         tauri::RunEvent::Reopen { .. } => {
-            show_preference_window(app_handle);
+            show_preference_window(_app_handle);
         }
-        _ => {
-            let _ = app_handle;
-        }
+        _ => {}
     });
 }

@@ -38,6 +38,8 @@ class Live2d {
   }
 
   public async load(path: string) {
+    this.destroy();
+
     this.initApp();
 
     const token = ++_loadToken;
@@ -53,12 +55,10 @@ class Live2d {
 
       const modelPath = join(path, modelFile.name);
       const modelJSON = JSON.parse(await readTextFile(modelPath));
-
       const modelSettings = new Cubism4ModelSettings({
         ...modelJSON,
         url: convertFileSrc(modelPath),
       });
-
       modelSettings.replaceFiles((file) => convertFileSrc(join(path, file)));
 
       const createdModel = await Live2DModel.from(modelSettings);
@@ -74,13 +74,14 @@ class Live2d {
         return await (this.lastLoadPromise as Promise<LoadResult>);
       }
 
-      this.destroy();
-
       this.model = createdModel;
       this.app?.stage.addChild(this.model);
 
       const { width, height } = this.model;
       const { motions, expressions } = modelSettings;
+
+      // Luôn gọi resizeModel để căn giữa model
+      this.resizeModel({ width, height });
 
       return { width, height, motions, expressions };
     })();

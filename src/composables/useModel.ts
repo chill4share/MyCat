@@ -47,7 +47,7 @@ export function useModel() {
       await resolveResource(path);
       const { width, height, ...rest } = await live2d.load(path);
       modelSize.value = { width, height };
-      handleResize();
+      handleResize(false);
       Object.assign(modelStore, rest);
     } catch (error) {
       message.error(String(error));
@@ -58,9 +58,13 @@ export function useModel() {
     live2d.destroy();
   }
 
-  async function handleResize() {
+  async function handleResize(shouldResetPosition = true) {
     if (!modelSize.value) return;
-    live2d.resizeModel(modelSize.value);
+
+    if (shouldResetPosition) {
+      live2d.resizeModel(modelSize.value);
+    }
+
     const { width, height } = modelSize.value;
     if (round(innerWidth / innerHeight, 1) !== round(width / height, 1)) {
       await appWindow.setSize(
