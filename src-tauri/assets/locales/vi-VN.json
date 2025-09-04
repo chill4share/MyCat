@@ -20,6 +20,7 @@
     "checkUpdate": "Kiểm tra cập nhật",
     "openSource": "Mã nguồn",
     "version": "Phiên bản",
+    "reset": "Đặt lại Ứng dụng",
     "restart": "Khởi động lại",
     "exit": "Thoát"
   },
@@ -44,6 +45,10 @@
   "common": {
     "loading": {
       "resizing": "Đang đổi kích thước..."
+    },
+    "actions": {
+      "confirm": "Xác nhận",
+      "cancel": "Hủy"
     }
   },
   "model": {
@@ -83,7 +88,25 @@
         "title": "Hiện biểu tượng trên thanh tác vụ (icon taskbar)",
         "description": "Bật để có thể quay cửa sổ qua OBS."
       },
-      "autoUpdate": "Tự động kiểm tra cập nhật"
+      "autoUpdate": "Tự động kiểm tra cập nhật",
+      "data": {
+        "title": "Dữ liệu & Tùy chỉnh",
+        "reset": {
+          "title": "Đặt lại Cài đặt",
+          "description": "Thao tác này sẽ đặt lại tất cả cài đặt mô hình (tỷ lệ, độ mờ, v.v.) về giá trị mặc định ban đầu.",
+          "button": "Đặt lại",
+          "success": "Đã đặt lại cài đặt thành công.",
+          "confirm": {
+            "title": "Bạn có chắc chắn muốn đặt lại không?",
+            "content": "Tất cả các cài đặt tùy chỉnh của bạn cho mô hình sẽ bị mất và khôi phục về trạng thái ban đầu. Hành động này không thể hoàn tác."
+          },
+          "restart": {
+            "title": "Yêu cầu Khởi động lại",
+            "content": "Ứng dụng cần khởi động lại để các thay đổi có hiệu lực đầy đủ.",
+            "button": "Khởi động lại ngay"
+          }
+        }
+      }
     },
     "languages": {
       "title": "Ngôn ngữ",

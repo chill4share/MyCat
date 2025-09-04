@@ -59,9 +59,14 @@ class Live2d {
         ...modelJSON,
         url: convertFileSrc(modelPath),
       });
-      modelSettings.replaceFiles((file) => convertFileSrc(join(path, file)));
+      modelSettings.replaceFiles((file: string) =>
+        convertFileSrc(join(path, file))
+      );
 
       const createdModel = await Live2DModel.from(modelSettings);
+
+      const intrinsicWidth = createdModel.width;
+      const intrinsicHeight = createdModel.height;
 
       if (token !== _loadToken) {
         try {
@@ -77,13 +82,16 @@ class Live2d {
       this.model = createdModel;
       this.app?.stage.addChild(this.model);
 
-      const { width, height } = this.model;
+      this.resizeModel({ width: intrinsicWidth, height: intrinsicHeight });
+
       const { motions, expressions } = modelSettings;
 
-      // Luôn gọi resizeModel để căn giữa model
-      this.resizeModel({ width, height });
-
-      return { width, height, motions, expressions };
+      return {
+        width: intrinsicWidth,
+        height: intrinsicHeight,
+        motions,
+        expressions,
+      };
     })();
 
     this.lastLoadPromise = loadPromise;
@@ -116,8 +124,9 @@ class Live2d {
     const scaleX = innerWidth / width;
     const scaleY = innerHeight / height;
     const scale = Math.min(scaleX, scaleY);
+    const finalScale = scale * 0.8; // Giảm kích thước model xuống còn 80% của vùng hiển thị, có thể thay đổ tùy ý
 
-    this.model.scale.set(scale);
+    this.model.scale.set(finalScale);
     this.model.x = innerWidth / 2;
     this.model.y = innerHeight / 2;
 

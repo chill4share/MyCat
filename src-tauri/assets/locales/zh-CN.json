@@ -20,6 +20,7 @@
     "checkUpdate": "检查更新",
     "openSource": "开源地址",
     "version": "版本",
+    "reset": "重置",
     "restart": "重启应用",
     "exit": "退出应用"
   },
@@ -44,6 +45,10 @@
   "common": {
     "loading": {
       "resizing": "重绘中..."
+    },
+    "actions": {
+      "confirm": "确认",
+      "cancel": "取消"
     }
   },
   "model": {
@@ -83,7 +88,25 @@
         "title": "显示任务栏图标",
         "description": "启用后，即可通过 OBS Studio 捕获窗口。"
       },
-      "autoUpdate": "自动检查更新"
+      "autoUpdate": "自动检查更新",
+      "data": {
+        "title": "数据与自定义",
+        "reset": {
+          "title": "重置设置",
+          "description": "此操作会将所有模型设置（缩放、不透明度等）重置为初始默认值。",
+          "button": "重置",
+          "success": "设置已成功重置。",
+          "confirm": {
+            "title": "您确定要重置吗？",
+            "content": "您对模型的所有自定义设置都将丢失并恢复到初始状态。此操作无法撤销。"
+          },
+          "restart": {
+            "title": "需要重启",
+            "content": "应用需要重启以使更改完全生效。",
+            "button": "立即重启"
+          }
+        }
+      }
     },
     "languages": {
       "title": "语言",

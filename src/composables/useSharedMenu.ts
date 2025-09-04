@@ -101,7 +101,11 @@ export function useSharedMenu() {
       PredefinedMenuItem.new({ item: "Separator" }),
       MenuItem.new({
         text: t("trayMenu.restart"),
-        action: () => relaunch(),
+        action: async () => {
+          catStore.reset();
+          await new Promise((resolve) => setTimeout(resolve, 300));
+          relaunch();
+        },
       }),
       MenuItem.new({
         text: t("trayMenu.exit"),

@@ -20,6 +20,7 @@
     "checkUpdate": "Check for updates",
     "openSource": "Source Code",
     "version": "Version",
+    "reset": "Reset App",
     "restart": "Restart",
     "exit": "Exit"
   },
@@ -44,6 +45,10 @@
   "common": {
     "loading": {
       "resizing": "Resizing..."
+    },
+    "actions": {
+      "confirm": "Confirm",
+      "cancel": "Cancel"
     }
   },
   "model": {
@@ -83,7 +88,25 @@
         "title": "Show taskbar icon",
         "description": "Once enabled, you can capture the window via OBS Studio."
       },
-      "autoUpdate": "Check for updates automatically"
+      "autoUpdate": "Check for updates automatically",
+      "data": {
+        "title": "Data & Customization",
+        "reset": {
+          "title": "Reset Settings",
+          "description": "This will reset all model settings (scale, opacity, etc.) to their original default values.",
+          "button": "Reset",
+          "success": "Settings have been reset successfully.",
+          "confirm": {
+            "title": "Are you sure you want to reset?",
+            "content": "All your custom settings for the model will be lost and restored to the initial state. This action cannot be undone."
+          },
+          "restart": {
+            "title": "Restart Required",
+            "content": "The application needs to restart for the changes to take full effect.",
+            "button": "Restart Now"
+          }
+        }
+      }
     },
     "languages": {
       "title": "Languages",
